@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Prototypes</span>
+        Use land and property data
+      </h1>
+
+      <!-- Version 0.1 of public beta -->
+      <h2 class="govuk-heading-m">Version 0.1</h2>
+      <h3 class="govuk-heading-s">
+        <a href="version-0-1/listings-signed-in" class="govuk-link">Context 1</a>
+      </h3>
+      <p>User signed in to their account; all available data purchased and licences agreed.</p>
+
+      <h3 class="govuk-heading-s">
+        <a href="version-0-1/listings" class="govuk-link">Context 2</a>
+      </h3>
+      <p>User not signed in; no datasets approved</p>
+
+      <h3 class="govuk-heading-s">Changes made:</h3>
+      <ul class="govuk-list">
+        <li>Created a new version of the listings page to remove the pill boxes.</li>
+        <li>Added request for information to the listings page and it's product, download and view page.</li>
+        <li>Added a new version of the NPS product page.</li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

@@ -6,20 +6,27 @@
 
 {% block content %}
 
+<!-- breadcrumbs -->
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings-op2">Home</a></li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">National Polygon Service</li>
     </ol>
   </div>
 
-  <!-- full width row for the blue box -->
+  <!-- full width row for title -->
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         <span class="govuk-caption-xl">Dataset</span>
         National polygon Service
       </h1>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
 
       <!-- contents -->
       <div class="toc" id="contents">
@@ -32,7 +39,9 @@
           <li><a href="#contact">Contact us</a></li>
         </ul>
       </div>
+    </div> <!-- column-one-third -->
 
+    <div class="govuk-grid-column-two-thirds">
       <h2 id="datasets" class="govuk-heading-l">The datasets</h2>
       <p class="govuk-body">
         The National Polygon Service contains 3 licensed, chargeable datasets:
@@ -235,5 +244,6 @@
 
     </div> <!-- column-two-thirds -->
   </div> <!-- grid-row -->
+</main>
 
 {% endblock %}

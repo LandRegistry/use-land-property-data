@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">
+                        Enter your card details
+                    </h1>
+                </legend>
+
+                <div class="govuk-form-group">
+                    <label class="govuk-label govuk-!-font-weight-bold" for="card-no">
+                        Card number
+                    </label>
+                    <input class="govuk-input govuk-!-width-two-thirds " id="card-no" name="cardNo" type="tel" maxlength="26" autocomplete="cc-number" value="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                    <span class="govuk-hint govuk-!-padding-top-2">
+                        Accepted credit and debit card types
+                    </span>
+                    <img src="/public/images/govpay-01-card_types.png" />
+                </div>
+
+                <div class="govuk-form-group govuk-clearfix expiry-date" data-validation="expiryMonth">
+                    <label class="govuk-label govuk-label--s" id="expiry-date-lbl" for="expiry-month">
+                        Expiry date
+                    </label>
+                    <span class="govuk-hint">
+                        For example, 05/22
+                    </span>
+                    <div class="govuk-date-input__item govuk-date-input__item--month govuk-date-input__item--with-separator">
+                        <label class="govuk-label govuk-date-input__label" for="expiry-month">
+                            Month</label>
+                        <input id="expiry-month" type="number" name="expiryMonth" value="" class="govuk-input govuk-date-input__input govuk-input--width-2" min="1" max="12" minlength="1" maxlength="2" autocomplete="cc-exp-month">
+                    </div>
+                    <div class="govuk-date-input__item govuk-date-input__item--year">
+                        <label for="expiry-year" class="govuk-label govuk-date-input__label">
+                            Year
+                        </label>
+                        <input id="expiry-year" type="number" name="expiryYear" value="" minlength="2" maxlength="4" class="govuk-input govuk-date-input__input govuk-input--width-2" autocomplete="cc-exp-year" data-last-of-form-group="" data-required="">
+                    </div>
+                </div>
+
+                <div class="govuk-form-group" data-validation="cardholderName">
+                    <label id="cardholder-name-lbl" for="cardholder-name" class="govuk-label govuk-label--s">
+                        Name on card
+                    </label>
+                    <input id="cardholder-name" type="text" name="cardholderName" maxlength="200" class="govuk-input govuk-!-width-two-thirds" value="" autocomplete="cc-name">
+                </div>
+
+                <div class="govuk-form-group cvc govuk-clearfix" data-validation="cvc">
+                    <label id="cvc-lbl" for="cvc" class="govuk-label govuk-label--s">
+                        Card security code
+                    </label>
+                    <span class="govuk-hint">
+                        The last 3 numbers on the back of the card
+                    </span>
+                    <input id="cvc" type="number" value="" name="cvc" class="govuk-input govuk-!-width-one-quarter cvc" maxlength="3" autocomplete="cc-csc">
+                    <img src="/public/images/security-code.png" class="generic-cvc" alt="The last 3 digits on the back of the card" height="40px" />
+                    <img src="/public/images/amex-security-code.png" class="amex-cvc hidden" alt="The last 4 digits after the card number on the front" height="40px" />
+                </div>
+
+                <div class="govuk-form-group govuk-!-width-two-thirds " data-validation="addressCountry">
+                    <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+                        Billing address
+                    </h2>
+                    <span class="govuk-hint">
+                        This is the address linked to the card
+                    </span>
+                    <label id="address-country-lbl" for="address-country" class="govuk-label govuk-label--s">
+                        Country or territory
+                    </label>
+                    <input aria-owns="address-country__listbox" autocomplete="off" class="govuk-input autocomplete__input autocomplete__input--default" id="address-country" name="" placeholder="" type="text" role="textbox">
+                </div>
+
+                <div class="govuk-form-group address" data-validation="addressLine1">
+                    <label id="address-line-1-lbl" for="address-line-1" class="govuk-label govuk-label--s">
+                        Building number or name and street
+                    </label>
+                    <input id="address-line-1" type="text" name="addressLine1" maxlength="100" class="govuk-input govuk-!-width-two-thirds" value="" autocomplete="billing street-address">
+                    <input id="address-line-2" type="text" name="addressLine2" maxlength="100" class="govuk-input govuk-!-width-two-thirds govuk-!-margin-top-2" data-last-of-form-group="" value="" aria-label="Enter address line 2" autocomplete="billing address-line2">
+                </div>
+                <div class="govuk-form-group" data-validation="addressCity">
+                    <label id="address-city-lbl" for="address-city" class="govuk-label govuk-label--s">
+                        Town or city
+                    </label>
+                    <input id="address-city" type="text" name="addressCity" maxlength="100" class="govuk-input govuk-!-width-one-third" value="" autocomplete="billing address-level2">
+                </div>
+                <div class="govuk-form-group" data-validation="addressPostcode">
+                    <label id="address-postcode-lbl" for="address-postcode" class="govuk-label govuk-label--s">
+                        Postcode
+                    </label>
+                    <input id="address-postcode" type="text" name="addressPostcode" maxlength="10" class="govuk-input govuk-!-width-one-quarter" value="" autocomplete="billing postal-code">
+                </div>
+
+                <div class="govuk-form-group" data-validation="email">
+                    <label id="email-lbl" for="email" class="govuk-label govuk-label--s">
+                        Email
+                    </label>
+                    <span class="govuk-hint">
+                        We’ll send your account approval here
+                    </span>
+                    <input id="email" type="email" name="email" maxlength="254" class="govuk-input govuk-!-width-two-thirds" value="" autocomplete="email" data-confirmation="true" data-confirmation-label="An email will be sent to: ">
+                </div>
+
+                <div>
+                    <a href="confirm-card-details" role="button" class="govuk-button">Continue
+                    </a>
+                </div>
+
+                <a href="../../listings-op1" class="govuk-link">Cancel</a>
+            </fieldset>
+        </div> <!-- form-group -->
+    </div> <!-- column-two-thirds -->
+
+    <div class="govuk-grid-column-one-third payment-summary-wrap">
+        <aside class="payment-summary">
+            <p id="payment-description" class="govuk-body govuk-!-font-weight-bold">
+                Use land and property data identity check
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-0">
+                Total amount:
+            </p>
+            <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold" data-amount="0.01">
+                £0.00
+            </span>
+        </aside>
+    </div>
+</div>
+
+
+{% endblock %}

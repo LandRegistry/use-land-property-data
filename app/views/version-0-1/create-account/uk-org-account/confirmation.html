@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+                Your account is almost ready
+            </h1>
+        </div>
+
+        <h2 class="govuk-heading-m">What happens next</h2>
+        <p class="govuk-body">
+            Check your email. We'll email you when your account is ready to use. You can use the link in this email to
+            create a password. After that, you can sign in and start downloading data.
+        </p>
+
+        <h3 class="govuk-heading-s">What happens if your email doesn't arrive?</h3>
+        <p class="govuk-inset-text">
+            Did you create a professional account for a UK organisation? HM Land Registry may take up to 2 days to
+            approve your account.
+        </p>
+
+        <h2 class="govuk-heading-m">I did not get the email from HM Land Registry</h2>
+        <p class="govuk-body">
+            Check your junk mail folder. If you do not see the email in your junk mail:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>Wait 2 days (if you work for a UK organisation), or</li>
+            <li>Email HM Land Registry: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk</a></li>
+        </ul>
+
+        <p class="govuk-body">
+            <a href="../../listings-op1" class="govuk-link">Return to homepage</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

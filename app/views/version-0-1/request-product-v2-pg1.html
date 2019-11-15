@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+  <!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings-op2">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Request for information</li>
+    </ol>
+  </div>
+
+  <!-- new full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Request for information
+      </h1>
+    </div>
+  </div>
+
+  <!-- new 2/3 row for contents -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li>The datasets</li>
+          <li><a href="request-product-v2-pg2">Access the data</a></li>
+          <li><a href="request-product-v2-pg3">Contact us</a></li>
+        </ul>
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    </div>
+  </div>
+
+  <!-- new 2/3 row for copy -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">The datasets</h2>
+      <p class="govuk-body">
+        This dataset is based on the 500 customers that send the most applications to us. It shows the number and
+        type of applications we receive and complete, and how many requests for information (formerly known as
+        requisitions) we send to customers
+      </p>
+      <p class="govuk-body">
+        It includes all types of requests for information, whether they are avoidable or not, but excludes:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>telephone requests for information</li>
+        <li>bankruptcy applications</li>
+        <li>bulk applications</li>
+      </ul>
+      <p class="govuk-body">
+        This dataset is updated every 3 months. It’s normally available to access on the 15th working day of the month.
+      </p>
+
+      <h3 id="explanation" class="govuk-heading-m">About requests for information</h3>
+      <p class="govuk-body">
+        HM Land Registry sends a request for information if we receive a register update or register create application
+        that does not have enough information. We’ll also request information if there are inconsistencies in the
+        documentation we receive.
+      </p>
+      <h4 class="govuk-heading-s">Register update applications</h4>
+      <p class="govuk-body">
+        These are applications to change the details on an existing register. For example, recording the names of
+        new owners of a property.
+      </p>
+      <h4 class="govuk-heading-s">Register create applications</h4>
+      <p class="govuk-body">
+        These are applications that involve creating a brand-new title, for example a property being registered for
+        the first time.
+      </p>
+      <p class="govuk-inset-text">
+        There are more requests for information in register create applications. This is because they are more complex
+        than register update applications. Conveyancers whose business involves more new titles may therefore receive
+        more requests for information than a firm with a different profile of work.
+      </p>
+
+      <h3 class="govuk-heading-m">Why we send requests for information</h3>
+      <p class="govuk-body">
+        Sometimes, HM Land Registry sends a request for information through no fault of the applicant or a third party.
+        Examples include:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          where HM Land Registry is exercising its power to ask for more information under
+          <a href="http://www.legislation.gov.uk/uksi/2003/1417/article/17/made">rule 17 of the Land Registration Rules 2003</a>
+        </li>
+        <li>
+          where HM Land Registry sends a request for information in error - we are taking steps to avoid this
+        </li>
+      </ul>
+      <p class="govuk-body">
+        Sometimes, issues arise from errors and oversights by conveyancers and in other cases, from third parties not
+        providing the evidence they need on time. Examples include:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>no evidence of consents by third parties</li>
+        <li>no evidence of mortgages being paid off</li>
+        <li>name discrepancies</li>
+        <li>documents not being signed or witnessed properly</li>
+        <li>no evidence of the authority of attorneys to sign documents</li>
+      </ul>
+      <p class="govuk-body">
+        Read the <a href="request-tech-spec">technical information</a> for the request for information dataset.
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+  <!-- new 2/3 row for pagination -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <nav class="pagination" role="navigation" aria-label="Pagination">
+        <ul>
+          <li class="pagination-item pagination-item__next">
+            <a class="pagination-control" href="request-product-v2-pg2" rel="next">
+              <span class="pagination-title">Next page</span><br>
+              <span class="pagination-label">2 of 3</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+{% endblock %}

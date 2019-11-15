@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Home</li>
+    </ol>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">HM Land Registry</span>
+        Use land and property data
+      </h1>
+      <p class="govuk-body-l">
+        You can use this service to download large data files from HM Land Registry. It is free to download most of this
+        data, but you may need to create an account and sign a licence agreement first.
+      </p>
+
+      <!-- need to have this line twice in order to view one section break? -->
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <!-- NPS datasets -->
+      <div class="govuk-!-padding-bottom-9">
+        <h2 class="govuk-heading-l">
+          <a href="nps-product" class="govuk-link">National Polygon Service</a>
+        </h2>
+
+            <dl class="govuk-body dataset-info">
+              <dd style="margin-left: 0px; width: 35%;">Account required:</dd>
+              <dt>Yes</dt>
+              <dd style="margin-left: 0px; width: 35%;">Free of charge:</dd>
+              <dt>No</dt>
+              <dd style="margin-left: 0px; width: 35%;">Update frequency:</dd>
+              <dt>Monthly</dt>
+              <dd style="margin-left: 0px; width: 35%;">Last update:</dd>
+              <dt>October</dt>
+              <dd style="margin-left: 0px; width: 35%;">File size:</dd>
+              <dt>1.2Gb</dt>
+              <dd style="margin-left: 0px; width: 35%;">Number of rows:</dd>
+              <dt>3000000</dt>
+            </dl>
+
+        <p class="govuk-body">
+          Download 3 datasets about registered land and property in England and Wales that show:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>indicative shape and position of boundaries</li>
+          <li>legal interests and class of title</li>
+          <li>unique property reference numbers</li>
+        </ul>
+        <p class="govuk-body">
+          This data includes (where available) polygons, title number, estate interest, class of title, date of creation,
+          date of update and Unique Property Reference Number (UPRN)
+        </p>
+      </div>
+
+
+      <!-- Overseas companies dataset -->
+      <div class="govuk-!-padding-bottom-9">
+        <h2 class="govuk-heading-l">
+          <a href="overseas-product" class="govuk-link">Overseas companies that own property in England and Wales</a>
+        </h2>
+        <dl class="govuk-body dataset-info">
+          <dd style="margin-left: 0px; width: 35%;">Account required:</dd>
+          <dt>Yes</dt>
+          <dd style="margin-left: 0px; width: 35%;">Free of charge:</dd>
+          <dt>Yes</dt>
+          <dd style="margin-left: 0px; width: 35%;">Update frequency:</dd>
+          <dt>Monthly</dt>
+          <dd style="margin-left: 0px; width: 35%;">Last update:</dd>
+          <dt>October</dt>
+          <dd style="margin-left: 0px; width: 35%;">File size:</dd>
+          <dt>1.2Gb</dt>
+          <dd style="margin-left: 0px; width: 35%;">Number of rows:</dd>
+          <dt>3000</dt>
+        </dl>
+        <p class="govuk-body">
+          Download data about non-UK companies that own land or property in England and Wales. The data includes (where
+          available) company name, type of company, registration number, address and price paid. This dataset was
+          originally called Overseas companies ownership data (OCOD).
+        </p>
+      </div>
+
+
+      <!-- Request datasets -->
+      <div class="govuk-!-padding-bottom-9">
+        <h2 class="govuk-heading-l">
+          <a href="request-product-v2-pg1" class="govuk-link">Request for information</a>
+        </h2>
+        <dl class="govuk-body dataset-info">
+          <dd style="margin-left: 0px; width: 35%;">Account required:</dd>
+          <dt>No</dt>
+          <dd style="margin-left: 0px; width: 35%;">Free of charge:</dd>
+          <dt>Yes</dt>
+          <dd style="margin-left: 0px; width: 35%;">Update frequency:</dd>
+          <dt>Quarterly</dt>
+          <dd style="margin-left: 0px; width: 35%;">Last update:</dd>
+          <dt>July</dt>
+          <dd style="margin-left: 0px; width: 35%;">File size:</dd>
+          <dt>1.2Gb</dt>
+          <dd style="margin-left: 0px; width: 35%;">Number of rows:</dd>
+          <dt>500</dt>
+        </dl>
+        <p class="govuk-body">
+          Information on how many requests for information we send to customers about their applications.
+        </p>
+      </div>
+
+
+      <!-- UK companies dataset -->
+      <div class="govuk-!-padding-bottom-9">
+        <h2 class="govuk-heading-l">
+          <a href="uk-product" class="govuk-link">UK companies that own property in England and Wales</a>
+        </h2>
+        <dl class="govuk-body dataset-info">
+          <dd style="margin-left: 0px; width: 35%;">Account required:</dd>
+          <dt>Yes</dt>
+          <dd style="margin-left: 0px; width: 35%;">Free of charge:</dd>
+          <dt>Yes</dt>
+          <dd style="margin-left: 0px; width: 35%;">Update frequency:</dd>
+          <dt>Monthly</dt>
+          <dd style="margin-left: 0px; width: 35%;">Last update:</dd>
+          <dt>October</dt>
+          <dd style="margin-left: 0px; width: 35%;">File size:</dd>
+          <dt>1.2Gb</dt>
+          <dd style="margin-left: 0px; width: 35%;">Number of rows:</dd>
+          <dt>2000</dt>
+        </dl>
+        <p class="govuk-body">
+          Download data about UK companies that own land or property in England and Wales. This data includes (where
+          available) company name, type of company, registration number, address and price paid. This data was originally
+          called Commercial and corporate data (CCOD).
+        </p>
+      </div>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

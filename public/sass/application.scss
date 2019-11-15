@@ -39,6 +39,7 @@ $govuk-assets-path: '/govuk/assets/';
   background-color: #005ea5;
   padding: 30px;
   overflow: auto;
+  margin-bottom: 30px;
   @media (max-width: 620px) {
     padding:4%;
   }
@@ -58,6 +59,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 .darker-blue {
   float: left;
+  margin-bottom: 0px;
   margin-right: 10px;
   background: #08477e;
   padding: 15px;
@@ -69,9 +71,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 .toc {
   font-size: 17px !important;
-  margin-top: 30px;
   margin-bottom: 30px;
-  border-bottom: #bfc1c3 solid 1px;
   p {
     margin-bottom: 0px;
   }
@@ -119,4 +119,91 @@ blockquote.noquotes p {
 
 .no-bottom-border {
     border-bottom-style: hidden;
+}
+
+
+.heading-nav {
+    margin-top: -30px;
+    text-align: right;
+    a {
+        padding-left: 50px;
+    }
+}
+
+
+.blue-bar {
+    border-bottom: 4px solid #1d70b8;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.pagination {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    vertical-align: baseline;
+}
+
+.pagination-control {
+    color: #005ea5;
+    text-decoration: none;
+    display: block;
+}
+
+.pagination-item {
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination-item__prev {
+    float: left;
+    text-align: left;
+
+    ::before {
+        background: file-url('/public/images/prev-arrow.png');
+        float: left;
+    }
+}
+
+.pagination-item__next {
+    float: right;
+    text-align: right;
+    left-margin: -32px;
+
+    ::after {
+        background-image: file-url('/public/images/next-arrow.png') no-repeat;
+        float: right;
+    }
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.float-right {
+    float: right;
+}
+
+.page-previous {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-previous-text > a {
+    text-decoration: none;
+}
+
+.pagination-title {
+    font-size: 27px;
+    line-height: 1.25;
+}
+
+.pagination-label {
+    font-size: 16px;
+    line-height: 1.25;
 }

@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+
+<!-- breadcrumbs -->
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings-op1">Home</a></li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Create account</li>
+  </ol>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form action="/account-choice" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Create an account
+            </h1>
+          </legend>
+          <p class="govuk-body-l">
+            I’m requesting access to this data for:
+          </p>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="account-choice" name="account-choice" type="radio" value="personal">
+              <label class="govuk-label govuk-radios__label" for="account-choice">
+                my own use
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="account-choice-2" name="account-choice" type="radio" value="uk-org">
+              <label class="govuk-label govuk-radios__label" for="account-choice-2">
+                a UK organisation
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="account-choice-3" name="account-choice" type="radio" value="os-org">
+              <label class="govuk-label govuk-radios__label" for="account-choice-3">
+                an overseas organisation
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">Why you need an account</span>
+        </summary>
+        <div class="govuk-details__text">
+          <h2>We need to check your identity</h2>
+          <p>We’ll check your identity with the information you give. We do this to detect and prevent fraud.</p>
+          <p>We may share your personal details with third parties to do these checks.</p>
+          <p>Our Personal Information Charter has more details about how we use your information.</p>
+
+          <h2>You need to agree to data licences</h2>
+          <p>Each dataset has a licence which tells you how you can use the data.</p>
+          <p>You must agree to the licence of each dataset you use. We’ll keep a record that you have agreed to the licence.</p>
+        </div>
+      </details>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

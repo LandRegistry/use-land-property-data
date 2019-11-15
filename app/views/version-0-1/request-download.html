@@ -6,27 +6,32 @@
 
 {% block content %}
 
+<!-- breadcrumbs -->
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="request-product">Request for information</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings-op1">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="request-product-blue-box">Request for information</a></li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">Download dataset</li>
     </ol>
   </div>
 
-  <!-- full width row for the blue box -->
+  <!-- full width row for title -->
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         <span class="govuk-caption-xl">Download</span>
         Request for information
       </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p class="govuk-body-l">
         Information on how many requests for information we send to customers about their applications.
       </p>
       <p class="govuk-body">
-        Your use of Requisition Data is governed by <a href="request-product#licence">conditions</a> and by
-        downloading the data you are agreeing to those conditions.
+        This dataset is updated every 3 months. It’s normally available to access on the 15th working day of the month.
       </p>
 
       <h2 class="govuk-heading-l">The latest data</h2>
@@ -37,7 +42,8 @@
             April to June 2019
           </th>
           <td class="govuk-table__cell"><a href="request-view">View online</a></td>
-          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv file</a></td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
         </tr>
         </tbody>
       </table>
@@ -46,9 +52,6 @@
       </p>
 
       <h2 id="how" class="govuk-heading-l">Previous data</h2>
-      <p class="govuk-body">
-        This dataset is updated every 3 months. It’s normally available to access on the 15th working day of the month.
-      </p>
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
         <div class="govuk-accordion__section ">
           <div class="govuk-accordion__section-header">
@@ -64,7 +67,8 @@
               <tr class="govuk-table__row no-bottom-border">
                 <th scope="row" class="govuk-table__header">January to March 2019</th>
                 <td class="govuk-table__cell"><a href="request-view">View online</a></td>
-                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv file</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
               </tr>
               </tbody>
             </table>
@@ -84,17 +88,20 @@
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">October to December 2018</th>
                 <td class="govuk-table__cell"><a href="request-view">View online</a></td>
-                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv file</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
               </tr>
               <tr class="govuk-table__row">
                 <th scope="row" class="govuk-table__header">July to September 2018</th>
                 <td class="govuk-table__cell"><a href="request-view">View online</a></td>
-                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv file</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
               </tr>
               <tr class="govuk-table__row no-bottom-border">
                 <th scope="row" class="govuk-table__header">April to June 2018</th>
                 <td class="govuk-table__cell"><a href="request-view">View online</a></td>
-                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv file</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
               </tr>
               </tbody>
             </table>

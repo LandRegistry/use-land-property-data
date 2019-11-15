@@ -6,14 +6,8 @@
 
 {% block content %}
 
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="request-product">Request for information</a></li>
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="request-download">Download dataset</a></li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">View dataset</li>
-    </ol>
-  </div>
+  <!-- back to previous page -->
+  <a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
 
   <!-- full width row for the blue box -->
   <div class="govuk-grid-row">

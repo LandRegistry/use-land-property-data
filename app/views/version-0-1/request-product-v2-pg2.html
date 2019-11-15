@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+  <!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings-op2">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Request for information</li>
+    </ol>
+  </div>
+
+  <!-- new full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Request for information
+      </h1>
+    </div>
+  </div>
+
+  <!-- new 2/3 row for contents -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="request-product-v2-pg1">The datasets</a></li>
+          <li>Access the data</li>
+          <li><a href="request-product-v2-pg3">Contact us</a></li>
+        </ul>
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    </div>
+  </div>
+
+  <!-- new 2/3 row for copy -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">Access the data</h2>
+      <h3 class="govuk-heading-m">How the data can be used</h3>
+      <p class="govuk-body">
+        It is available free of charge for use and re-use under the 
+        <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a>
+         (OGL). Make sure that you understand the terms of the OGL before using the data.
+      </p>
+      <p class="govuk-body">
+        If you use or publish this data, you must add the following attribution statement:
+      </p>
+      <blockquote class="noquotes">
+        <p class="govuk-body">
+          Contains HM Land Registry data © Crown copyright and database right 2019. This data is licensed under the
+          Open Government Licence v3.0.
+        </p>
+      </blockquote>
+      <p class="govuk-body">
+        You must also provide a link in the data you publish to this <a href="request-product-v2-pg1#explanation">
+        explanation</a> of the dataset.
+      </p>
+
+      <h3 class="govuk-heading-m">How to get the data</h3>
+      <a href="request-download" role="button" class="govuk-button">
+        Access the data
+      </a>
+
+      <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+      <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+  <!-- new 2/3 row for pagination -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="nav-container govuk-!-margin-top-3">
+        <div class="page-previous">
+          <div class=""page-previous-icon">
+            <img src="/public/images/prev-arrow.png" height="40px">
+          </div>
+          <div class="page-previous-text">
+            <a href="#"><span class="pagination-title">Previous page </span></a><br>
+            <span class="pagination-label">1 of 3</span>
+          </div>
+        </div>
+        <div class="page-previous">
+          <div class="page-previous-text">
+            <a href="#"><span class="pagination-title">Next page</span></a><br>
+            <span class="pagination-label float-right">1 of 3</span>
+          </div>
+          <div class=""page-previous-icon">
+            <img src="/public/images/next-arrow.png" height="40px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <nav class="pagination" role="navigation" aria-label="Pagination">
+        <ul class="govuk-list">
+          <li class="pagination-item pagination-item__prev">
+            <a class="pagination-control" href="request-product-v2-pg1" rel="prev">
+              <img src="/public/images/prev-arrow.png" height="40px"><span class="pagination-title">Previous page </span><br>
+              <span class="pagination-label">1 of 3</span>
+            </a>
+          </li>
+          <li class="pagination-item pagination-item__next">
+            <a class="pagination-control" href="request-product-v2-pg3" rel="next">
+              <span class="pagination-title">Next page</span><img src="/public/images/next-arrow.png" height="40"><br>
+              <span class="pagination-label">3 of 3</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+{% endblock %}

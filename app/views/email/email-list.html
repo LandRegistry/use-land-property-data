@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+<!-- breadcrumbs -->
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="../index">Prototype home</a></li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Emails</li>
+    </ol>
+</div>
+
+<!-- list of emails -->
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+            Emails
+        </h1>
+        <p class="govuk-body-l">
+            <a href="account-create" class="govuk-link">Account creation email</a>
+        </p>
+    </div> <!-- column-two-thirds -->
+</div>
+
+{% endblock %}

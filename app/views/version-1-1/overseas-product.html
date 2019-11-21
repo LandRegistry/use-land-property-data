@@ -1,0 +1,202 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Overseas companies that own property in England and Wales</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Overseas companies that own property in England and Wales
+      </h1>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="#datasets">The dataset</a></li>
+          <li><a href="#example">Get example data</a></li>
+          <li><a href="#buy">Get the dataset</a></li>
+          <li><a href="#access">Access the data</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div> <!-- column-one-third -->
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 id="datasets" class="govuk-heading-l">The dataset</h2>
+      <p class="govuk-body">
+        Download data about non-UK companies that own land or property in England and Wales. The data includes
+        (where available) company name, type of company, registration number, address and price paid. This dataset
+        was originally called Overseas companies ownership data (OCOD).
+      </p>
+
+
+      <h2 id="example" class="govuk-heading-l">Get example dataset</h2>
+      <p>
+        This is an example of the data in Overseas companies that own property in England and Wales.
+      </p>
+      <div class="govuk-inset-text">
+        <a class="govuk-body govuk-!-font-weight-bold" href="/public/files/ocod-dataset-sample.csv" download>Download example</a>
+        - You do not need to create an account.​
+      </div>
+
+      <table id="example-data" class="govuk-table">
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Data</th>
+          <th class="govuk-table__header">Example data 1</th>
+          <th class="govuk-table__header">Example data 2</th>
+        </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Title number</th>
+          <td class="govuk-table__cell">ZZ1234</td>
+          <td class="govuk-table__cell">ZZ1235</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Tenure</th>
+          <td class="govuk-table__cell">Leasehold</td>
+          <td class="govuk-table__cell">Freehold</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Property address</th>
+          <td class="govuk-table__cell">Flat 11<br>Mahogany House<br>Lensbury<br>London<br>SW61 2VT</td>
+          <td class="govuk-table__cell">336 High Street<br>Cosham<br>Portsmouth<br>PO66 2XT</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">District</th>
+          <td class="govuk-table__cell">Hammersmith</td>
+          <td class="govuk-table__cell">Portsmouth</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Region</th>
+          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">South East</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Postcode</th>
+          <td class="govuk-table__cell">SW61 2VT</td>
+          <td class="govuk-table__cell">PO66 2XT</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Multiple address indicator</th>
+          <td class="govuk-table__cell">Y</td>
+          <td class="govuk-table__cell">N</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Price paid</th>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell">456000</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Proprietor name</th>
+          <td class="govuk-table__cell">Property Limited Company</td>
+          <td class="govuk-table__cell">Trace Property Limited</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Company registration number</th>
+          <td class="govuk-table__cell">1122334</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Proprietorship category</th>
+          <td class="govuk-table__cell">Limited Company or Public Limited Company</td>
+          <td class="govuk-table__cell">Limited Company or Public Limited Company</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Country incorporated</th>
+          <td class="govuk-table__cell">Guernsey</td>
+          <td class="govuk-table__cell">British Virgin Islands</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Proprietor address</th>
+          <td class="govuk-table__cell">PO Box 2400<br>Bancroft<br>La Route<br>St Martin<br>Guernsey<br>Channel Islands<br>GY33 3LV</td>
+          <td class="govuk-table__cell">478 Seven Gates Road<br>London<br>SW7 8AA</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Date proprietor added</th>
+          <td class="govuk-table__cell">23/12/2008</td>
+          <td class="govuk-table__cell">26/03/2009</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Additional proprietor indicator</th>
+          <td class="govuk-table__cell">N</td>
+          <td class="govuk-table__cell">N</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Change indicator (change only update)</th>
+          <td class="govuk-table__cell">A</td>
+          <td class="govuk-table__cell">D</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Change date</th>
+          <td class="govuk-table__cell">16/09/2019</td>
+          <td class="govuk-table__cell">16/09/2019</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h2 id="buy" class="govuk-heading-l">Get the database</h2>
+
+
+      <h2 id="access" class="govuk-heading-l">Access the data</h2>
+      <h3 class="govuk-heading-m">Download the data</h3>
+
+      <h3 class="govuk-heading-m">Access the data with an API</h3>
+
+
+      <h2 id="contact" class="govuk-heading-l">Contact details</h2>
+      <p>
+        If you need more information or you want to buy the data, contact us:
+      </p>
+      <p>
+        <strong>Data Services Team</strong>​<br>
+        HM Land Registry​<br>
+        Rosebrae Court ​<br>
+        Woodside Ferry Approach​<br>
+        Birkenhead​<br>
+        Merseyside​<br>
+        CH41 6DU
+      </p>
+      <p>
+        Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+      </p>
+      <p>​
+        Telephone: 0300 006 0478
+      </p>
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

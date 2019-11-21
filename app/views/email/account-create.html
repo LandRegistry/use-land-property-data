@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+<!-- back link -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<!-- list of emails -->
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">
+            Account creation email
+        </h1>
+        <p class="govuk-body">
+            From: Use land and property data​
+        </p>
+        <p class="govuk-body">
+            Subject: Your application for an account
+        </p>
+        <p class="govuk-body">
+            Hello [first name, last name]
+        </p>
+        <p class="govuk-body">
+            You applied for an account for HM Land Registry’s Use land and property data.
+        </p>
+        <p class="govuk-body">
+            We’re processing your application and we’ll email you when it's ready.
+        </p>
+        <p class="govuk-body">
+            We process most accounts on the same day. If we receive your application at the end of the working day
+            or over the weekend, we'll process it the next working day.
+        </p>
+        <p class="govuk-body">
+            If you do not get another email from us within 2 working days, contact us by:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>email: data.services@landregistry.gov.uk</li>
+            <li>telephone: (+44) 0300 006 0478</li>
+        </ul>
+        <p class="govuk-body">
+            Regards
+        </p>
+        <p class="govuk-body">
+            Data Services Team
+        </p>
+    </div> <!-- column-two-thirds -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- back link -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<!-- full width row for page title -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Technical specification</span>
+      Request for information
+    </h1>
+  </div>
+</div>
+
+<!-- row for contents and content -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <!-- contents -->
+    <div class="toc" id="contents">
+      <p>Contents</p>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#headers">What the column headings mean</a></li>
+        <li><a href="#structure">File structure</a></li>
+        <li><a href="#accuracy">Accuracy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div> <!-- column-one-third -->
+
+  <div class="govuk-grid-column-two-thirds">
+    <h2 id="overview" class="govuk-heading-l">Overview</h2>
+    <p>
+      All figures in this dataset are for the previous 3 months.
+    </p>
+
+    <h2 id="headers" class="govuk-heading-l">What the column headings mean</h2>
+    <p class="govuk-body">
+      <strong>FR – First registration</strong><br>
+      An application for a first registration of land both freehold and leasehold. For leasehold, this applies when
+      the landlord’s title is not registered.
+    </p>
+    <p class="govuk-body">
+      <strong>TP – Transfer of part</strong><br>
+      An application to register the transfer of part of a registered title.
+    </p>
+    <p class="govuk-body">
+      <strong>DFL – Dispositionary first lease</strong><br>
+      An application for the registration of a new lease granted by the proprietor of registered land.
+    </p>
+    <p class="govuk-body">
+      <strong>Register update</strong><br>
+      An application to update details of an existing title on the register.
+    </p>
+    <p class="govuk-body">
+      <strong>Input</strong><br>
+      This is the number of applications made by the customer. 
+    </p>
+    <p class="govuk-body">
+      <strong>Output</strong><br>
+      This is the number of applications completed by HM Land Registry. 
+    </p>
+    <p class="govuk-body">
+      <strong>Requests for information</strong><br>
+      This is the number of requests for information we sent to the customer. 
+    </p>
+
+<!--
+    <dl class="govuk-summary-list">
+      <dt class="govuk-summary-list__key">
+        FR – First registration
+      </dt>
+      <dd class="govuk-summary-list__value">
+        An application for a first registration of land both freehold and leasehold. For leasehold, this applies when
+        the landlord’s title is not registered.
+      </dd>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          TP – Transfer of part
+        </dt>
+        <dd class="govuk-summary-list__value">
+          An application to register the transfer of part of a registered title.
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          DFL – <br>
+          Dispositionary first lease
+        </dt>
+        <dd class="govuk-summary-list__value">
+          An application for the registration of a new lease granted by the proprietor of registered land.
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Register update
+        </dt>
+        <dd class="govuk-summary-list__value">
+          An application to update details of an existing title on the register.
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Input
+        </dt>
+        <dd class="govuk-summary-list__value">
+          This is the number of applications made by the customer.
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Output
+        </dt>
+        <dd class="govuk-summary-list__value">
+          This is the number of applications completed by HM Land Registry.
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Requests for information
+        </dt>
+        <dd class="govuk-summary-list__value">
+          This is the number of requests for information HM Land Registry sent to the customer.
+        </dd>
+      </div>
+    </dl>
+-->
+    <h2 id="structure" class="govuk-heading-l">File structure</h2>
+    <p class="govuk-body">
+      The data is ordered alphabetically (ascending) by customer name.
+      Each file will:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>use a comma to delimit each field: ‘,’ (ASCII 44)</li>
+      <li>enclose all fields within double-quotes: ”” (ASCII 34)</li>
+      <li>transmit null fields without a character between double quotes: ””</li>
+      <li>format dates as DD-MM-YYYY HH:MM:SS</li>
+      <li>use UTF-8 and ASCII encoding</li>
+      <li>have the carriage return and line feeds removed from the data</li>
+      <li>have the column heading name as the first row</li>
+    </ul>
+
+    <h2 id="accuracy" class="govuk-heading-l">Accuracy</h2>
+    <p class="govuk-body">
+      We try to make sure our public data is accurate but cannot guarantee it's free from errors or fit for your
+      purpose or use.
+    </p>
+
+    <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+    <p class="govuk-body">
+      If you have any questions about this data, email our customer service team:
+      <a href="mailto:customer.service@landregistry.gov.uk">customer.service@landregistry.gov.uk​</a>.
+    </p>
+  </div> <!-- two-thirds -->
+</div> <!-- grid-row -->
+
+
+{% endblock %}

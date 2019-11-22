@@ -17,22 +17,130 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+
+
 .dataset-info dd, .dataset-info dt {
     display: inline-block;
     margin-bottom: 5px;
     vertical-align: text-top;
 }
-
 .dataset-info dt {
     width: 30%;
     font-weight: bold;
     white-space: nowrap;
     margin-right: 5px;
 }
-
 .dataset-info dd {
     width: 60%;
 }
+
+
+
+.toc {
+  font-size: 17px !important;
+  margin-bottom: 30px;
+  p {
+    margin-bottom: 0px;
+  }
+  ul li {
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      font-size: 17px !important;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  ul li::before {
+    content: "— ";
+    margin-left: -25px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+}
+
+
+
+.black-outline {
+  border: 2px solid #6f777b;
+  padding: 30px;
+  overflow: auto;
+  @media (max-width: 620px) {
+    padding:4%;
+  }
+}
+
+
+
+blockquote {
+    margin: 0 0 20px 0;
+}
+blockquote.noquotes {
+    padding: 15px;
+    background-color: #b1b4b6;
+}
+blockquote.noquotes p {
+    margin: 0;
+}
+
+
+
+.no-bottom-border {
+    border-bottom-style: hidden;
+}
+
+
+
+.heading-nav {
+    margin-top: 10px;
+    text-align: right;
+    a {
+        padding-left: 50px;
+    }
+}
+
+
+
+.banner {
+    margin-top: -50px;
+}
+
+
+
+.blue-bar {
+    border-bottom: 4px solid #1d70b8;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+.payment-summary {
+    border: 10px solid #bfc1c3;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+.payment-summary-wrap {
+    position: sticky;
+    top: 30px;
+}
+
+
+
+.wide-bottom-border {
+    border-bottom: 5px solid #bfc1c3;
+}
+
+
+
+
+
+
+
+
+
 
 
 .blue-box {
@@ -68,86 +176,6 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 
-
-.toc {
-  font-size: 17px !important;
-  margin-bottom: 30px;
-  p {
-    margin-bottom: 0px;
-  }
-  ul li {
-    list-style: none;
-
-    a {
-      text-decoration: none;
-      font-size: 17px !important;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  }
-  ul li::before {
-    content: "— ";
-    margin-left: -25px;
-    padding-right: 5px;
-    font-size: 14px;
-  }
-}
-
-
-.black-outline {
-  border: 2px solid #6f777b;
-  padding: 30px;
-  overflow: auto;
-  @media (max-width: 620px) {
-    padding:4%;
-  }
-}
-
-
-blockquote {
-    margin: 0 0 20px 0;
-}
-blockquote.noquotes {
-    padding: 15px;
-    background-color: #b1b4b6;
-}
-blockquote.noquotes p {
-    margin: 0;
-}
-
-
-.no-bottom-border {
-    border-bottom-style: hidden;
-}
-
-
-.heading-nav {
-    margin-top: -30px;
-    text-align: right;
-    a {
-        padding-left: 50px;
-    }
-}
-
-
-.blue-bar {
-    border-bottom: 4px solid #1d70b8;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-
-.payment-summary {
-    border: 10px solid #bfc1c3;
-    padding: 15px;
-    background-color: #f8f8f8;
-}
-
-.payment-summary-wrap {
-    position: sticky;
-    top: 30px;
-}
 
 .pagination {
     margin-top: 30px;

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<hr class="govuk-section-break govuk-section-break--m">
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+                Application complete
+            </h1>
+        </div>
+
+        <hr class="govuk-section-break govuk-section-break--m">
+
+        <h2 class="govuk-heading-l">What happens next</h2>
+        <p class="govuk-body">
+            We’ll email you when your account is ready to use.
+        </p>
+
+        <p class="govuk-body">
+            We process most accounts on the same day. If we receive your application at the end of the working day
+            or over the weekend, we'll process it the next working day.
+        </p>
+
+        <h2 class="govuk-heading-l">Your confirmation email</h2>
+        <p class="govuk-body">
+            The email will have a link to create your account password. ​Once you have created your password, you’ll
+            be able to sign in and download data.
+        </p>
+
+        <hr class="govuk-section-break govuk-section-break--m">
+
+        <p class="govuk-body">
+            <a href="https://www.smartsurvey.co.uk/s/HMLR_feedback/" class="govuk-link">What do you think of this service?</a>
+        </p>
+        <p class="govuk-body">
+            <a href="../listings" class="govuk-link">Return to homepage</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

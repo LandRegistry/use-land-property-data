@@ -127,12 +127,21 @@ blockquote.noquotes p {
     top: 30px;
 }
 
-
-
-.wide-bottom-border {
-    border-bottom: 5px solid #bfc1c3;
+.scroll-wrap {
+    height: 600px;
+    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
 }
 
+.wide-bottom-border {
+    border-bottom: 5px solid #8f8f8f;
+}
+.cell-shade {
+    background-color: #d9d9d9;
+    padding-left: 10px;
+}
 
 
 

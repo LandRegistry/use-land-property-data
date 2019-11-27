@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="request-product">Request for information</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Download dataset</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Download</span>
+        Request for information
+      </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h2 class="govuk-heading-l">
+        Latest data
+        <p class="govuk-body-s">
+          Published 19 July 2019.
+        </p>
+      </h2>
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">
+            April to June 2019
+          </th>
+          <td class="govuk-table__cell"><a href="request-view">View online</a></td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <h2 id="how" class="govuk-heading-l">Previous data</h2>
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                2019
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row no-bottom-border">
+                <th scope="row" class="govuk-table__header">January to March 2019</th>
+                <td class="govuk-table__cell"><a href="request-view">View online</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2019 accordion section -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                2018
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <table class="govuk-table">
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">October to December 2018</th>
+                <td class="govuk-table__cell"><a href="request-view">View online</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">July to September 2018</th>
+                <td class="govuk-table__cell"><a href="request-view">View online</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
+              </tr>
+              <tr class="govuk-table__row no-bottom-border">
+                <th scope="row" class="govuk-table__header">April to June 2018</th>
+                <td class="govuk-table__cell"><a href="request-view">View online</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .ods</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2018 accordion section -->
+      </div> <!-- accordion -->
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

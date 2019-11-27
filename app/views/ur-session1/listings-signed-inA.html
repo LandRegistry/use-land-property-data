@@ -64,31 +64,11 @@
             <div class="govuk-grid-column-two-thirds">
               <h2 class="govuk-heading-l">
                 Welcome back, Cynthia Hobbs.
+                <p class="govuk-body-s">
+                  You last signed in 25 November 2019.
+                </p>
               </h2>
 
-              <!-- FIRST TIME RETURNING USER -->
-         <!--     <p class="govuk-body">
-                You'll see datasets on this page when you've agreed to the dataset licence.
-                </p>
-              <p>
-                You have not agreed to any dataset licences.
-                <a href="#all-datasets" class="govuk-link">View all datasets</a> from HM Land Registry.
-              </p> -->
-
-
-              <!-- AGREED LICENCE, NOT DOWNLOADED -->
-         <!--     <p class="govuk-body-s">
-                You last signed in 25 November 2019.
-              </p>
-              <p class="govuk-body">
-                You've agreed to licences for the datasets on this page.
-              </p> -->
-
-
-              <!-- PREVIOUSLY DOWNLOADED DATA -->
-              <p class="govuk-body-s">
-                You last signed in 25 November 2019.
-              </p>
               <p class="govuk-body">
                 You've agreed to licences for the datasets on this page.
               </p>
@@ -111,72 +91,6 @@
           <!-- column-two-thirds for listed datasets -->
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-
-              <!-- dataset that has been downloaded previously -->
-          <!--    <div class="govuk-!-padding-bottom-9">
-                <h2 class="govuk-heading-l">
-                  Daily application data
-                </h2>
-                <p class="govuk-body">
-                  The latest version is from <strong>22 November 2019</strong>.
-                </p> -->
-
-                <!-- download buttons -->
-      <!--<!--          <a class="govuk-button govuk-!-margin-right-1" href="/public/files/ocod-dataset-sample.csv" download>
-                  Download - 38.58 MB, CSV
-                </a>
-
-                <!-- older versions -->
-       <!--         <details class="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">See older versions of this file</span>
-                  </summary>
-
-                  <div class="govuk-details__text">
-                    <table class="govuk-table">
-                      <tbody class="govuk-table__body">
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">21 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">20 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">19 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">18 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">15 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">14 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">13 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">12 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">11 November 2019</th>
-                        <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
-                      </tr>
-                      </tbody>
-                    </table>
-                  </div> <!-- class="govuk-details__text" -->
-          <!--      </details>
-              </div>
-
 
               <!-- dataset that has been downloaded previously -->
               <div class="govuk-!-padding-bottom-9">
@@ -267,7 +181,7 @@
                     </ul>
                   </div> <!-- class="govuk-details__text" -->
                 </details>
-              </div>
+              </div> <!-- Overseas companies -->
 
 
               <!-- dataset that licence has been agreed, but never downloaded -->
@@ -289,9 +203,7 @@
                 <a class="govuk-button govuk-!-margin-right-1" href="/public/files/ocod-dataset-sample.csv" download>
                   full dataset - 38.58 MB, CSV
                 </a>
-          <!--      <a class="govuk-button govuk-button--secondary" href="/public/files/ocod-dataset-sample.csv" download>
-                  change only file - 1.16 MB, CSV
-                </a> -->
+
                 <!-- older versions -->
                 <details class="govuk-details">
                   <summary class="govuk-details__summary">
@@ -357,8 +269,11 @@
                     </ul>
                   </div> <!-- class="govuk-details__text" -->
                 </details>
-              </div>
+              </div> <!-- UK Companies -->
 
+              <p class="govuk-body">
+                <a href="#all-datasets" class="govuk-link">View all available datasets</a> from HM Land Registry.
+              </p>
             </div> <!-- grid-row-two-thirds -->
           </div> <!-- grid-row -->
         </section> <!-- My datasets tab -->
@@ -366,16 +281,97 @@
         <!-- All datasets tab -->
         <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="all-datasets">
 
-          <!-- column-two-thirds for summary list of datasets -->
+          <!-- column-two-thirds for listed datasets -->
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
+
+              <!-- 1862 dataset -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 class="govuk-heading-l">
+                  <a href="https://www.gov.uk/guidance/1862-act-register" class="govuk-link" target="_blank">
+                    1862 Act Register
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt>Never</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>1.5MB, JPG</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  Download historical data about people and properties recorded on the 1862 Act Register. This was the first
+                  land register that HM Land Registry created and was the government’s first attempt to
+                  record property ownership information. It shows the owner name and property they owned.
+                </p>
+              </div>
+
+
+              <!-- Geospatial dataset -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 class="govuk-heading-l">
+                  <a href="https://www.gov.uk/government/publications/geospatial-commission-data-catalogue-hm-land-registry" class="govuk-link" target="_blank">
+                    Geospatial Data Catalogue
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt></dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>24.9KB, CSV</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  View or download a catalogue containing information about some of the electronic data held by HM Land
+                  Registry, based on datasets which are “linked to location” through title registrations.
+                </p>
+              </div>
+
+
+              <!-- INSPIRE dataset -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 class="govuk-heading-l">
+                  <a href="https://www.gov.uk/guidance/inspire-index-polygons-spatial-data" class="govuk-link" target="_blank">
+                    INSPIRE Index Polygon spatial data
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt>Monthly</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>average 15MB, GML</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  View or download HM Land Registry INSPIRE Index Polygons which show the indicative position of registered
+                  freehold properties in England and Wales. The data is shown as shapes on a map. You’ll need a Geographical
+                  Information System (GIS) to view the polygons.
+                </p>
+              </div>
+
 
               <!-- NPS datasets -->
               <div class="govuk-!-padding-bottom-9">
                 <h2 class="govuk-heading-l">
-                  <a href="nps-product-signed-in" class="govuk-link">National Polygon Service</a>
+                  <a href="nps-product" class="govuk-link">
+                    National Polygon Service
+                  </a>
                 </h2>
-
                 <dl class="govuk-body dataset-info">
                   <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
                   <dt>£20,000 plus VAT a year</dt>
@@ -388,7 +384,6 @@
                   <dd style="margin-left: 0px; width: 35%;">API available:</dd>
                   <dt>Yes</dt>
                 </dl>
-
                 <p class="govuk-body">
                   Download data about registered land and property that shows:
                 </p>
@@ -406,7 +401,9 @@
               <!-- Overseas companies dataset -->
               <div class="govuk-!-padding-bottom-9">
                 <h2 class="govuk-heading-l">
-                  <a href="overseas-product-signed-in" class="govuk-link">Overseas companies that own property in England and Wales</a>
+                  <a href="overseas-product" class="govuk-link">
+                    Overseas companies that own property in England and Wales
+                  </a>
                 </h2>
                 <dl class="govuk-body dataset-info">
                   <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
@@ -430,10 +427,37 @@
               </div>
 
 
+              <!-- Price paid dataset -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 class="govuk-heading-l">
+                  <a href="https://www.gov.uk/government/collections/price-paid-data" class="govuk-link" target="_blank">
+                    Price Paid Data
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt>Monthly</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>30.5MB, CSV</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  Download property price data for the latest property sale prices in England and Wales.
+                </p>
+              </div>
+
+
               <!-- Request datasets -->
               <div class="govuk-!-padding-bottom-9">
                 <h2 class="govuk-heading-l">
-                  <a href="request-product" class="govuk-link">Request for information (requisition) data</a>
+                  <a href="request-product" class="govuk-link">
+                    Request for information (requisition) data
+                  </a>
                 </h2>
                 <dl class="govuk-body dataset-info">
                   <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
@@ -455,10 +479,38 @@
               </div>
 
 
+              <!-- Transaction datasets -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 class="govuk-heading-l">
+                  <a href="https://www.gov.uk/guidance/hm-land-registry-transaction-data" class="govuk-link" target="_blank">
+                    Transaction Data
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt>Monthly</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>550KB</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  Download data about how many applications we completed in the previous month. The data is shows
+                  applications for: first registrations, leases, transfers of part, dealings, official copies and searches.
+                </p>
+              </div>
+
+
               <!-- UK companies dataset -->
               <div class="govuk-!-padding-bottom-9">
                 <h2 class="govuk-heading-l">
-                  <a href="uk-product-signed-in" class="govuk-link">UK companies that own property in England and Wales</a>
+                  <a href="uk-product" class="govuk-link">
+                    UK Companies that own property in England and Wales
+                  </a>
                 </h2>
                 <dl class="govuk-body dataset-info">
                   <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
@@ -480,48 +532,32 @@
                   You’ll need to create an account to download this data.
                 </p>
               </div>
-            </div> <!-- column two-thirds -->
 
 
-            <!-- column one-third for related links -->
-            <div class="govuk-grid-column-one-third">
-              <hr class="blue-bar">
-              <h3 class="govuk-heading-m">
-                Related content
-                <span class="govuk-caption-m">
-                  Other HM Land Registry datasets
-                </span>
-              </h3>
-              <p class="govuk-body">
-                <a href="https://www.gov.uk/guidance/1862-act-register" class="govuk-link" target="_blank">
-                  1862 Act register
-                </a>
-              </p>
-              <p class="govuk-body">
-                <a href="https://www.gov.uk/government/collections/price-paid-data" class="govuk-link" target="_blank">
-                  Price paid data
-                </a>
-              </p>
-              <p class="govuk-body">
-                <a href="https://www.gov.uk/guidance/hm-land-registry-transaction-data" class="govuk-link" target="_blank">
-                  Transaction data
-                </a>
-              </p>
-              <p class="govuk-body">
-                <a href="https://www.gov.uk/government/collections/uk-house-price-index-reports" class="govuk-link" target="_blank">
-                  UK House price index: reports
-                </a>
-              </p>
-              <p class="govuk-body">
-                <a href="https://www.gov.uk/guidance/inspire-index-polygons-spatial-data" class="govuk-link" target="_blank">
-                  Inspire Index Polygons spatial data
-                </a>
-              </p>
-              <p class="govuk-body">
-                <a href="https://www.gov.uk/government/publications/geospatial-commission-data-catalogue-hm-land-registry" class="govuk-link" target="_blank">
-                  Geospatial Data Catalogue
-                </a>
-              </p>
+              <!-- UK house price index dataset -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 class="govuk-heading-l">
+                  <a href="https://www.gov.uk/government/collections/uk-house-price-index-reports" class="govuk-link" target="_blank">
+                    UK House Price Index: reports
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt>Every 3 months</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>56MB, CSV</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  Access reports for the UK House Price Index (UKHPI) for England, Scotland, Wales and Norther Ireland.
+                  The UKHPI shows changes in the value of residential properties.
+                </p>
+              </div>
             </div>
           </div>
         </section> <!-- All datasets tab -->

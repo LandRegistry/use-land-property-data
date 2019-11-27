@@ -22,7 +22,7 @@
   <div class="govuk-grid-column-full">
     <h1 class="govuk-heading-xl">
       <span class="govuk-caption-xl">Technical specification</span>
-      Request for information
+      Request for information (requisition) data
     </h1>
   </div>
 </div>
@@ -149,12 +149,12 @@
       Each file will:
     </p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>use a comma to delimit each field: ‘,’ (ASCII 44)</li>
+      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
       <li>enclose all fields within double-quotes: ”” (ASCII 34)</li>
-      <li>transmit null fields without a character between double quotes: ””</li>
+      <li>send blank fields without a character between double quotes: ””</li>
       <li>format dates as DD-MM-YYYY HH:MM:SS</li>
-      <li>use UTF-8 and ASCII encoding</li>
-      <li>have the carriage return and line feeds removed from the data</li>
+      <li>use UTF-8 and ASCII encoding (the way characters are coded for websites)</li>
+      <li>remove line separation the data</li>
       <li>have the column heading name as the first row</li>
     </ul>
 

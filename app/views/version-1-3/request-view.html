@@ -17,16 +17,27 @@
   <!-- back to previous page -->
   <a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
 
-  <!-- full width row for the blue box -->
+  <!-- full width row for heading -->
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         <span class="govuk-caption-xl">View</span>
-        Request for information
+        Request for information (requisition) data
       </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
       <p class="govuk-body-l">
-        Information about the 500 customers that lodged the most applications with us from April to June 2019.
+        Information about:​
       </p>
+      <ul class="govuk-body-l govuk-list govuk-list--bullet">
+        <li>the 500 customers that sent the most applications to us</li>
+        <li>how many requests for information we sent</li>
+        <li>the number and type of applications we received and completed</li>
+      </ul>
+
       <p class="govuk-body">
         <a href="/public/files/RFI.csv" download>Download .csv file</a>
       </p>
@@ -55,16 +66,16 @@
             An application to update details of an existing title on the register.
           </p>
           <p class="govuk-body">
-            <strong>Input</strong><br>
+            <strong>Requests for information</strong><br>
+            This is the number of requests for information we sent to the customer. 
+          </p>
+          <p class="govuk-body">
+            <strong>Applications received</strong><br>
             This is the number of applications made by the customer. 
           </p>
           <p class="govuk-body">
-            <strong>Output</strong><br>
+            <strong>Applications completed</strong><br>
             This is the number of applications completed by HM Land Registry. 
-          </p>
-          <p class="govuk-body">
-            <strong>Requests for information</strong><br>
-            This is the number of requests for information we sent to the customer. 
           </p>
         </div>
       </details>
@@ -105,7 +116,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">69</td>
           </tr>
           <tr class="govuk-table__row">
-            <th class="govuk-table__header cell-shade">Intake</th>
+            <th class="govuk-table__header cell-shade">Applications received</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
@@ -113,7 +124,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">903</td>
           </tr>
           <tr class="govuk-table__row wide-bottom-border">
-            <th class="govuk-table__header cell-shade">Output</th>
+            <th class="govuk-table__header cell-shade">Applications completed</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
@@ -131,7 +142,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">28</td>
           </tr>
           <tr class="govuk-table__row">
-            <th class="govuk-table__header cell-shade">Intake</th>
+            <th class="govuk-table__header cell-shade">Applications received</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">31</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
@@ -139,7 +150,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">551</td>
           </tr>
           <tr class="govuk-table__row wide-bottom-border">
-            <th class="govuk-table__header cell-shade">Output</th>
+            <th class="govuk-table__header cell-shade">Applications completed</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">23</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
@@ -157,7 +168,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
           </tr>
           <tr class="govuk-table__row">
-            <th class="govuk-table__header cell-shade">Intake</th>
+            <th class="govuk-table__header cell-shade">Applications received</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
@@ -165,7 +176,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">21151</td>
           </tr>
           <tr class="govuk-table__row wide-bottom-border">
-            <th class="govuk-table__header cell-shade">Output</th>
+            <th class="govuk-table__header cell-shade">Applications completed</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
@@ -183,7 +194,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">134</td>
           </tr>
           <tr class="govuk-table__row">
-            <th class="govuk-table__header cell-shade">Intake</th>
+            <th class="govuk-table__header cell-shade">Applications received</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">19</td>
@@ -191,7 +202,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">341</td>
           </tr>
           <tr class="govuk-table__row wide-bottom-border">
-            <th class="govuk-table__header cell-shade">Output</th>
+            <th class="govuk-table__header cell-shade">Applications completed</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">7</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">16</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">17</td>
@@ -209,7 +220,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">149</td>
           </tr>
           <tr class="govuk-table__row">
-            <th class="govuk-table__header cell-shade">Intake</th>
+            <th class="govuk-table__header cell-shade">Applications received</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">15</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">85</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
@@ -217,7 +228,7 @@
             <td class="govuk-table__cell govuk-table__cell--numeric">983</td>
           </tr>
           <tr class="govuk-table__row wide-bottom-border">
-            <th class="govuk-table__header cell-shade">Output</th>
+            <th class="govuk-table__header cell-shade">Applications completed</th>
             <td class="govuk-table__cell govuk-table__cell--numeric">10</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">66</td>
             <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
@@ -226,6 +237,23 @@
           </tr>
         </tbody>
       </table>
+
+      <hr class="govuk-section-break govuk-section-break--m">
+      <h2 id="contact" class="govuk-heading-l">Contact details</h2>
+      <p class="govuk-body">
+        If you have any questions about this data, contact us:
+      </p>
+      <p class="govuk-body govuk-!-font-weight-bold">
+        Customer Service
+      </p>
+      <p class="govuk-body">
+        email: <a href="mailto:customer.service@landregistry.gov.uk">customer.service@landregistry.gov.uk​</a>
+      </p>
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}
 
 <!--
       <table>
@@ -734,19 +762,4 @@
       </table>
 -->
 
-      <hr class="govuk-section-break govuk-section-break--m">
-      <h2 id="contact" class="govuk-heading-l">Contact details</h2>
-      <p class="govuk-body">
-        If you have any questions about this data, contact us:
-      </p>
-      <p class="govuk-body govuk-!-font-weight-bold">
-        Customer Service
-      </p>
-      <p class="govuk-body">
-        email: <a href="mailto:customer.service@landregistry.gov.uk">customer.service@landregistry.gov.uk​</a>
-      </p>
 
-    </div> <!-- column-two-thirds -->
-  </div> <!-- grid-row -->
-
-{% endblock %}

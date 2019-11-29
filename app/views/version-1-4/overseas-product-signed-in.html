@@ -10,15 +10,14 @@
 
 <!-- sign-in/create account links -->
 <div class="govuk-body heading-nav">
-  <a class="govuk-link" href="">Sign in</a>
-  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+  <a class="govuk-link" href="listings">Sign out</a>
 </div>
 
 <!-- breadcrumbs -->
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">UK companies that own property in England and Wales</li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings-signed-in">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Overseas companies that own property in England and Wales</li>
     </ol>
   </div>
 
@@ -27,7 +26,7 @@
     <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         <span class="govuk-caption-xl">Dataset</span>
-        UK companies that own property in England and Wales
+        Overseas companies that own property in England and Wales
       </h1>
     </div>
   </div>
@@ -48,23 +47,26 @@
       </div>
     </div> <!-- column-one-third -->
 
+    <!-- column two-thirds for content -->
     <div class="govuk-grid-column-two-thirds">
+
+      <!-- THE DATASETS -->
       <h2 id="datasets" class="govuk-heading-l">The dataset</h2>
       <p class="govuk-body">
-        This data shows registered land and property in England and Wales owned by UK companies.
+        This data shows every completed record we have about non-UK companies that own land or property in England and Wales.
       </p>
       <p class="govuk-body">
-        The data does not show land or property owned by:
+        The data does not show land or property owned by:
       </p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>private individuals​</li>
-        <li>overseas companies</li>
-        <li>charities</li>
+        <li>private individuals</li>
+        <li>UK companies with an overseas address​</li>
+        <li>charities​</li>
       </ul>
       <p class="govuk-body">
-        We cannot show records that are being updated. For example, a company buys a property and tells us about it
-        on 20 June 2019. We finish updating the record on 12 July 2019. You will not be able to download this data
-        until the dataset is next updated on the second working day of August.
+        We cannot show records that are being updated. For example, an overseas company buys a property and tells us
+        about it on 20 June 2019. We finish updating the record on 12 July 2019. You will not be able to download
+        this data until the dataset is next updated on the second day of August. ​
       </p>
 
       <h3 class="govuk-heading-m">
@@ -83,12 +85,13 @@
         <li>deeds​</li>
         <li>other documents</li>
       </ul>
+
       <h4 class="govuk-heading-s">
         Inconsistencies in the data​
       </h4>
       <p class="govuk-body">
         The data comes from different sources. This means that not everything is written the same way. For example,
-        one address may say '24 The Willows' and another might be written as 'Field south of N14'.
+        one address may say ’24 The Willows’ and another might be written as ‘Field south of N14’.​
       </p>
       <p class="govuk-body">
         You may also see:
@@ -97,33 +100,34 @@
         <li>spelling errors or typos​</li>
         <li>descriptions instead of addresses (land being developed may not have an address)</li>
         <li>partial postcodes or no postcode at all​</li>
-        <li>mistakes in company registration numbers​</li>
-        <li>no data for date of registration</li>
-        <li>no data for company registration number​</li>
-        <li>2 different companies with the same registration number</li>
+        <li>mistakes in company registration numbers or no company registration number</li>
+        <li>no data for date of registration​</li>
+        <li>2 different companies with the same registration number​</li>
       </ul>
       <p class="govuk-body">
-        Inconsistencies happen because of human error or because we do not have the data. For example, companies
-        who bought property before 1996 did not need to tell us their registration number.
+        Inconsistencies happen because of human error or because we do not have the data. For example, companies who
+        bought property before 1996 did not need to tell us their registration number.
       </p>
+
       <h4 class="govuk-heading-s">
-        Technical specification
+        Technical specification​
       </h4>
       <p class="govuk-body">
-        <a href="uk-tech-spec" class="govuk-link">
-          Read the technical specification for UK companies that own properties in England and Wales</a>
-         for full details about the data.
+        <a href="overseas-tech-spec" class="govuk-link">Read the technical specification for overseas companies that own properties
+          in England and Wales</a> for full details about the data​.
       </p>
       <p class="govuk-body">
-        <a href="#contact" class="govuk-link">Contact us</a> if you think there’s a mistake in the data.
+        <a href="#contact" class="govuk-link">Contact us</a> if you think there’s a mistake in the data. 
       </p>
 
+      <!-- GET EXAMPLE -->
       <h2 id="example" class="govuk-heading-l">Get example dataset</h2>
-      <p>
-        You can <a class="govuk-link" href="/public/files/ocod-dataset-sample.csv" download>download example data</a>.
-        You do not need to create an account for the example data.
+      <p class="govuk-body">
+        You can <a class="govuk-link" href="/public/files/ocod-dataset-sample.csv" download>
+        download example data</a>. You do not need to create an account for the example data.
       </p>
 
+      <!-- example data table -->
       <table id="example-data" class="govuk-table">
         <thead class="govuk-table__head">
         <tr class="govuk-table__row">
@@ -136,73 +140,73 @@
         <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Title number</th>
-          <td class="govuk-table__cell">DTR365201</td>
-          <td class="govuk-table__cell">DTT261501</td>
+          <td class="govuk-table__cell">ZZ1234</td>
+          <td class="govuk-table__cell">ZZ1235</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Tenure</th>
           <td class="govuk-table__cell">Leasehold</td>
-          <td class="govuk-table__cell">Leasehold</td>
+          <td class="govuk-table__cell">Freehold</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Property address</th>
-          <td class="govuk-table__cell">Land lying to the south of<br>West Parley Road<br>Bournemouth</td>
-          <td class="govuk-table__cell">67 Arthur Green Walk<br>Tuckton<br>BH99 9ZZ</td>
+          <td class="govuk-table__cell">Flat 11<br>Mahogany House<br>Lensbury<br>London<br>SW61 2VT</td>
+          <td class="govuk-table__cell">336 High Street<br>Cosham<br>Portsmouth<br>PO66 2XT</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">District</th>
-          <td class="govuk-table__cell">Bournemouth</td>
-          <td class="govuk-table__cell">Christchurch</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <th class="govuk-table__cell">County</th>
-          <td class="govuk-table__cell">Bournemouth</td>
-          <td class="govuk-table__cell">Dorset</td>
+          <td class="govuk-table__cell">Hammersmith</td>
+          <td class="govuk-table__cell">Portsmouth</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Region</th>
-          <td class="govuk-table__cell">South West</td>
-          <td class="govuk-table__cell">South West</td>
+          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">South East</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Postcode</th>
-          <td class="govuk-table__cell"></td>
-          <td class="govuk-table__cell">BH99 9ZZ</td>
+          <td class="govuk-table__cell">SW61 2VT</td>
+          <td class="govuk-table__cell">PO66 2XT</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Multiple address indicator</th>
-          <td class="govuk-table__cell">N</td>
           <td class="govuk-table__cell">Y</td>
+          <td class="govuk-table__cell">N</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Price paid</th>
           <td class="govuk-table__cell"></td>
-          <td class="govuk-table__cell">59100</td>
+          <td class="govuk-table__cell">456000</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Proprietor name</th>
-          <td class="govuk-table__cell">Sopley View Freehold Limited</td>
-          <td class="govuk-table__cell">Downton Bloor Housing Association Limited</td>
+          <td class="govuk-table__cell">Property Limited Company</td>
+          <td class="govuk-table__cell">Trace Property Limited</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Company registration number</th>
-          <td class="govuk-table__cell">9999999</td>
-          <td class="govuk-table__cell">99999</td>
+          <td class="govuk-table__cell">1122334</td>
+          <td class="govuk-table__cell"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Proprietorship category</th>
           <td class="govuk-table__cell">Limited Company or Public Limited Company</td>
-          <td class="govuk-table__cell">Community Benefit Society (Company)</td>
+          <td class="govuk-table__cell">Limited Company or Public Limited Company</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Country incorporated</th>
+          <td class="govuk-table__cell">Guernsey</td>
+          <td class="govuk-table__cell">British Virgin Islands</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Proprietor address</th>
-          <td class="govuk-table__cell">21 Norfolk Grange<br>Bournemouth<br>BH56 8UT</td>
-          <td class="govuk-table__cell">Holborne House<br>Tuckton<br>BH56 3ML</td>
+          <td class="govuk-table__cell">PO Box 2400<br>Bancroft<br>La Route<br>St Martin<br>Guernsey<br>Channel Islands<br>GY33 3LV</td>
+          <td class="govuk-table__cell">478 Seven Gates Road<br>London<br>SW7 8AA</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Date proprietor added</th>
-          <td class="govuk-table__cell">24/09/2012</td>
-          <td class="govuk-table__cell">25/01/2017</td>
+          <td class="govuk-table__cell">23/12/2008</td>
+          <td class="govuk-table__cell">26/03/2009</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Additional proprietor indicator</th>
@@ -220,12 +224,12 @@
           <td class="govuk-table__cell">16/09/2019</td>
         </tr>
         </tbody>
-      </table>
-
+      </table> <!-- example data table -->
       <hr class="govuk-section-break govuk-section-break--m">
 
+      <!-- ACCESS THE DATA -->
       <h2 id="access" class="govuk-heading-l">
-        Access the data
+        Access the database
       </h2>
       <h3 class="govuk-heading-m">
         Download the data
@@ -250,7 +254,7 @@
         Access the data with an API
       </h3>
       <p class="govuk-body">
-        You'll get an API key when you've:
+        You will get an API key when you:
       </p>
       <ul class="govuk-list govuk-list--bullet">
         <li>created your account</li>
@@ -266,25 +270,28 @@
         How the data can be used
       </h3>
       <p class="govuk-body">
-        This data has a <a href="uk-licence" class="govuk-link">licence</a> which explains how you can use it.
-        If you're not sure that you can use the data in the way you need, email
-        <a href="mailto:address.management@royalmail.com" class="govuk-link">address.management@royalmail.com</a> to check.
+        This data has a <a href="overseas-licence" class="govuk-link">licence</a> which explains how you can use it.
+        If you’re not sure that you can use the data in the way you need, email 
+        <a href="mailto:address.management@royalmail.com" class="govuk-link">address.management@royalmail.com</a> to check.
       </p>
       <p class="govuk-body">
-        The licence sets out the conditions for the re-use of data (in this case, addresses) which contain third party
+        The licence sets out the conditions for the re-use of data (in this case, addresses) which contain third party 
         intellectual property rights. Property addresses contained within the Overseas companies that own property in
         England and Wales data are processed against Ordnance Survey’s AddressBase Premium product, which incorporates
         Royal Mail’s PAF® database (Address Data).
       </p>
       <p class="govuk-body">
-        <a class="govuk-button" href="listings-signed-inA">
-          Access the data
+        <a class="govuk-button" href="agree-overseas-licence">
+          Agree licence
         </a>
       </p>
 
-      <h2 id="contact" class="govuk-heading-l">Contact details</h2>
+      <!-- CONTACT US -->
+      <h2 id="contact" class="govuk-heading-l">
+        Contact us
+      </h2>
       <p>
-        If you need more information or you want to buy the data, contact us:
+        Contact us if you need help with the dataset or have any questions:
       </p>
       <p>
         <strong>Data Services Team</strong>​<br>

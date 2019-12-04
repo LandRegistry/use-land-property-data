@@ -80,6 +80,7 @@ if (isSecure) {
   app.set('trust proxy', 1) // needed for secure cookies on heroku
 }
 
+
 middleware.forEach(func => app.use(func))
 
 // Set up App

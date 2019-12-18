@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- back to previous page -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form action="/research-choice" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-type">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              How should we contact you for research?
+            </h1>
+          </legend>
+          <span id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </span>
+
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="contact-type" name="contact-type" type="checkbox" value="telephone">
+              <label class="govuk-label govuk-checkboxes__label" for="contact-type">
+                Telephone
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="contact-type-2" name="contact-type" type="checkbox" value="email">
+              <label class="govuk-label govuk-checkboxes__label" for="contact-type-2">
+                Email
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="contact-type-3" name="contact-type" type="checkbox" value="post">
+              <label class="govuk-label govuk-checkboxes__label" for="contact-type-3">
+                Post
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <a href="../overseas-org-account/check-answers" role="button" class="govuk-button">
+        Continue
+      </a>
+    </form>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

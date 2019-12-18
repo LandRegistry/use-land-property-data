@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- signed in details -->
+<div class="govuk-body heading-nav">
+  <p class="govuk-body">Logged in as: BK123PQ</p>
+</div>
+
+<!-- back to previous page -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back to worklist</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      Application information
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      Details
+    </h2>
+    <table class="govuk-table">
+      <thead>
+        <th width="25%"></th>
+        <th width="65%"></th>
+        <th width="10%"></th>
+      </thead>
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Full name</th>
+        <td class="govuk-table__cell">Miss Amy Jones</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Status</th>
+        <td class="govuk-table__cell">Pending</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Address</th>
+        <td class="govuk-table__cell">104  Clasper Way<br>Heysham<br>Lancashire<br>LA3 1EE</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Telephone number</th>
+        <td class="govuk-table__cell">01982761834</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Email</th>
+        <td class="govuk-table__cell">Amy@123.com</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Contactable</th>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell"><a href="change-research" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Contact by</th>
+        <td class="govuk-table__cell">Email<br>Post</td>
+        <td class="govuk-table__cell"><a href="change-research-yes" class="govuk-link">Change</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--m">
+    <h2 class="govuk-heading-l">
+      Notes
+    </h2>
+    <textarea class="govuk-textarea read-only-textarea" rows="10">
+      Outline the changes that have been made.
+    </textarea>
+    <p class="govuk-body">
+      Enter the text for your note.
+    </p>
+    <textarea class="govuk-textarea" rows="5"></textarea>
+
+    ...
+
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+  <!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Transaction data</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Transaction data
+      </h1>
+      <p class="govuk-body-l">
+        Access information about the volume and type of applications completed each month.
+      </p>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="#datasets">The dataset</a></li>
+          <li><a href="#how">How you can use the data</a></li>
+          <li><a href="#access">How to get the data</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div> <!-- column-one-third -->
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 id="datasets" class="govuk-heading-l">
+        The dataset
+      </h2>
+      <p class="govuk-body">
+        Transaction Data is a dataset that shows how many customer applications we completed, in the preceding month for:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>first registrations</li>
+        <li>leases</li>
+        <li>transfers of part</li>
+        <li>dealings</li>
+        <li>official copies</li>
+        <li>searches</li>
+      </ul>
+      <p class="govuk-body">
+        This is based on customer and location.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Technical specification
+      </h3>
+      <p class="govuk-body">
+        <a href="transaction-tech-spec" class="govuk-link">Read the technical specification for transaction data</a>
+        for full details about the data and what the column headings mean.
+      </p>
+
+      <h2 id="how" class="govuk-heading-l">
+        How you can use the data
+      </h2>
+      <p class="govuk-body">
+        Transaction Data is available free of charge and is available for use and re-use under the
+        <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a>
+        (OGL). This licence allows public bodies to make their data available for re-use.
+      </p>
+      <p class="govuk-body">
+        You need to make sure you understand the terms of the OGL before using the data.
+      </p>
+      <p class="govuk-body">
+        If you use or publish our Transaction Data, you must add the following attribution statement:
+      </p>
+      <blockquote class="noquotes">
+        <p class="govuk-body">
+          Contains HM Land Registry data © Crown copyright and database right 2019. This data is licensed under
+          the Open Government Licence v3.0.
+        </p>
+      </blockquote>
+      <hr class="govuk-section-break govuk-section-break--m">
+      <h3 class="govuk-heading-m">
+        Download options
+      </h3>
+      <p class="govuk-body">
+        You can choose from 5 options, of number and type of application, to select the data that best meets
+        your requirements.
+      </p>
+      <p class="govuk-body">
+        Completed applications in England and Wales lodged by all customers by:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>number and type of application divided by region</li>
+        <li>number and type of application divided by local authority district</li>
+      </ul>
+      <p class="govuk-body">
+        Completed applications in England and Wales lodged by account holders by:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>number and type of application</li>
+        <li>number and type of transactions for value, including freehold and leasehold sales (transactions for
+          value are applications lodged involving a transfer of ownership for value)</li>
+        <li>number and type of searches</li>
+      </ul>
+      <p class="govuk-body">
+        Historic monthly files from December 2011 are also available for download.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Data excluded from Transaction Data
+      </h3>
+      <p class="govuk-body">
+        Our Transaction Data includes information about the number and types of applications we have completed.
+        The data reflects the volume of applications lodged by customers using an HM Land Registry account number
+        on their application form. The data does not include applications that are not yet completed, or all the
+        applications lodged with us.
+      </p>
+      <p class="govuk-body">
+        Our Transaction Data excludes:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>pending applications</li>
+        <li>bankruptcy applications</li>
+        <li>bulk applications</li>
+      </ul>
+
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h2 id="access" class="govuk-heading-l">How to get the data</h2>
+      <p class="govuk-body">
+        Datasets are available as CSV files.
+      </p>
+      <p class="govuk-body">
+        Your use of the Transaction Data is governed by <a href="#how">conditions</a> and by downloading you are
+        agreeing to those conditions.
+      </p>
+      <a href="transaction-download" role="button" class="govuk-button">
+        Access the data
+      </a>
+      <p class="govuk-body">
+        Our Transaction Data is also available in a machine-readable format as
+        <a href="https://landregistry.data.gov.uk/#linked-data">linked data</a>.
+      </p>
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+      <p class="govuk-body">
+        If you have any questions about this data, email our customer service team:
+        <a href="mailto:customer.service@landregistry.gov.uk">customer.service@landregistry.gov.uk​</a>.
+      </p>
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

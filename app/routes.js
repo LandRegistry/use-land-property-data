@@ -26,11 +26,11 @@ router.post('/account-choice', function (req, res) {
   let choice = req.session.data['account-choice']
 
   if (choice === 'personal') {
-    res.redirect('version-2/create-account/personal-account/your-details')
+    res.redirect('version-2-1/create-account/personal-account/your-details')
   } else if (choice == 'uk-org') {
-    res.redirect('version-2/create-account/uk-org-account/your-details')
+    res.redirect('version-2-1/create-account/uk-org-account/your-details')
   } else if (choice == 'os-org') {
-    res.redirect('version-2/create-account/overseas-org-account/your-details')
+    res.redirect('version-2-1/create-account/overseas-org-account/your-details')
   }
 })
 
@@ -41,9 +41,9 @@ router.post('/live-in-uk', function (req, res) {
   let choice = req.session.data['live-in-uk']
 
   if (choice === 'yes') {
-    res.redirect('version-2/create-account/personal-account/uk-address')
+    res.redirect('version-2-1/create-account/personal-account/uk-address')
   } else {
-    res.redirect('version-2/create-account/personal-account/overseas-address')
+    res.redirect('version-2-1/create-account/personal-account/overseas-address')
   }
 })
 
@@ -54,9 +54,9 @@ router.post('/personal-research', function (req, res) {
   let choice = req.session.data['personal-research']
 
   if (choice === 'yes') {
-    res.redirect('version-2/create-account/personal-account/yes-research')
+    res.redirect('version-2-1/create-account/personal-account/yes-research')
   } else {
-    res.redirect('version-2/create-account/personal-account/check-answers')
+    res.redirect('version-2-1/create-account/personal-account/check-answers')
   }
 })
 
@@ -67,9 +67,9 @@ router.post('/uk-org-research', function (req, res) {
   let choice = req.session.data['uk-org-research']
 
   if (choice === 'yes') {
-    res.redirect('version-2/create-account/uk-org-account/yes-research')
+    res.redirect('version-2-1/create-account/uk-org-account/yes-research')
   } else {
-    res.redirect('version-2/create-account/uk-org-account/check-answers')
+    res.redirect('version-2-1/create-account/uk-org-account/check-answers')
   }
 })
 
@@ -80,9 +80,9 @@ router.post('/overseas-org-research', function (req, res) {
   let choice = req.session.data['overseas-org-research']
 
   if (choice === 'yes') {
-    res.redirect('version-2/create-account/overseas-org-account/yes-research')
+    res.redirect('version-2-1/create-account/overseas-org-account/yes-research')
   } else {
-    res.redirect('version-2/create-account/overseas-org-account/check-answers')
+    res.redirect('version-2-1/create-account/overseas-org-account/check-answers')
   }
 })
 
@@ -93,13 +93,13 @@ router.post('/org-type', function (req, res) {
   let choice = req.session.data['org-type']
 
   if (choice === 'company') {
-    res.redirect('version-2/create-account/uk-org-account/company-details')
+    res.redirect('version-2-1/create-account/uk-org-account/company-details')
   } else if (choice == 'charity') {
-    res.redirect('version-2/create-account/uk-org-account/charity-details')
+    res.redirect('version-2-1/create-account/uk-org-account/charity-details')
   } else if (choice == 'gov') {
-    res.redirect('version-2/create-account/uk-org-account/gov-details')
+    res.redirect('version-2-1/create-account/uk-org-account/gov-details')
   } else if (choice == 'la') {
-    res.redirect('version-2/create-account/uk-org-account/la-details')
+    res.redirect('version-2-1/create-account/uk-org-account/la-details')
   }
 })
 

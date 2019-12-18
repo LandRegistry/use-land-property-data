@@ -21,71 +21,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.125">
-              <caret line="41" column="113" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nps-product.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/version-2/nps-product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8461539">
-              <caret line="243" column="57" selection-start-line="243" selection-start-column="57" selection-end-line="243" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="title-number-tech-spec.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/version-2/title-number-tech-spec.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3717948">
-              <caret line="207" column="23" selection-start-line="207" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nps-product-signed-in.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/version-2/nps-product-signed-in.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.65068495">
+              <caret line="60" column="72" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="listings-signed-in.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/version-2/listings-signed-in.html">
+        <entry file="file://$PROJECT_DIR$/app/views/version-3/listings-signed-in.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5882353">
-              <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="666" column="16" selection-start-line="666" selection-start-column="16" selection-end-line="666" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample-nps-licence.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/version-2/sample-nps-licence.html">
+      <file leaf-file-name="listings.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/version-3/listings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.125">
-              <caret line="315" column="64" selection-start-line="315" selection-start-column="64" selection-end-line="315" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overseas-product-signed-in.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/version-2/overseas-product-signed-in.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65068495">
-              <caret line="286" column="11" selection-start-line="286" selection-start-column="11" selection-end-line="286" selection-end-column="23" />
+            <state vertical-scroll-proportion="-12.058824">
+              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -108,57 +68,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/version-1-3/listings.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/request-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/create-account/uk-org-account/la-details.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/request-download.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/request-view.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/overseas-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/uk-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/uk-product.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/uk-licence.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/agree-uk-licence.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/agree-overseas-licence.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/uk-product- signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/nps-product.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-3/listings-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/ur-session1/listingsB.html" />
-        <option value="$PROJECT_DIR$/app/views/ur-session1/listings-signed-inA.html" />
-        <option value="$PROJECT_DIR$/app/views/ur-session1/listings-signed-inB.html" />
-        <option value="$PROJECT_DIR$/app/views/ur-session1/uk-product-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/create-account/overseas-org-account/check-answers.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/create-account/personal-account/check-answers.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/create-account/uk-org-account/check-answers.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/my-datasets-1.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/my-datasets-2.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/my-datasets-3.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/request-download.html" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/listings-signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/request-view.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/nps-product.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/request-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/version-1-4/request-product.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/my-datasets-1.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/my-datasets-2.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/my-datasets-3.html" />
-        <option value="$PROJECT_DIR$/app/routes.js" />
-        <option value="$PROJECT_DIR$/app/views/version-2/uk-product- signed-in.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/listings.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/full-nps-licence.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/nps-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/title-desc-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/version-2/overseas-product.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/request-product.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/uk-product.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/uk-product-signed-in.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/nps-product.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/title-number-tech-spec.html" />
-        <option value="$PROJECT_DIR$/app/views/index.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/listings-signed-in.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/sample-nps-licence.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/nps-product-signed-in.html" />
         <option value="$PROJECT_DIR$/app/views/version-2/overseas-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/sign-in.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/reset-password.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/confirm-reset-password.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/agree-overseas-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/agree-uk-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/api-access.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/api-tech.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/full-nps-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/nps-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/overseas-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/overseas-product.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/overseas-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/request-product.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/request-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/request-view.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/sample-nps-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/terms-of-use.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/title-desc-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/title-number-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/uk-licence.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/uk-product.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/uk-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/uk-tech-spec.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/request-download.html" />
+        <option value="$PROJECT_DIR$/app/views/dst/change-research.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/nps-product.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/nps-product-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/dst/dst-application.html" />
+        <option value="$PROJECT_DIR$/app/views/dst/change-research-yes.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/create-account/overseas-org-account/check-answers.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/create-account/uk-org-account/check-answers.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/listings-v1.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/listings-v2.html" />
+        <option value="$PROJECT_DIR$/app/assets/sass/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/listings-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/routes.js" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/transaction-product.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/transaction-download.html" />
+        <option value="$PROJECT_DIR$/app/views/version-2-1/listings.html" />
+        <option value="$PROJECT_DIR$/app/views/version-3/listings-signed-in.html" />
+        <option value="$PROJECT_DIR$/app/views/version-3/listings.html" />
+        <option value="$PROJECT_DIR$/app/views/index.html" />
       </list>
     </option>
   </component>
@@ -260,7 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="version-2" />
+              <option name="myItemId" value="version-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,11 +286,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/version-2" />
       <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/app/views/version-1-4" />
+      <recent name="$PROJECT_DIR$/app/views/version-2-1" />
       <recent name="$PROJECT_DIR$/app/views/ur-session1" />
-      <recent name="$PROJECT_DIR$/app/views/version-1-3" />
+      <recent name="$PROJECT_DIR$/app/views/dst" />
+      <recent name="$PROJECT_DIR$/app/views/version-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/version-1-1" />
@@ -690,39 +650,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/overseas-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="282" column="0" selection-start-line="282" selection-start-column="0" selection-end-line="286" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/nps-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9803922">
-          <caret line="234" column="11" selection-start-line="234" selection-start-column="11" selection-end-line="234" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/listings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="218" column="50" selection-start-line="218" selection-start-column="50" selection-end-line="218" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/listings-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.6470585">
-          <caret line="552" column="30" selection-start-line="552" selection-start-column="30" selection-end-line="552" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ur-session1/api-tech.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/my-datasets-2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -730,373 +658,407 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/uk-product- signed-in.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/my-datasets-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0205479">
-          <caret line="291" column="28" selection-start-line="290" selection-start-column="29" selection-end-line="291" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/agree-uk-licence.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/new-link-sent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14383562">
-          <caret line="346" column="68" selection-start-line="346" selection-start-column="68" selection-end-line="346" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-3/uk-licence.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/nps-tech-spec.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8082192">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ur-session1/uk-product-signed-in.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/overseas-licence.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4379562">
-          <caret line="273" column="118" selection-start-line="273" selection-start-column="118" selection-end-line="273" selection-end-column="118" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ur-session1/listings-signed-inB.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/overseas-product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40145984">
-          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/overseas-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/confirm-reset-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/overseas-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/request-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/uk-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/uk-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/uk-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/uk-licence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/title-number-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/title-desc-tech-spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37671232">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/terms-of-use.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/sign-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5410959">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="51" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/sample-nps-licence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034246575">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/reset-password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034246575">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/full-nps-licence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/request-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/request-download.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.882353">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/accessibility.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/create-account/personal-account/yes-research.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.375">
+          <caret line="46" column="18" selection-start-line="19" selection-start-column="10" selection-end-line="46" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/create-account/personal-account/research.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.061643835">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/create-account/personal-account/uk-address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7191781">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/nps-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/ur-session1/nps-product-signed-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/ur-session1/listingsB.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91240877">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ur-session1/listingsA.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.3561645">
-          <caret line="318" column="12" selection-start-line="47" selection-start-column="6" selection-end-line="318" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/api-tech.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-1.130137">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/create-account/overseas-org-account/check-answers.html">
+    <entry file="file://$PROJECT_DIR$/app/views/dst/change-research-yes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8235292">
-          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.58219177">
+          <caret line="32" column="139" selection-start-line="32" selection-start-column="139" selection-end-line="32" selection-end-column="139" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/create-account/personal-account/check-answers.html">
+    <entry file="file://$PROJECT_DIR$/app/views/dst/change-research.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.30656934">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/create-account/uk-org-account/check-answers.html">
+    <entry file="file://$PROJECT_DIR$/app/views/dst/dst-application.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42335767">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.8029197">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/my-datasets-1.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/create-account/overseas-org-account/check-answers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7737226">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.55474454">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="122" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/ur-session1/listings-signed-inA.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/create-account/uk-org-account/check-answers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.208333">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.375">
+          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/my-datasets-2.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/create-account/personal-account/check-answers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4379562">
-          <caret line="99" column="75" selection-start-line="99" selection-start-column="75" selection-end-line="99" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/my-datasets-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-56.17647">
-          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="48.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/request-download.html">
+    <entry file="file://$PROJECT_DIR$/app/assets/sass/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38961038">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/listings-v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.474453">
+          <caret line="315" column="19" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/listings-v1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
-          <caret line="106" column="18" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="18" />
+          <caret line="286" column="42" selection-start-line="286" selection-start-column="42" selection-end-line="286" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#dd#4;n#dl#0;n#div#0;n#div#1;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#4;n#dl#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#3;n#dl#0;n#div#0;n#div#1;n#div#7;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#dd#4;n#dl#0;n#div#0;n#div#1;n#div#7;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/nps-product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23972602">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="49" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/listings-signed-in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22303921">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/request-view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.620438">
-          <caret line="244" column="104" selection-start-line="244" selection-start-column="104" selection-end-line="244" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/listings-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0384617">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/nps-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3529413">
-          <caret line="241" column="9" selection-start-line="241" selection-start-column="9" selection-end-line="241" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/overseas-tech-spec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/request-tech-spec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9871795">
-          <caret line="320" column="19" selection-start-line="320" selection-start-column="19" selection-end-line="320" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-1-4/request-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7058825">
-          <caret line="32" column="104" selection-start-line="32" selection-start-column="104" selection-end-line="32" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/api-tech.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="52.5">
+          <caret line="277" column="50" selection-start-line="277" selection-start-column="50" selection-end-line="277" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9310345">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/my-datasets-3.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/transaction-product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75342464">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        <state vertical-scroll-proportion="-4.8235292">
+          <caret line="163" column="6" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/my-datasets-2.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/request-view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7876712">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="80" column="16" selection-start-line="44" selection-start-column="6" selection-end-line="80" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/my-datasets-1.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/transaction-download.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8561644">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state vertical-scroll-proportion="251.94118">
+          <caret line="1858" column="133" selection-start-line="1858" selection-start-column="133" selection-end-line="1858" selection-end-column="133" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/full-nps-licence.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-2-1/listings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.369864">
-          <caret line="609" column="30" selection-start-line="609" selection-start-column="30" selection-end-line="609" selection-end-column="30" />
+        <state vertical-scroll-proportion="-12.6470585">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/overseas-tech-spec.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-3/sign-in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="538" column="12" selection-start-line="538" selection-start-column="12" selection-end-line="538" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/overseas-product.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-3/listings-v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.540146">
-          <caret line="241" column="0" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="341" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/title-desc-tech-spec.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-3/listings-signed-in.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7670157">
-          <caret line="192" column="52" selection-start-line="192" selection-start-column="52" selection-end-line="192" selection-end-column="52" />
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="666" column="16" selection-start-line="666" selection-start-column="16" selection-end-line="666" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/nps-tech-spec.html">
+    <entry file="file://$PROJECT_DIR$/app/views/version-3/listings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.625">
-          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/listings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7712895">
-          <caret line="201" column="65" selection-start-line="201" selection-start-column="65" selection-end-line="201" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#dd#3;n#dl#0;n#div#2;n#div#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dd#3;n#dl#0;n#div#9;n#div#0;n#div#3;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/uk-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6232877">
-          <caret line="287" column="10" selection-start-line="287" selection-start-column="10" selection-end-line="287" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/uk-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28082192">
-          <caret line="299" column="29" selection-start-line="299" selection-start-column="29" selection-end-line="299" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/request-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4428224">
-          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/nps-product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8461539">
-          <caret line="243" column="57" selection-start-line="243" selection-start-column="57" selection-end-line="243" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/title-number-tech-spec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3717948">
-          <caret line="207" column="23" selection-start-line="207" selection-start-column="23" selection-end-line="207" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/agree-uk-licence.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21232876">
-          <caret line="343" column="1" selection-start-line="343" selection-start-column="1" selection-end-line="363" selection-end-column="12" />
+        <state vertical-scroll-proportion="-12.058824">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.125">
-          <caret line="41" column="113" selection-start-line="41" selection-start-column="113" selection-end-line="41" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/listings-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5882353">
-          <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/sample-nps-licence.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.125">
-          <caret line="315" column="64" selection-start-line="315" selection-start-column="64" selection-end-line="315" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/nps-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/version-2/overseas-product-signed-in.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65068495">
-          <caret line="286" column="11" selection-start-line="286" selection-start-column="11" selection-end-line="286" selection-end-column="23" />
+          <caret line="60" column="72" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
           <folding />
         </state>
       </provider>

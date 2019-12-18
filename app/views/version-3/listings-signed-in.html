@@ -66,7 +66,7 @@
               <h2 class="govuk-heading-l">
                 Welcome back, Cynthia Hobbs.
                 <p class="govuk-body-s">
-                  You last signed in 25 November 2019.
+                  You last signed in 25 November 2019 12:23:42.
                 </p>
               </h2>
 
@@ -283,7 +283,7 @@
                 </h2>
 
                 <p class="govuk-body">
-                  The latest data is from on 2 November 2019.
+                  The latest data is from on <strong>2 November 2019</strong>.
                 </p>
                 <p class="govuk-body">
                   Download the:
@@ -292,6 +292,9 @@
                 <!-- download buttons -->
                 <a class="govuk-button govuk-!-margin-right-1" href="/public/files/ocod-dataset-sample.csv" download>
                   full dataset - 38.58 MB, CSV
+                </a>
+                <a class="govuk-button" href="/public/files/ocod-dataset-sample.csv" download>
+                  change only file - 1.16 MB, CSV
                 </a>
 
                 <!-- older versions -->
@@ -375,7 +378,6 @@
             <div class="govuk-grid-column-one-third toc">
               <p class="govuk-body">Contents</p>
               <ul>
-                <li><a href="#1862">1862 Act register</a></li>
                 <li><a href="#geospatial">Geospatial Data Catalogue</a></li>
                 <li><a href="#inspire">INSPIRE Index Polygon spatial data</a></li>
                 <li><a href="#nps">National Polygon Service</a></li>
@@ -385,38 +387,12 @@
                 <li><a href="#transaction">Transaction data</a></li>
                 <li><a href="#ccod">UK Companies that own property in England and Wales</a></li>
                 <li><a href="#hpi">UK House Price Index: reports</a></li>
+                <li><a href="#1862">1862 Act register</a></li>
               </ul>
             </div>
 
             <!-- column-two-thirds for summary list of datasets -->
             <div class="govuk-grid-column-two-thirds">
-              <!-- 1862 dataset -->
-              <div class="govuk-!-padding-bottom-9">
-                <h2 id="1862" class="govuk-heading-l">
-                  <a href="https://www.gov.uk/guidance/1862-act-register" class="govuk-link" target="_blank">
-                    1862 Act Register
-                  </a>
-                </h2>
-                <dl class="govuk-body dataset-info">
-                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
-                  <dt>Free of charge</dt>
-                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
-                  <dt>Never</dt>
-                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
-                  <dt>Open Government Licence</dt>
-                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
-                  <dt>1.5MB, JPG</dt>
-                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
-                  <dt>No</dt>
-                </dl>
-                <p class="govuk-body">
-                  Download historical data about people and properties recorded on the 1862 Act Register. This was the first
-                  land register that HM Land Registry created and was the government’s first attempt to
-                  record property ownership information. It shows the owner name and property they owned.
-                </p>
-              </div>
-
-
               <!-- Geospatial dataset -->
               <div class="govuk-!-padding-bottom-9">
                 <h2 id="geospatial" class="govuk-heading-l">
@@ -661,6 +637,33 @@
                 <p class="govuk-body">
                   Access reports for the UK House Price Index (UKHPI) for England, Scotland, Wales and Norther Ireland.
                   The UKHPI shows changes in the value of residential properties.
+                </p>
+              </div>
+
+
+              <!-- 1862 dataset -->
+              <div class="govuk-!-padding-bottom-9">
+                <h2 id="1862" class="govuk-heading-l">
+                  <a href="https://www.gov.uk/guidance/1862-act-register" class="govuk-link" target="_blank">
+                    1862 Act Register
+                  </a>
+                </h2>
+                <dl class="govuk-body dataset-info">
+                  <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+                  <dt>Free of charge</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+                  <dt>Never</dt>
+                  <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+                  <dt>Open Government Licence</dt>
+                  <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+                  <dt>1.5MB, JPG</dt>
+                  <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+                  <dt>No</dt>
+                </dl>
+                <p class="govuk-body">
+                  Download historical data about people and properties recorded on the 1862 Act Register. This was the first
+                  land register that HM Land Registry created and was the government’s first attempt to
+                  record property ownership information. It shows the owner name and property they owned.
                 </p>
               </div>
             </div><!-- column two-thirds -->

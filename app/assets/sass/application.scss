@@ -63,6 +63,121 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 
+.govuk-list--decimal4 {
+  counter-reset: num;
+
+  li:before {
+    content: "4." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.govuk-list--nested {
+  counter-reset: num;
+
+  li:before {
+    content: "4.12." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -60px;
+  padding-left: 60px;
+}
+
+.govuk-list--decimal12 {
+  counter-reset: num;
+
+  li:before {
+    content: "12." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.govuk-list--decimal13 {
+  counter-reset: num;
+
+  li:before {
+    content: "13." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.govuk-list--decimal14 {
+  counter-reset: num;
+
+  li:before {
+    content: "14." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.govuk-list--nested14 {
+  counter-reset: num;
+
+  li:before {
+    content: "14.1." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -60px;
+  padding-left: 60px;
+}
+
+.govuk-list--decimal15 {
+  counter-reset: num;
+
+  li:before {
+    content: "15." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.govuk-list--dash {
+  li:before {
+    content: "-";
+    padding-right: 5px;
+  }
+
+  text-indent: -15px;
+  padding-left: 15px;
+}
+
+.govuk-list--alpha {
+  counter-reset: letter;
+
+  li:before {
+    content: counter(letter, lower-alpha) ") ";
+    counter-increment: letter;
+    padding-right: 5px;
+  }
+
+  text-indent: -25px;
+  padding-left: 25px;
+}
+
+
 
 .black-outline {
   border: 2px solid #6f777b;

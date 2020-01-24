@@ -1,0 +1,2677 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="transaction-product">Transaction data</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Download dataset</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Download</span>
+        Transaction data
+      </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">
+        Transaction data gives the number of applications for first registrations, leases, transfers of part, dealings,
+        official copies and searches completed with HM Land Registry by account holders in the preceding month.
+      </p>
+      <p class="govuk-body">
+        By downloading this dataset, you are agreeing to the
+        <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">
+        OGL conditions of use</a>.
+      </p>
+
+
+      <h2 class="govuk-heading-l">
+        Latest data
+        <p class="govuk-body-s">
+          Published 21 November 2019.
+        </p>
+      </h2>
+      <table class="govuk-table">
+        <thead>
+        <th width="80%"></th>
+        <th width="20%"></th>
+        </thead>
+
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">
+            Number and types of applications by all account customers
+          </td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">
+            Number and types of transactions for value by all account customers
+          </td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">
+            Number of applications in England and Wales divided by region
+          </td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">
+            Number of applications in England and Wales divided by local authorities
+          </td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td scope="row" class="govuk-table__cell">
+            Number of searches by all account customers
+          </td>
+          <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+        </tr>
+        </tbody>
+      </table>
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h2 class="govuk-heading-l">Previous data</h2>
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                2019
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <table class="govuk-table">
+              <thead>
+              <th width="80%"></th>
+              <th width="20%"></th>
+              </thead>
+
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">October</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">September</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">August</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">July</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">June</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">May</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">April</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">March</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">February</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">January</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2019 accordion section -->
+
+        <!-- 2018 -->
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                2018
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <table class="govuk-table">
+              <thead>
+                <th width="80%"></th>
+                <th width="20%"></th>
+              </thead>
+
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">December</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">November</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">October</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">September</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">August</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">July</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">June</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">May</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">April</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">March</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">February</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header govuk-!-padding-top-6">January</th>
+                  <td class="govuk-table__cell"></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of applications by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number and types of transactions for value by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by region
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of applications in England and Wales divided by local authorities
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td scope="row" class="govuk-table__cell">
+                    Number of searches by all account customers
+                  </td>
+                  <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2018 accordion section -->
+
+        <!-- 2017 -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                2017
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+            <table class="govuk-table">
+              <thead>
+              <th width="80%"></th>
+              <th width="20%"></th>
+              </thead>
+
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">December</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">November</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">October</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">September</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">August</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">July</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">June</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">May</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">April</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">March</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">February</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">January</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2017 accordion section -->
+
+        <!-- 2016 -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                2016
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+            <table class="govuk-table">
+              <thead>
+              <th width="80%"></th>
+              <th width="20%"></th>
+              </thead>
+
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">December</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">November</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">October</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">September</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">August</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">July</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">June</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">May</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">April</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">March</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">February</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">January</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2016 accordion section -->
+
+        <!-- 2015 -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+                2015
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-5">
+            <table class="govuk-table">
+              <thead>
+              <th width="80%"></th>
+              <th width="20%"></th>
+              </thead>
+
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">December</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">November</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">October</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">September</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">August</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">July</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">June</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">May</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">April</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">March</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">February</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">January</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2015 accordion section -->
+
+        <!-- 2014 -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-6">
+                2014
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-6" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-6">
+            <table class="govuk-table">
+              <thead>
+              <th width="80%"></th>
+              <th width="20%"></th>
+              </thead>
+
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">December</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">November</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">October</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">September</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">August</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">July</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">June</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">May</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">April</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">March</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">February</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header govuk-!-padding-top-6">January</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of applications by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number and types of transactions for value by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by region
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of applications in England and Wales divided by local authorities
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td scope="row" class="govuk-table__cell">
+                  Number of searches by all account customers
+                </td>
+                <td class="govuk-table__cell"><a href="/public/files/RFI.csv" download>Download .csv</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- 2014 accordion section -->
+      </div> <!-- accordion -->
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

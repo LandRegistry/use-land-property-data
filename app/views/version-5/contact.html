@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+
+<!-- back to previous page -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Use land and property data</span>
+            Contact
+        </h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <p class="govuk-body">
+            <strong>Data Services Team</strong>​<br>
+            HM Land Registry​<br>
+            Rosebrae Court ​<br>
+            Woodside Ferry Approach​<br>
+            Birkenhead​<br>
+            Merseyside​<br>
+            CH41 6DU
+        </p>
+        <p class="govuk-body">
+            Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+        </p>
+        <p class="govuk-body">​
+            Telephone: 0300 006 0478
+        </p>
+    </div>
+</div>
+
+{% endblock %}

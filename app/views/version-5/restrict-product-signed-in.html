@@ -1,0 +1,217 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Restrictive Covenants</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Restrictive Covenants
+      </h1>
+      <p class="govuk-body-l">
+        A restrictive covenant is a contract between two landowners: one landowner promises the other landowner not to
+        carry out particular acts on their own land.
+      </p>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="#datasets">The dataset</a></li>
+          <li><a href="#example">Get example data</a></li>
+          <li><a href="#access">Access the dataset</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div> <!-- column-one-third -->
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 id="datasets" class="govuk-heading-l">The dataset</h2>
+      <p class="govuk-body">
+        This data shows registered land and property in England and Wales that has a restrictive covenant.
+      </p>
+      <p class="govuk-body">
+        The data does not give details about what the restrictive covenant is.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        What is a restrictive covenant?
+      </h3>
+      <p class="govuk-body">
+        A restrictive covenant is a contract between 2 landowners. One land owner promises the other land owner not to
+        carry out certain acts on their own land.
+      </p>
+      <p class="govuk-body">
+        Restrictive covenants usually happen when somebody selling land wishes to restrict what the buyer can do with it.
+        Although in some cases the vendor will agree to restrict his use of the land he is retaining. The obligation
+        to comply with the covenants remain no matter how often the land changes hands on how obsolete the covenants
+        seem to be.
+      </p>
+
+      <h2 id="example" class="govuk-heading-l">Get example data</h2>
+      <p>
+        You can <a class="govuk-link" href="/public/files/ocod-dataset-sample.csv" download>download example data</a>.
+        You do not need to create an account for the example data.
+      </p>
+
+      <table id="example-data" class="govuk-table">
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Data</th>
+          <th class="govuk-table__header">Example data 1</th>
+          <th class="govuk-table__header">Example data 2</th>
+        </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Unique identifier</th>
+          <td class="govuk-table__cell">768G</td>
+          <td class="govuk-table__cell">99F2</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Tenure</th>
+          <td class="govuk-table__cell">Freehold</td>
+          <td class="govuk-table__cell">Freehold</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Register property description</th>
+          <td class="govuk-table__cell">41 Brow Lane<br>London<br>SE1 1SE</td>
+          <td class="govuk-table__cell">193 Edmund Road<br>London<br>SW17 7SW</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">County</th>
+          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">Greater London</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Region</th>
+          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">Greater London</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Associated property description ID</th>
+          <td class="govuk-table__cell">1234567</td>
+          <td class="govuk-table__cell">9876543</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Associated property description</th>
+          <td class="govuk-table__cell">41 Brow Lane<br>London<br>SE1 1SE</td>
+          <td class="govuk-table__cell">193 Edmund Road<br>London<br>SW17 7SW</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h4 class="govuk-heading-s">
+        Technical specification
+      </h4>
+      <p class="govuk-body">
+        <a href="restrict-tech-spec" class="govuk-link">Read the technical specification for Restrictive Covenants</a>
+         for full details about the data.
+      </p>
+
+      <h2 id="access" class="govuk-heading-l">
+        Access the dataset
+      </h2>
+      <p class="govuk-body">
+        There are 3 different licence types that describe how you can use the data.
+      </p>
+
+      <h3 class="govuk-heading-m">Commercial licence</h3>
+      <p class="govuk-body">
+        You intent to use the data to make a product or service to sell to others. You might add or combine data
+        to make your product.
+      </p>
+      <p class="govuk-body">
+        The data costs £5,000 a year.
+      </p>
+      <p class="govuk-body">
+        <a href="#contact">Contact us</a> if you want this type of licence.
+      </p>
+
+      <h3 class="govuk-heading-m">Exploration licence</h3>
+      <p class="govuk-body">
+        You want to take the data to see if you can make a product or service to sell. You can put the data in products,
+        services or prototypes and show it to users or customers.
+      </p>
+      <p class="govuk-body">
+        The data is free of charge and you will get access to the data for 3 months.
+      </p>
+      <p class="govuk-body">
+        <a href="#contact">Contact us</a> if you want this type of licence.
+      </p>
+
+      <h3 class="govuk-heading-m">Personal use licence</h3>
+      <p class="govuk-body">
+        You want to use this data for research, for personal use or for your work. You <strong>will not</strong>:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>show or give this dataset to anyone externally</li>
+        <li>publish the data online</li>
+        <li>use the data in a commercial product or service</li>
+      </ul>
+      <p class="govuk-body">
+        You'll need to create an account and agree to the licence to access the data.
+      </p>
+      <p class="govuk-body">
+        The data is free of charge. The licence lasts a year.
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-button" href="create-account/create-account">
+          Agree licence
+        </a>
+      </p>
+
+      <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+      <p>
+        Contact us if you need help with the dataset or have any questions:
+      </p>
+      <p>
+        <strong>Data Services Team</strong>​<br>
+        HM Land Registry​<br>
+        Rosebrae Court ​<br>
+        Woodside Ferry Approach​<br>
+        Birkenhead​<br>
+        Merseyside​<br>
+        CH41 6DU
+      </p>
+      <p>
+        Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+      </p>
+      <p>​
+        Telephone: 0300 006 0478
+      </p>
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

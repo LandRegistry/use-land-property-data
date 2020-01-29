@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/version-5-1/intro-5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/intro-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/intro-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/intro-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/intro-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/intro-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/intro-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/intro-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/intro-4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-5-1/listings-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/listings-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/restrict-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/restrict-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/restrict-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/restrict-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-5-1/terms-of-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5-1/terms-of-use.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-5/listings-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5/listings-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-5/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5/listings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-5/terms-of-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-5/terms-of-use.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>

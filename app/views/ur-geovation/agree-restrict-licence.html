@@ -1,0 +1,168 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+    <a class="govuk-link" href="sign-in">Sign in</a>
+    <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- back to previous page -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
+            <span class="govuk-caption-xl">Private licence</span>
+            Restrictive Covenants
+        </h1>
+    </div>
+</div>
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">
+            Summary of use
+        </h2>
+        <ol class="govuk-list govuk-list--number">
+            <li>
+                This Licence (as defined in the Small Print) is dated                     2020 and:
+                <ol class="govuk-list govuk-list--alpha-dot">
+                    <li>is free of charge</li>
+                    <li>relates to HM Land Registry leasehold datasets which comprises the unique identifier, property
+                        address, UPRN, tenure, date of lease, term of lease, alienation clause indicator where available,
+                        multiple lease indicator (the “Exploration Data”)
+                    </li>
+                    <li>does not affect any existing licence arrangements already in place. If you have access to other
+                        data under, for example, the terms of an Open Government Licence or a commercial licence issued
+                        by a Partner Body, those licensing arrangements continue to apply
+                    </li>
+                    <li>lets you use Exploration  Data for 3 months</li>
+                    <li>lets you do any of the permitted actions we list below, so you can:
+                        <ul class="govuk-list govuk-list--bullet-no-alpha">
+                            <li>evaluate Exploration Data to see if what we’re offering is what you need</li>
+                            <li>use Exploration Data to research and develop your ideas and propositions.
+                                It doesn’t matter if you’re not sure yet how Exploration Data might help you.
+                                For example, you may want to assess it for a potential commercial opportunity or
+                                see what potential benefits and value it could bring to you, helping you build
+                                your case for licensing Exploration Data for use in your business or organisation
+                                under a separate, commercial licensing arrangement with us.  Note these research and
+                                development rights are subject to the provisions below regarding live trials or tests
+                            </li>
+                            <li>display Exploration Data or create working prototypes using Exploration Data to
+                                demonstrate and promote on your own equipment how your ideas or propositions for
+                                using our data would work, which is ideal if you’re talking to potential customers,
+                                agents, investors or other financial backers.  With our prior agreement, you can
+                                also provide prototypes for a short time to any of these people on equivalent terms
+                                to this Licence solely to help them to make a better assessment of your idea or proposition
+                            </li>
+                            <li>use Exploration Data in live trials or tests within your business or organisation
+                                to determine whether you wish to license it as an internal business aid immediately
+                                after your live trial
+                            </li>
+                            <li>use small extracts of HMLR Data (to be agreed with HMLR in advance) in time-bound
+                                events that promote collaboration and innovation, to provide better insight into
+                                specific uses or develop ideas or answer particular questions, for example, as
+                                part of competitions, hackathons and mash-ups
+                            </li>
+                            <li>use small extracts of HMLR Data (to be agreed with HMLR in advance), to promote
+                                your use of HMLR Data in articles and at events that intend to share or widen
+                                knowledge (such as academic papers, trade journals or industry conferences)
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        is subject to all of the following requirements listed below that you shall comply with:
+                        <ul class="govuk-list govuk-list--bullet-no-alpha">
+                            <li>provide us with information about you and/or your company or organisation as requested
+                                when you register to access Exploration Data so that we know who we are licensing to
+                                and what you are wanting to do
+                            </li>
+                            <li>
+                                acknowledge that you’re using Exploration Data and that you’re doing so in the right
+                                way. You cannot reproduce the HM Land Registry  logo unless it forms an integral part
+                                of the Exploration Data and you are reproducing it in that context
+                            </li>
+                            <li>
+                                make sure any prototypes you provide or any HMLR Data you provide to third parties
+                                is returned to you or destroyed within 7 days of the end of the assessment or event.
+                                Tell us in advance if doing this might disrupt your longer term plans and we can
+                                discuss appropriate licensing
+                            </li>
+                            <li>
+                                provide technological and security measures to make sure all Exploration Data
+                                supplied to you is secure from any unauthorised use or access
+                            </li>
+                            <li>
+                                maintain accurate, complete and detailed records relating to this Licence regarding
+                                access to the Exploration Data by your staff (including unauthorised access and
+                                information regarding any prototypes created) that shall be open to inspection and
+                                for copies of any necessary records to be taken by us or our representatives upon request
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Under this Licence you must not do the following listed in the restrictions below:
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>
+                        unless we expressly permit you to do so above, make any Exploration Data available to
+                        third parties or create any products or services which have benefitted from, relied on or
+                        made any use of Exploration Data (including, without limitation, where you have created your
+                        products or services by copying, publishing, modifying, re-formatting, analysing or performing
+                        searches, look ups or enquiries using Exploration Data). You agree that, if you want to make
+                        Exploration Data available in this way, you will tell us and will not proceed until we agree
+                        the basis on which that can happen
+                    </li>
+                    <li>
+                        you shall not infringe or breach the intellectual property rights in the Exploration Data
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+
+
+        <hr class="govuk-section-break govuk-section-break--l">
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="agree-hint">
+
+                <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="agree" name="agree" type="checkbox" value="yes">
+                        <label class="govuk-label govuk-checkboxes__label" for="agree">
+                            I have read and agree to the terms and conditions of this licence.
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <p class="govuk-body">
+            <a class="govuk-button" href="listings-signed-in">
+                Continue
+            </a>
+        </p>
+    </div> <!-- column-two-thirds -->
+
+    <div class="govuk-grid-column-one-third">
+        <div class="blue-bar-no-padding"></div>
+        <p class="govuk-body">
+            <a href="#" onclick="myFunction()" class="govuk-link" rel="alternate" download>
+                Download this licence - 15Kb, HTML
+            </a>
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}

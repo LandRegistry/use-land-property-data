@@ -1,0 +1,256 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- signed in details -->
+<div class="govuk-body heading-nav">
+  <p class="govuk-body">Logged in as: BK123PQ</p>
+</div>
+
+<!-- back to previous page -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back to search results</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Mrs Abigail North</span>
+      Account information
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      Details
+    </h2>
+    <table class="govuk-table">
+      <thead>
+        <th width="25%"></th>
+        <th width="65%"></th>
+        <th width="10%"></th>
+      </thead>
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Full name</th>
+        <td class="govuk-table__cell">Miss Amy Jones</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Status</th>
+        <td class="govuk-table__cell">Pending</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Address</th>
+        <td class="govuk-table__cell">104  Clasper Way<br>Heysham<br>Lancashire<br>LA3 1EE</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Telephone number</th>
+        <td class="govuk-table__cell">01982761834</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Email</th>
+        <td class="govuk-table__cell">Amy@123.com</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">Contactable</th>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell"><a href="change-research" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Contact by</th>
+        <td class="govuk-table__cell">Email<br>Post</td>
+        <td class="govuk-table__cell"><a href="change-research-yes" class="govuk-link">Change</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--m">
+    <h2 class="govuk-heading-l">
+      Notes
+    </h2>
+    <textarea class="govuk-textarea read-only-textarea" rows="10">
+      Contact preferences updated on [date].
+    </textarea>
+    <p class="govuk-body">
+      Enter the text for your note.
+    </p>
+    <textarea class="govuk-textarea" rows="5"></textarea>
+
+    <a class="govuk-button govuk-button--blue" href="create-account/create-account">
+      Create account
+    </a>
+
+    <h2 class="govuk-heading-l">
+      Dataset activity
+    </h2>
+    <p class="govuk-body">
+      Information about which datasets this account has access to and a history of downloads for each dataset.
+    </p>
+    <p class="govuk-body">
+      <a href="#">View dataset activity</a>
+    </p>
+
+    <h2 class="govuk-heading-l">
+      Actions
+    </h2>
+    <!-- Tab list -->
+    <div id="access" class="govuk-tabs" data-module="govuk-tabs">
+      <h2 class="govuk-tabs__title">
+        Actions
+      </h2>
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+          <a class="govuk-tabs__tab" href="#data-access">
+            Data access
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#close-account">
+            Close account
+          </a>
+        </li>
+      </ul> <!-- tabs list -->
+
+      <!-- Data access tab -->
+      <section class="govuk-tabs__panel" id="data-access">
+        <h3 class="govuk-heading-m">
+          Manage access to the datasets
+          <span class="govuk-caption-m">
+            Select all that apply
+          </span>
+        </h3>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <h4 class="govuk-heading-s">
+              Free datasets
+            </h4>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="CCOD" name="free-data" type="checkbox" value="CCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="CCOD">
+                  UK Companies that own property in England and Wales
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                  Overseas companies that own property in England and Wales
+                </label>
+              </div>
+            </div>
+
+            <hr class="govuk-section-break govuk-section-break--l">
+            <h4 class="govuk-heading-s">
+              National Polygon Service
+            </h4>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="CCOD" name="free-data" type="checkbox" value="CCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="CCOD">
+                  Sample
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                  Full dataset
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-grid-column-one-half">
+            <h4 class="govuk-heading-s">
+              Registered Leases
+            </h4>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="CCOD" name="free-data" type="checkbox" value="CCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="CCOD">
+                  Private
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                  Exploration
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                  Commercial
+                </label>
+              </div>
+            </div>
+
+            <hr class="govuk-section-break govuk-section-break--m">
+            <h4 class="govuk-heading-s">
+              Restrictive Covenants
+            </h4>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="CCOD" name="free-data" type="checkbox" value="CCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="CCOD">
+                  Private
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                  Exploration
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                  Commercial
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <hr class="govuk-section-break govuk-section-break--m">
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Restricted datasets
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                <div class="govuk-checkboxes__item govuk-checkboxes--small">
+                  <input class="govuk-checkboxes__input" id="OCOD" name="free-data" type="radio" value="OCOD">
+                  <label class="govuk-label govuk-checkboxes__label" for="OCOD">
+                    Daily Application Data
+                  </label>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- close account tab -->
+      <section class="govuk-tabs__panel" id="close-account">
+
+      </section>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

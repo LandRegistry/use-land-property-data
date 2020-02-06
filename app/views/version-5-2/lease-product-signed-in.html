@@ -18,7 +18,7 @@
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Restrictive Covenants</li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases</li>
     </ol>
   </div>
 
@@ -27,7 +27,7 @@
     <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         <span class="govuk-caption-xl">Dataset</span>
-        Restrictive Covenants
+        RRegistered Leases
       </h1>
     </div>
   </div>
@@ -51,29 +51,22 @@
     <div class="govuk-grid-column-two-thirds">
       <h2 id="datasets" class="govuk-heading-l">The dataset</h2>
       <p class="govuk-body">
-        This data shows registered land and property in England and Wales that has a restrictive covenant.
-      </p>
-      <p class="govuk-body">
-        The data does not give details about what the restrictive covenant is.
+        This data shows registered land and property in England and Wales that has a lease registered on them. It
+        shows when the lease started and how long it lasts.
       </p>
 
       <h3 class="govuk-heading-m">
-        What is a restrictive covenant?
+        What is a registered lease?
       </h3>
       <p class="govuk-body">
-        A restrictive covenant is a contract between 2 landowners. One landowner promises the other landowner not to
-        carry out certain acts on their own land.
-      </p>
-      <p class="govuk-body">
-        Restrictive covenants usually happen when somebody selling land wishes to restrict what the buyer can do with it.
-        However, sometimes the vendor will agree to restrict their own use of the land they are keeping. The landowner
-        must comply with the covenants no matter how often the land changes hands or how out of date the covenants
-        seem to be.
+        A landlord has to register a lease on a property that lasts longer than 7 years. Some leases that are shorter
+        than 7 years are also registered.
       </p>
 
       <h2 id="example" class="govuk-heading-l">Get example data</h2>
       <p>
-        You can download example data. You do not need to create an account for the example data.
+        You can <a class="govuk-link" href="/public/files/ocod-dataset-sample.csv" download>download example data</a>.
+        You do not need to create an account for the example data.
       </p>
 
       <table id="example-data" class="govuk-table">
@@ -88,38 +81,68 @@
         <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Unique identifier</th>
-          <td class="govuk-table__cell">768G</td>
-          <td class="govuk-table__cell">99F2</td>
+          <td class="govuk-table__cell">995ab159ce951c</td>
+          <td class="govuk-table__cell">99C8C5DCA</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Tenure</th>
-          <td class="govuk-table__cell">Freehold</td>
-          <td class="govuk-table__cell">Freehold</td>
+          <td class="govuk-table__cell">Leasehold</td>
+          <td class="govuk-table__cell">Leasehold</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Register property description</th>
-          <td class="govuk-table__cell">41 Brow Lane<br>London<br>SE1 1SE</td>
-          <td class="govuk-table__cell">193 Edmund Road<br>London<br>SW17 7SW</td>
+          <td class="govuk-table__cell">84 Heather Close<br>London<br>SE11 11SE</td>
+          <td class="govuk-table__cell">Unavailable - refer to Associated Property Description</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">County</th>
           <td class="govuk-table__cell">Greater London</td>
-          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">Essex</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Region</th>
           <td class="govuk-table__cell">Greater London</td>
-          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">South East</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Associated property description ID</th>
-          <td class="govuk-table__cell">1234567</td>
-          <td class="govuk-table__cell">9876543</td>
+          <td class="govuk-table__cell">899899</td>
+          <td class="govuk-table__cell">554479999</td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell">Associated property description</th>
-          <td class="govuk-table__cell">41 Brow Lane<br>London<br>SE1 1SE</td>
-          <td class="govuk-table__cell">193 Edmund Road<br>London<br>SW17 7SW</td>
+          <td class="govuk-table__cell">84 Heather Close<br>London<br>SE11 11SE</td>
+          <td class="govuk-table__cell">Flat 40<br>Chancer House Bolt Road<br>Colchester<br>CO2 2AB</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">OS UPRN</th>
+          <td class="govuk-table__cell">900145134</td>
+          <td class="govuk-table__cell">900887655</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Price paid</th>
+          <td class="govuk-table__cell">373000</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Reg order</th>
+          <td class="govuk-table__cell">3</td>
+          <td class="govuk-table__cell">1</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Date of lease</th>
+          <td class="govuk-table__cell">23/10/1921</td>
+          <td class="govuk-table__cell">20/08/2017</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Term</th>
+          <td class="govuk-table__cell">999 years (less one day) from 10 March 1900</td>
+          <td class="govuk-table__cell">999 years from and including 1 January 2014</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Alienation Clause Indicator</th>
+          <td class="govuk-table__cell">N</td>
+          <td class="govuk-table__cell">Y</td>
         </tr>
         </tbody>
       </table>
@@ -130,14 +153,15 @@
         Technical specification
       </h4>
       <p class="govuk-body">
-        Read the technical specification for Restrictive Covenants for full details about the data.
+        <a href="restrict-tech-spec" class="govuk-link">Read the technical specification for Restrictive Covenants</a>
+         for full details about the data.
       </p>
 
       <h2 id="access" class="govuk-heading-l">
         Access the dataset
       </h2>
       <p class="govuk-body">
-        The dataset is updated on the xth working day of the month. We publish the data as .CSV files. You can
+        The dataset is updated on the 6th working day of the month. We publish the data as .CSV files. You can
         download the:
       </p>
       <ul class="govuk-list govuk-list--bullet">
@@ -159,17 +183,21 @@
 
       <h3 class="govuk-heading-m">Commercial licence</h3>
       <p class="govuk-body">
-        A commercial licence allows you to use the data in a product or service that you'll sell. You might add or
-        combine data to make your product.
+        A <a href="lease-comm-licence">commercial licence</a> allows you to use the data in a product or service that
+        you'll sell. You might add or combine data to make your product.
+      </p>
+      <p class="govuk-body">
+        The data costs £5,000 a year.
       </p>
 
       <h3 class="govuk-heading-m">Exploration licence</h3>
       <p class="govuk-body">
-        An exploration licence allows you to take the data to see if you can make a product or service to sell.
-        You'll be able to put the data in products, services or prototypes and show it to users or customers.
+        An <a href="lease-exp-licence">exploration licence</a> allows you to take the data to see if you can make a
+        product or service to sell. You'll be able to put the data in products, services or prototypes and show it
+        to users or customers.
       </p>
       <p class="govuk-body">
-        You'll get access to the data for 3 months.
+        The data is free of charge and you'll get access to the data for 3 months.
       </p>
 
 
@@ -184,15 +212,15 @@
         to sign and ask you to create an account on our service. You'll need this to access the data.
       </p>
       <p class="govuk-body">
-        Once you've returned the licence, we'll approve you're access to the dataset and you
+        Once you've returned the licence and paid any fee, we'll approve your access to the dataset and you
         can download the data.
       </p>
 
       <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
       <h3 class="govuk-heading-m">Private licence</h3>
       <p class="govuk-body">
-        A <a href="restrict-priv-licence">private licence</a> allows you to use this data for research, for personal use or for your work. <strong>You are
-        not allowed to</strong>:
+        A <a href="lease-priv-licence">private licence</a> allows you to use this data for research, for personal
+        use or for your work. <strong>You are not allowed to</strong>:
       </p>
       <ul class="govuk-list govuk-list--bullet">
         <li>show or give this dataset to anyone externally</li>
@@ -200,25 +228,25 @@
         <li>use the data in a commercial product or service</li>
         <li>make money from the data</li>
       </ul>
+      <p class="govuk-body">
+        The data is free of charge.
+      </p>
 
       <h4 class="govuk-heading-s">
         What happens next?
       </h4>
       <p class="govuk-body">
-        You'll need to create an account and agree to the licence to access the data.
+        You'll need to agree to the licence to access the data.
       </p>
       <p class="govuk-body">
-        <a class="govuk-button" href="create-account/create-account">
-          Create account
-        </a>
-        <a href="sign-in" class="govuk-link" style="padding-left: 30px; margin-top: 8px; position: absolute;">
-          Sign in
+        <a class="govuk-button" href="agree-lease-licence">
+          Agree licence
         </a>
       </p>
 
       <h2 id="contact" class="govuk-heading-l">Contact us</h2>
       <p>
-        If you need more information or you want to get the data, contact us:
+        If you need more information or you want to buy the data, contact us:
       </p>
       <p>
         <strong>Data Services Team</strong>​<br>

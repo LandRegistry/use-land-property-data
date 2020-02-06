@@ -177,6 +177,31 @@ $govuk-assets-path: '/govuk/assets/';
   padding-left: 25px;
 }
 
+.govuk-list--alpha-dot {
+  counter-reset: letter;
+
+  li:before {
+    content: counter(letter, lower-alpha) ". ";
+    counter-increment: letter;
+    padding-right: 5px;
+  }
+
+  text-indent: -25px;
+  padding-left: 25px;
+}
+
+.govuk-list--bullet-no-alpha {
+  counter-reset: disc;
+
+  li:before {
+    content: counter(disc, disc);
+    counter-increment: disc;
+    padding-right: 18px;
+  }
+
+  taxt-indent: -25px;
+  padding-left: 25px;
+}
 
 
 .black-outline {

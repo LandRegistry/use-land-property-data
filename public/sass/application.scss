@@ -62,12 +62,179 @@ $govuk-assets-path: '/govuk/assets/';
   }
 }
 
+.govuk-list--decimal2 {
+  counter-reset: num;
 
+  li:before {
+    content: "2." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal3 {
+  counter-reset: num;
+
+  li:before {
+    content: "3." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
 .govuk-list--decimal4 {
   counter-reset: num;
 
   li:before {
     content: "4." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal5 {
+  counter-reset: num;
+
+  li:before {
+    content: "5." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal6 {
+  counter-reset: num;
+
+  li:before {
+    content: "6." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal7 {
+  counter-reset: num;
+
+  li:before {
+    content: "7." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal8 {
+  counter-reset: num;
+
+  li:before {
+    content: "8." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal9 {
+  counter-reset: num;
+
+  li:before {
+    content: "9." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal10 {
+  counter-reset: num;
+
+  li:before {
+    content: "10." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal11 {
+  counter-reset: num;
+
+  li:before {
+    content: "11." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal12 {
+  counter-reset: num;
+
+  li:before {
+    content: "12." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal13 {
+  counter-reset: num;
+
+  li:before {
+    content: "13." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--decimal14 {
+  counter-reset: num;
+
+  li:before {
+    content: "14." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -40px;
+  padding-left: 40px;
+}
+.govuk-list--nested14 {
+  counter-reset: num;
+
+  li:before {
+    content: "14.1." counter(num);
+    counter-increment: num;
+    padding-right: 5px;
+  }
+
+  text-indent: -60px;
+  padding-left: 60px;
+}
+.govuk-list--decimal15 {
+  counter-reset: num;
+
+  li:before {
+    content: "15." counter(num);
     counter-increment: num;
     padding-right: 5px;
   }
@@ -87,71 +254,6 @@ $govuk-assets-path: '/govuk/assets/';
 
   text-indent: -60px;
   padding-left: 60px;
-}
-
-.govuk-list--decimal12 {
-  counter-reset: num;
-
-  li:before {
-    content: "12." counter(num);
-    counter-increment: num;
-    padding-right: 5px;
-  }
-
-  text-indent: -40px;
-  padding-left: 40px;
-}
-
-.govuk-list--decimal13 {
-  counter-reset: num;
-
-  li:before {
-    content: "13." counter(num);
-    counter-increment: num;
-    padding-right: 5px;
-  }
-
-  text-indent: -40px;
-  padding-left: 40px;
-}
-
-.govuk-list--decimal14 {
-  counter-reset: num;
-
-  li:before {
-    content: "14." counter(num);
-    counter-increment: num;
-    padding-right: 5px;
-  }
-
-  text-indent: -40px;
-  padding-left: 40px;
-}
-
-.govuk-list--nested14 {
-  counter-reset: num;
-
-  li:before {
-    content: "14.1." counter(num);
-    counter-increment: num;
-    padding-right: 5px;
-  }
-
-  text-indent: -60px;
-  padding-left: 60px;
-}
-
-.govuk-list--decimal15 {
-  counter-reset: num;
-
-  li:before {
-    content: "15." counter(num);
-    counter-increment: num;
-    padding-right: 5px;
-  }
-
-  text-indent: -40px;
-  padding-left: 40px;
 }
 
 .govuk-list--dash {
@@ -202,6 +304,34 @@ $govuk-assets-path: '/govuk/assets/';
   taxt-indent: -25px;
   padding-left: 25px;
 }
+
+.govuk-list--roman {
+  counter-reset: letter;
+
+  li:before {
+    content: counter(letter, lower-roman) ") ";
+    counter-increment: letter;
+    padding-right: 5px;
+  }
+
+  text-indent: -25px;
+  padding-left: 25px;
+}
+
+.govuk-button--blue {
+  background-color: #5694ca;
+  box-shadow: 0 2px 0 #1d70b8;
+}
+.govuk-button--blue:hover {
+  background-color: #1d70b8;
+}
+
+
+.govuk-checkboxes--inline {
+  display: inline;
+}
+
+
 
 
 .black-outline {

@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/version-6/restrict-comm-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-6/restrict-exp-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/sass/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/sass/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-6/agree-restrict-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/agree-restrict-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-6/listings-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/listings-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-6/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-priv-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-priv-licence.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/application-ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application-ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>
@@ -48,17 +51,17 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/version-6" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/version-6" />
       <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/views/version-5-2" />
       <recent name="$PROJECT_DIR$/app/views/dst" />
       <recent name="$PROJECT_DIR$/app/views/version-5-1" />
-      <recent name="$PROJECT_DIR$/app/views/version-4-1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/version-4-1" />
@@ -315,6 +318,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581683129152">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1581683129152" />
     <state x="298" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579008882243">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

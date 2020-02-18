@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/version-6/restrict-comm-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-6/restrict-exp-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-6/restrict-tech-spec.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/sass/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/sass/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-6/agree-restrict-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/agree-restrict-licence.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dst/account-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dst/account-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-6/listings-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/listings-signed-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-6/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/listings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-comm-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-comm-licence.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-exp-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-exp-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-priv-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-priv-licence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/application-ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application-ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-6/restrict-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-6/restrict-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sass/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/sass/application.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>

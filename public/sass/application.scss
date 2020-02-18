@@ -68,7 +68,7 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "2." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 11px;
   }
 
   text-indent: -40px;
@@ -80,7 +80,7 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "3." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 11px;
   }
 
   text-indent: -40px;
@@ -92,7 +92,7 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "4." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 10px;
   }
 
   text-indent: -40px;
@@ -128,7 +128,7 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "7." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 11px;
   }
 
   text-indent: -40px;
@@ -140,7 +140,7 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "8." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 9px;
   }
 
   text-indent: -40px;
@@ -152,7 +152,7 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "9." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 9px;
   }
 
   text-indent: -40px;
@@ -164,11 +164,11 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: "10." counter(num);
     counter-increment: num;
-    padding-right: 5px;
+    padding-right: 11px;
   }
 
-  text-indent: -40px;
-  padding-left: 40px;
+  text-indent: -50px;
+  padding-left: 50px;
 }
 .govuk-list--decimal11 {
   counter-reset: num;
@@ -272,13 +272,12 @@ $govuk-assets-path: '/govuk/assets/';
   li:before {
     content: counter(letter, lower-alpha) ") ";
     counter-increment: letter;
-    padding-right: 5px;
+    padding-right: 8px;
   }
 
   text-indent: -25px;
   padding-left: 25px;
 }
-
 .govuk-list--alpha-dot {
   counter-reset: letter;
 
@@ -291,18 +290,29 @@ $govuk-assets-path: '/govuk/assets/';
   text-indent: -25px;
   padding-left: 25px;
 }
-
 .govuk-list--bullet-no-alpha {
   counter-reset: disc;
 
   li:before {
     content: counter(disc, disc);
     counter-increment: disc;
-    padding-right: 18px;
+    padding-right: 15px;
   }
 
   taxt-indent: -25px;
   padding-left: 25px;
+}
+.govuk-list--alpha-cap {
+  counter-reset: letter;
+
+  li:before {
+    content: counter(letter, upper-alpha) ") ";
+    counter-increment: letter;
+    padding-right: 8px;
+  }
+
+  text-indent: -33px;
+  padding-left: 33px;
 }
 
 .govuk-list--roman {
@@ -355,6 +365,12 @@ blockquote.noquotes {
 blockquote.noquotes p {
     margin: 0;
 }
+blockquote.indent {
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #b1b4b6;
+}
+
 
 
 

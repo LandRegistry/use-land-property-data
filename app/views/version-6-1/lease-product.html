@@ -1,0 +1,299 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Registered Leases
+      </h1>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="#datasets">The dataset</a></li>
+          <li><a href="#example">Get example data</a></li>
+          <li><a href="#access">Access the dataset</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div> <!-- column-one-third -->
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 id="datasets" class="govuk-heading-l">The dataset</h2>
+      <p class="govuk-body">
+        This data shows registered land and property in England and Wales that have a lease registered on them.
+        It shows when the lease started and how long it lasts.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        What is a registered lease?
+      </h3>
+      <p class="govuk-body">
+        A landlord has to register a lease if it lasts longer than 7 years. Some leases that are shorter
+        than 7 years are also registered.
+      </p>
+
+      <h2 id="example" class="govuk-heading-l">Get example data</h2>
+      <p>
+        You can <a class="govuk-link" href="/public/files/ocod-dataset-sample.csv" download>download example data</a>.
+        You do not need to create an account for the example data.
+      </p>
+
+      <table id="example-data" class="govuk-table">
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header">Data</th>
+          <th class="govuk-table__header">Example data 1</th>
+          <th class="govuk-table__header">Example data 2</th>
+        </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Unique identifier</th>
+          <td class="govuk-table__cell">995ab159ce951c</td>
+          <td class="govuk-table__cell">99C8C5DCA</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Tenure</th>
+          <td class="govuk-table__cell">Leasehold</td>
+          <td class="govuk-table__cell">Leasehold</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Register property description</th>
+          <td class="govuk-table__cell">84 Heather Close<br>London<br>SE11 11SE</td>
+          <td class="govuk-table__cell">Unavailable - refer to Associated Property Description</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">County</th>
+          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">Essex</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Region</th>
+          <td class="govuk-table__cell">Greater London</td>
+          <td class="govuk-table__cell">South East</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Associated property description ID</th>
+          <td class="govuk-table__cell">899899</td>
+          <td class="govuk-table__cell">554479999</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Associated property description</th>
+          <td class="govuk-table__cell">84 Heather Close<br>London<br>SE11 11SE</td>
+          <td class="govuk-table__cell">Flat 40<br>Chancer House Bolt Road<br>Colchester<br>CO2 2AB</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">OS UPRN</th>
+          <td class="govuk-table__cell">900145134</td>
+          <td class="govuk-table__cell">900887655</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Price paid</th>
+          <td class="govuk-table__cell">373000</td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Reg order</th>
+          <td class="govuk-table__cell">3</td>
+          <td class="govuk-table__cell">1</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Date of lease</th>
+          <td class="govuk-table__cell">23/10/1921</td>
+          <td class="govuk-table__cell">20/08/2017</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Term</th>
+          <td class="govuk-table__cell">999 years (less one day) from 10 March 1900</td>
+          <td class="govuk-table__cell">999 years from and including 1 January 2014</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell">Alienation Clause Indicator</th>
+          <td class="govuk-table__cell">N</td>
+          <td class="govuk-table__cell">Y</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h4 class="govuk-heading-s">
+        Technical specification
+      </h4>
+      <p class="govuk-body">
+        <a href="lease-tech-spec" class="govuk-link">Read the technical specification for Registered Leases</a>
+         for full details about the data.
+      </p>
+
+      <h2 id="access" class="govuk-heading-l">
+        Access the dataset
+      </h2>
+      <h3 class="govuk-heading-m">
+        Download the data
+      </h3>
+      <p class="govuk-body">
+        The dataset is updated on the 6th working day of the month. We publish the data as .CSV files. You can
+        download the:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          complete file - this is a complete file of the current data and contains all of the changes the happened
+          during the month
+        </li>
+        <li>
+          change only file - this includes data that has changed since the previous month's release
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        Access the data with an API
+      </h3>
+      <p class="govuk-body">
+        If you have software engineering knowledge, you can access the data with an API. You'll get an API key
+        when you've:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>agreed to the licence</li>
+        <li>paid the fee if you have a commercial licence</li>
+        <li>signed in to your account</li>
+      </ul>
+      <p class="govuk-body">
+        For more information, read our guidelines on <a href="api-access">accessing data with the API</a> and
+        <a href="api-tech">API technical details</a>.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        How you can use the data
+      </h3>
+      <p class="govuk-body">
+        There are 3 different licence types - commercial, exploration and direct us. Each licence describes how you
+        can use the data.
+      </p>
+
+      <h3 class="govuk-heading-m">Commercial licence</h3>
+      <p class="govuk-body">
+        A <a href="lease-comm-licence">commercial licence</a> allows you to use the data in a product or service that
+        you'll sell. You might add or combine data to make your product.
+      </p>
+      <p class="govuk-body">
+        The data costs £5,000 a year.
+      </p>
+
+      <h3 class="govuk-heading-m">Exploration licence</h3>
+      <p class="govuk-body">
+        An <a href="lease-exp-licence">exploration licence</a> allows you to take the data for 3 months to see if you
+        can make a product or service to sell. You'll be able to put the data in products, services or prototypes and
+        show it to users or customers.
+      </p>
+      <p class="govuk-body">
+        The data is free of charge.
+      </p>
+      <p class="govuk-body">
+        You’ll need to take a commercial licence if you decide to create your product or service after evaluating the data.
+      </p>
+
+      <h3 class="govuk-heading-m">Direct Use licence</h3>
+      <p class="govuk-body">
+        A <a href="lease-priv-licence">direct use licence</a> allows you to use this data for research, for personal
+        use or for your work.
+      </p>
+      <p class="govuk-body">
+        <strong>You are not allowed to</strong>:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>show or give this dataset to anyone externally</li>
+        <li>publish the data online</li>
+        <li>use the data in a commercial product or service</li>
+        <li>make money from the data</li>
+      </ul>
+      <p class="govuk-body">
+        The data is free of charge.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        What happens next?
+      </h3>
+      <h4 class="govuk-heading-s">
+        Commercial or exploration licence
+      </h4>
+      <p class="govuk-body">
+        <a href="#contact">Contact us if you want a commercial or exploration licence</a>. We'll check this is
+        the correct licence for your needs. We'll send you the licence to sign and ask you to create an
+        account on our service. You'll need this to access the data.
+      </p>
+      <p class="govuk-body">
+        Once you've returned the licence and paid any fee, we'll approve your access to the dataset and you
+        can download the data.
+      </p>
+
+      <h4 class="govuk-heading-s">
+        Direct Use licence
+      </h4>
+      <p class="govuk-body">
+        You'll need to create an account and agree to the licence to access the data.
+      </p>
+      <p class="govuk-body">
+        <a class="govuk-button" href="create-account/create-account">
+          Create account
+        </a>
+        <a href="sign-in" class="govuk-link" style="padding-left: 30px; margin-top: 8px; position: absolute;">
+          Sign in
+        </a>
+      </p>
+
+      <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+      <p>
+        Contact us if you need help with the dataset or have any questions: 
+      </p>
+      <p>
+        <strong>Data Services Team</strong>​<br>
+        HM Land Registry​<br>
+        Rosebrae Court ​<br>
+        Woodside Ferry Approach​<br>
+        Birkenhead​<br>
+        Merseyside​<br>
+        CH41 6DU
+      </p>
+      <p>
+        Email: <a href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a>
+      </p>
+      <p>​
+        Telephone: 0300 006 0478
+      </p>
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

@@ -1,0 +1,432 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+
+
+<!-- breadcrumbs -->
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Home</li>
+  </ol>
+</div>
+
+<!-- list of available datasets -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">HM Land Registry</span>
+      Use land and property data
+    </h1>
+
+    <p class="govuk-body-l">
+      Access datasets about all registered land and property in England and Wales.
+    </p>
+    <p class="govuk-body-l">
+      This is bulk data suitable for business and professional use.
+    </p>
+    <p class="govuk-body-l">
+      You could use it in:
+    </p>
+    <ul class="govuk-body-l çgovuk-list govuk-list--bullet">
+      <li>research</li>
+      <li>your work</li>
+      <li>online data services or products</li>
+    </ul>
+    <p class="govuk-body-l">
+      Most of the data is free to access but you may need to create an account and sign a licence agreement first.
+    </p>
+    <p class="govuk-body-l">
+      Some datasets are large. You may need specialist software to open them.
+    </p>
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true" style="margin-top: 7px;">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        <a href="">Sign in to Kahootz</a> if you normally use it to access Overseas or UK companies datasets.
+        <p class="govuk-body">
+          We'll be moving Kahootz users to this service from February 2020.
+        </p>
+      </strong>
+    </div>
+
+    <!-- horizontal line to break intro paragraph and datasets -->
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+  </div> <!-- column-two-thirds -->
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <!-- column-one-third for contents list -->
+  <div class="govuk-grid-column-one-third toc">
+    <p class="govuk-body">Contents</p>
+    <ul>
+      <li><a href="#geospatial">Geospatial Data Catalogue</a></li>
+      <li><a href="#inspire">INSPIRE Index Polygon spatial data</a></li>
+      <li><a href="#nps">National Polygon Service</a></li>
+      <li><a href="#ocod">Overseas companies that own property in England and Wales</a></li>
+      <li><a href="#ppd">Price Paid Data</a></li>
+      <li><a href="#lease">Registered Leases</a></li>
+      <li><a href="#rfi">Request for Information (requisition) data</a></li>
+      <li><a href="#restrict">Restrictive Covenants</a></li>
+      <li><a href="#transaction">Transaction data</a></li>
+      <li><a href="#ccod">UK Companies that own property in England and Wales</a></li>
+      <li><a href="#hpi">UK House Price Index: reports</a></li>
+      <li><a href="#1862">1862 Act register</a></li>
+    </ul>
+  </div>
+
+  <!-- column-two-thirds for summary list of datasets -->
+  <div class="govuk-grid-column-two-thirds">
+    <!-- Geospatial dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="geospatial" class="govuk-heading-l">
+        <a href="https://www.gov.uk/government/publications/geospatial-commission-data-catalogue-hm-land-registry" class="govuk-link" target="_blank">
+          Geospatial Data Catalogue
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt></dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Open Government Licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>24.9KB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        View or download a catalogue containing information about some of the electronic data held by HM Land
+        Registry, based on datasets which are “linked to location” through title registrations.
+      </p>
+    </div>
+
+
+    <!-- INSPIRE dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="inspire" class="govuk-heading-l">
+        <a href="https://www.gov.uk/guidance/inspire-index-polygons-spatial-data" class="govuk-link" target="_blank">
+          INSPIRE Index Polygon spatial data
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Limited</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>average 15MB, GML</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        View or download HM Land Registry INSPIRE Index Polygons which show the indicative position of registered
+        freehold properties in England and Wales. The data is shown as shapes on a map. You’ll need a Geographical
+        Information System (GIS) to view the polygons.
+      </p>
+    </div>
+
+
+    <!-- NPS datasets -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="nps" class="govuk-heading-l">
+        <a href="nps-product" class="govuk-link">
+          National Polygon Service
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>£20,000 plus VAT a year</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Restricted</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>ZIP 7.5GB, CSV and shape file</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>Yes</dt>
+      </dl>
+      <p class="govuk-body">
+        Download data about registered land and property that shows:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>indicative shape and position of boundaries</li>
+        <li>legal interests and class of title</li>
+        <li>unique property reference numbers</li>
+      </ul>
+      <p class="govuk-body">
+        It costs £20,000 plus VAT a year and you’ll need to create an account to download this data.
+      </p>
+    </div>
+
+
+    <!-- Overseas companies dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="ocod" class="govuk-heading-l">
+        <a href="overseas-product" class="govuk-link">
+          Overseas companies that own property in England and Wales
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Restricted</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>38.37MB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>Yes</dt>
+      </dl>
+      <p class="govuk-body">
+        Download data about non-UK companies that own land or property in England and Wales. This dataset was
+        originally called Overseas companies ownership data (OCOD).
+      </p>
+      <p class="govuk-body">
+        You’ll need to create an account to download this data.
+      </p>
+    </div>
+
+
+    <!-- Price paid dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="ppd" class="govuk-heading-l">
+        <a href="https://www.gov.uk/government/collections/price-paid-data" class="govuk-link" target="_blank">
+          Price Paid Data
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Limited</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>30.5MB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        Download property price data for the latest property sale prices in England and Wales.
+      </p>
+    </div>
+
+
+    <!-- registered leases datasets -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="lease" class="govuk-heading-l">
+        <a href="lease-product" class="govuk-link">
+          Registered Leases
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Fee dependent on licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>3 licence types</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>ZIP 482.49MB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>Yes</dt>
+      </dl>
+      <p class="govuk-body">
+        Download data about land and property that have leases registered against them.
+      </p>
+      <p class="govuk-body">
+        It shows when the lease started and how long it lasts.
+      </p>
+      <p class="govuk-body">
+        You'll need to choose a licence based on how you're going to use the data and create an account
+        to access the dataset.
+      </p>
+    </div>
+
+
+    <!-- Request datasets -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="rfi" class="govuk-heading-l">
+        <a href="request-product" class="govuk-link">
+          Request for information (requisition) data
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Every 3 months</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Open Government Licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>33.9KB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        View or download data about the 500 customers that send the most applications to us. It shows the number
+        and type of applications we receive and complete. It also shows how many requests for information we send
+        to those customers.
+      </p>
+    </div>
+
+
+    <!-- restrictive covenants datasets -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="restrict" class="govuk-heading-l">
+        <a href="restrict-product" class="govuk-link">
+          Restrictive Covenants
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Fee dependent on licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>3 licence types</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>1.17GB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>Yes</dt>
+      </dl>
+      <p class="govuk-body">
+        Download data about all registered land and property in England and Wales that have restrictive covenants.
+      </p>
+      <p class="govuk-body">
+        The data shows if there's a restrictive covenant but it does not give details of what it is.
+      </p>
+      <p class="govuk-body">
+        You'll need to chose a licence based on how you're going to use the data and create an account to download it.
+      </p>
+    </div>
+
+
+    <!-- Transaction datasets -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="transaction" class="govuk-heading-l">
+        <a href="transaction-product" class="govuk-link">
+          Transaction Data
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Open Government Licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>550KB</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        Download data about the number and type of applications HM Land Registry complete each month.
+      </p>
+    </div>
+
+
+    <!-- UK companies dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="ccod" class="govuk-heading-l">
+        <a href="uk-product" class="govuk-link">
+          UK Companies that own property in England and Wales
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Monthly</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Restricted</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>1.3GB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>Yes</dt>
+      </dl>
+      <p class="govuk-body">
+        Download data about UK companies that own land or property in England and Wales. This data was originally
+        called Commercial and corporate data (CCOD).
+      </p>
+      <p class="govuk-body">
+        You’ll need to create an account to download this data.
+      </p>
+    </div>
+
+
+    <!-- UK house price index dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="hpi" class="govuk-heading-l">
+        <a href="https://www.gov.uk/government/collections/uk-house-price-index-reports" class="govuk-link" target="_blank">
+          UK House Price Index: reports
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Every 3 months</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Open Government Licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>56MB, CSV</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        Access reports for the UK House Price Index (UKHPI) for England, Scotland, Wales and Norther Ireland.
+        The UKHPI shows changes in the value of residential properties.
+      </p>
+    </div>
+
+    <!-- 1862 dataset -->
+    <div class="govuk-!-padding-bottom-9">
+      <h2 id="1862" class="govuk-heading-l">
+        <a href="https://www.gov.uk/guidance/1862-act-register" class="govuk-link" target="_blank">
+          1862 Act Register
+        </a>
+      </h2>
+      <dl class="govuk-body dataset-info">
+        <dd style="margin-left: 0px; width: 35%;">Cost:</dd>
+        <dt>Free of charge</dt>
+        <dd style="margin-left: 0px; width: 35%;">Updated:</dd>
+        <dt>Never</dt>
+        <dd style="margin-left: 0px; width: 35%;">Licence:</dd>
+        <dt>Open Government Licence</dt>
+        <dd style="margin-left: 0px; width: 35%;">File size and type:</dd>
+        <dt>1.5MB, JPG</dt>
+        <dd style="margin-left: 0px; width: 35%;">API available:</dd>
+        <dt>No</dt>
+      </dl>
+      <p class="govuk-body">
+        Download historical data about people and properties recorded on the 1862 Act Register. This was the first
+        land register that HM Land Registry created and was the government’s first attempt to
+        record property ownership information. It shows the owner name and property they owned.
+      </p>
+    </div>
+  </div><!-- column two-thirds -->
+</div>
+
+{% endblock %}

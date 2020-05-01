@@ -1,0 +1,351 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- back link -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<!-- full width row for page title -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Technical specification</span>
+      Registered Leases
+    </h1>
+  </div>
+</div>
+
+
+<!-- row for contents and content -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <!-- contents -->
+    <div class="toc" id="contents">
+      <p>Contents</p>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#scope">Specification scope</a></li>
+        <li><a href="#content">Data content and structure</a></li>
+        <li><a href="#quality">Data quality</a></li>
+        <li><a href="#capture">Data capture information</a></li>
+        <li><a href="#maintenance">Data maintenance</a></li>
+        <li><a href="#product">Data product delivery</a></li>
+        <li><a href="#contact">Contact information</a></li>
+      </ul>
+    </div>
+  </div> <!-- column-one-third -->
+
+
+<!-- column two-thirds for content -->
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="overview">Overview</h2>
+    <p class="govuk-body">
+      A lease is a contract which gives the right to exclusive possession of land to a tenant for a specific amount
+      of time. Leasehold is one of two ways of owning land (the other is freehold). The landlord of a freehold or
+      leasehold may grant a lease to a tenant. If the lease is granted for more than 7 years, it must be registered
+      with HM Land Registry.
+    </p>
+    <p class="govuk-body">
+      The registered leases dataset is made up of data elements relating to leasehold entries in HM Land Registry’s register.
+    </p>
+
+
+    <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+    <h3 class="govuk-heading-m">Inclusions and exclusions</h3>
+    <p>
+      Due to data protection regulations, it excludes any personal data, which may lead to fields being blank.
+      This information may be available in individual registers or in documents referred to in the register and
+      retained by HM Land Registry.
+    </p>
+
+    <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+    <p class="govuk-body">
+      The Unique Identifier (UID) will be consistent across HM Land Registry’s datasets and allow relational links
+      with other datasets with this attribute.
+    </p>
+
+    <h3 class="govuk-heading-m">
+      Address relationships
+    </h3>
+    <p class="govuk-body">
+      The UID represents an individual registered title. Where there is more than one address associated with a
+      registered title these are listed as multiple rows for the ID.
+    </p>
+
+    <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+    <h3 class="govuk-heading-m">Table 1 - Registered Leases class diagram</h3>
+    <table class="govuk-table">
+      <caption hidden>
+        Class diagram of the dataset which describes the content and structure
+      </caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Registered Leases</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr><td class="govuk-table__cell">Unique identifier</td></tr>
+      <tr><td class="govuk-table__cell">Tenure</td></tr>
+      <tr><td class="govuk-table__cell">Property Description</td></tr>
+      <tr><td class="govuk-table__cell">County</td></tr>
+      <tr><td class="govuk-table__cell">Region</td></tr>
+      <tr><td class="govuk-table__cell">Associated Property Description ID</td></tr>
+      <tr><td class="govuk-table__cell">Associated Property Description</td></tr>
+      <tr><td class="govuk-table__cell">UPRN</td></tr>
+      <tr><td class="govuk-table__cell">Price Paid</td></tr>
+      <tr><td class="govuk-table__cell">Reg Order</td></tr>
+      <tr><td class="govuk-table__cell">Date of Lease</td></tr>
+      <tr><td class="govuk-table__cell">Term</td></tr>
+      <tr><td class="govuk-table__cell">Alienation Clause Flag</td></tr>
+      <tr><td class="govuk-table__cell">Multiple Address Indicator</td></tr>
+      <tr><td class="govuk-table__cell">Change Indicator</td></tr>
+      <tr><td class="govuk-table__cell">Change Date</td></tr>
+      </tbody>
+    </table>
+
+    <br>
+    <h3 class="govuk-heading-m">Table 2 - Registered Leases table structure</h3>
+    <table class="govuk-table">
+      <caption hidden>
+        Description of the data fields in the dataset
+      </caption>
+      <thead class="govuk-table__header">
+      <tr>
+        <th scope="col" class="govuk-table__header" width="25%">Field name</th>
+        <th scope="col" class="govuk-table__header" width="20%">Data type</th>
+        <th scope="col" class="govuk-table__header" width="15%">Mandatory</th>
+        <th scope="col" class="govuk-table__header" width="40%">Description</th>
+      </tr>
+      </thead>
+      
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">Unique identifier</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">A unique reference number given to a piece of registered land</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Tenure</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">The conditions upon which a person holds land i.e. Freehold or Leasehold</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Property Description</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">The unformatted property description in the register</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">County</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Name of current County in England and Wales</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Region</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Name of a geographic region which comprises one or more current counties,
+          former counties or unitary authorities or any combination of these</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Associated Property Description ID</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Uniquely identify the Associated Property Description</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Associated Property Description</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">All Land Registry Property Gazetteer (LRPG) addresses associated with the
+          registered property. Each unique identifier may refer to multiple associated property descriptions</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">UPRN</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">A Unique Property Reference Number (UPRN) used by Ordnance Survey for the
+          spatial address of a property. If no UPRN is available, this attribute will be ‘’ (blank)</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Price Paid</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The sale price stated on the transfer deed</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Reg Order</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Leasehold titles can be comprised of 1 or more leases; the leases are represented
+          by a number in the order that they appear on the register</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Date of Lease</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Date that the lease is signed and becomes a legal document. This may not be the
+          start of the lease term</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Term</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The period for which the lease is granted. There is no standard format for
+          this entry</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Alienation Clause Flag</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Indicates whether an alienation clause, which limits the lessee’s power to
+          dispose of the lease (re-assign, transfer, sublet or share occupation) is present in the register</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Change Indicator (change only update file)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">Indicates the type of change made to a row in the change only update file: <br>
+          A indicates a new entry<br>
+          D indicates an entry has been removed</td>
+      </tr>
+
+      <tr>
+        <td class="govuk-table__cell">Change Date<br>(change only update file)</td>
+        <td class="govuk-table__cell">Date</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The date of the extract of the change only update</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+    <p class="govuk-body">
+      The dataset is made up of elements copied from HM Land Registry’s database systems via an automated process.
+      Before we release the dataset, we check it for inclusions and exclusions through a quality control process.
+      We try to make sure our public data is accurate but cannot guarantee it is free from errors or fit for your
+      purpose or use.
+    </p>
+    
+    <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+    <p class="govuk-body">
+      Leases granted for a period in excess of 7 years are entered in the register as leasehold titles by HM Land Registry.
+    </p>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+    <p class="govuk-body">
+      The published data gives a snapshot of information from leasehold titles at the point of monthly extraction.
+    </p>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h2 class="govuk-heading-l" id="product">Data product delivery</h2>
+    <h3 class="govuk-heading-m">Access to the dataset</h3>
+    <p class="govuk-body">
+      Two files will be published from the 6th working day of the month.
+    </p>
+    <p class="govuk-body">
+      The data is published in both a monthly complete file and a file that only shows changes to the dataset
+      since the previous month. This is known as the change only update file.
+    </p>
+    <p class="govuk-body">
+      Once the full dataset has been downloaded, the UID allows users to maintain the data by adding the change
+      only update to the full dataset each month. Alternatively, the user can download the full dataset again,
+      which also contains all changes made to date.
+    </p>
+    
+    <h3 class="govuk-heading-m">Granting access</h3>
+    <p class="govuk-body">
+      You’ll need to create an account on the Use Land and Property Data service.
+    </p>
+    <p class="govuk-body">
+      To create the account, you’ll need to provide some information about yourself. We collect and hold
+      personal and non-personal information, which may be validated, to identify who has requested the data.
+      For more information about how HMLR handles personal data, see the
+      <a href="https://www.gov.uk/government/organisations/land-registry/about/personal-information-charter">
+        Personal information charter</a>.
+    </p>
+    <p class="govuk-body">
+      There are 3 different licences for this dataset. You have to choose which licence you need based on how
+      you’re going to use the data. Once your account has been approved and you’ve agreed to the correct licence,
+      you can sign in to the service to access the data.
+    </p>
+    
+    <h3 class="govuk-heading-m">File structure</h3>
+    <p class="govuk-body">
+      The data is provided as a .CSV file. The data in each file will:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
+      <li>enclose all fields within double-quotes: ”” (ASCII 34)</li>
+      <li>send blank fields without a character between double: ””</li>
+      <li>use UTF-8 encoding (the way characters are coded for websites)</li>
+      <li>have line separation removed</li>
+      <li>have the column heading name as the first row</li>
+      <li>have the row count as the last row</li>
+    </ul>
+    
+    <h3 class="govuk-heading-m">File name</h3>
+    <p class="govuk-body">
+      The file names will be structured as follows:
+    </p>
+    <p class="govuk-body">
+      Monthly full extract<br>
+      file Name: REGISTERED_LEASES_FULL_<1>_<2>.csv<br>
+      <1>Year <2> Month<br>
+      Example file name structure for October 2018: REG_LEASES_FULL_2018_10.csv
+    </p>
+    <p class="govuk-body">
+      Monthly change only update (COU)<br>
+      File Name: REGISTERED_LEASES_COU_<1>_<2>.csv<br>
+      <1>Year <2> Month<br>
+      Example file name structure for October 2018: REG_LEASES_COU_2018_10.csv
+    </p>
+
+    <h3 class="govuk-heading-m">File management</h3>
+    <p class="govuk-body">
+      The current full file and current change only update file will be available for download each month.
+    </p>
+
+    <h2 class="govuk-heading-l" id="contact">Contact information</h2>
+    <h3 class="govuk-heading-s">
+      Telephone
+    </h3>
+    <ul class="govuk-list">
+      <li>Telephone: 0300 006 0478</li>
+      <li>Monday to Friday, 9am to 5pm</li>
+    </ul>
+    <p class="govuk-body">
+      <a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
+    </p>
+
+    <h3 class="govuk-heading-s">
+      Email
+    </h3>
+    <ul class="govuk-list">
+      <li><a class="govuk-link" href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a></li>
+      <li>We aim to respond within 2 working days</li>
+    </ul>
+  </div>
+</div>
+
+
+{% endblock %}

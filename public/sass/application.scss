@@ -329,11 +329,11 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .govuk-button--blue {
-  background-color: #5694ca;
-  box-shadow: 0 2px 0 #1d70b8;
+  background-color: #1d70b8;
+  box-shadow: 0 2px 0 #003078;
 }
 .govuk-button--blue:hover {
-  background-color: #1d70b8;
+  background-color: #155084;
 }
 
 
@@ -447,44 +447,47 @@ blockquote.indent {
 
 
 
-
-
-
-
-
-
-
-.blue-box {
-  background-color: #005ea5;
-  padding: 30px;
-  overflow: auto;
-  margin-bottom: 30px;
-  @media (max-width: 620px) {
-    padding:4%;
-  }
-  h1, p, ul, span {
-    color: white;
-  }
-   .white-link-text {
-     color: #fff !important;
-     font-weight: bold;
-   }
-   .download span {
-     color:#0b0c0c !important;
-    text-decoration: none !important;
-   }
-}
-
-
-.darker-blue {
-  float: left;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  background: #08477e;
+.blue-border {
+  color: #0b0c0c;
   padding: 15px;
-  overflow: auto;
-  width: 45%;
+  margin-bottom: 0px;
+  border: 5px solid #1d70b8;
 }
+.blue-border__body {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+
+
+.cookie-banner {
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  color: #0b0c0c;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #f3f2f1;
+}
+.cookie-button {
+    margin-right: 30px;
+    width: 270px;
+}
+
+
+
+
 
 
 

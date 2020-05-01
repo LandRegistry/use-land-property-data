@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- signed in details -->
+<div class="govuk-body heading-nav">
+    <p class="govuk-body">Logged in as: BK123PQ</p>
+</div>
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+        <h1 class="govuk-heading-xl">
+            Worklist
+        </h1>
+
+        <!-- Tab list -->
+        <div class="govuk-tabs" data-module="govuk-tabs">
+            <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#applications">
+                        Applications
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#search">
+                        Search
+                    </a>
+                </li>
+            </ul> <!-- tabs list -->
+
+            <!-- My datasets tab -->
+            <section class="govuk-tabs__panel" id="applications">
+                <h2 class="govuk-heading-m">
+                    Applications
+                </h2>
+
+                <table class="govuk-table">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col" width="15%">Date</th>
+                            <th class="govuk-table__header" scope="col" width="40%">Name</th>
+                            <th class="govuk-table__header" scope="col" width="15%">Status</th>
+                            <th class="govuk-table__header" scope="col" width="15%">Details</th>
+                            <th class="govuk-table__header" scope="col" width="15%">Locked status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">05/03/2019</td>
+                            <td class="govuk-table__cell">Miss Amy Jones</td>
+                            <td class="govuk-table__cell">Pending</td>
+                            <td class="govuk-table__cell"><a href="">View details</a></td>
+                            <td class="govuk-table__cell"></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">15/03/2019</td>
+                            <td class="govuk-table__cell">Mr Tom Jones</td>
+                            <td class="govuk-table__cell">Pending</td>
+                            <td class="govuk-table__cell"><a href="">View details</a></td>
+                            <td class="govuk-table__cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section> <!-- applications tab -->
+
+            <section class="govuk-tabs__panel" id="search">
+                <p class="govuk-body">
+                    <a href="">View last 50 applications</a>
+                </p>
+                <p class="govuk-body">
+                    or
+                </p>
+                <p class="govuk-body">
+                    To search all applications and accounts, enter text in any box.
+                </p>
+
+                <fieldset class="govuk-fieldset">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="first-name">
+                            First name
+                        </label>
+                        <input class="govuk-input" id="first-name" name="first-name" type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="last-name">
+                            Last name
+                        </label>
+                        <input class="govuk-input" id="last-name" name="last-name" type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="org-name">
+                            Organisation name
+                        </label>
+                        <input class="govuk-input" id="org-name" name="org-name" type="text">
+                    </div>
+
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="email">
+                            Email
+                        </label>
+                        <input class="govuk-input" id="email" name="email" type="text">
+                    </div>
+                </fieldset>
+                <p class="govuk-body">
+                    <a class="govuk-button" href="">
+                        Search
+                    </a>
+                </p>
+            </section> <!-- search tab -->
+        </div> <!-- tabs -->
+    </div>
+</div>
+
+{% endblock %}

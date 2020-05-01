@@ -81,9 +81,116 @@ Use land and property data
       Enter the text for your note.
     </p>
     <textarea class="govuk-textarea" rows="5"></textarea>
+    <button class="govuk-button govuk-button--blue">
+      Add note
+    </button>
 
-    ...
+    <hr class="govuk-section-break govuk-section-break--m">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h2 class="govuk-fieldset__heading">
+            Actions
+          </h2>
+        </legend>
 
+        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+              Approve
+            </label>
+            <span id="approve-hint" class="govuk-hint govuk-radios__hint">
+              Approving an application will create an account and send the user an activation email.
+            </span>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional">
+            <div class="govuk-form-group">
+              <button class="govuk-button">
+                Approve
+              </button>
+            </div>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+            <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+              Decline
+            </label>
+            <span id="decline-hint" class="govuk-hint govuk-radios__hint">
+              Declining an application will remove that users account and send them an email with the reason they were declined.
+            </span>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+            <div class="govuk-form-group">
+              <p class="govuk-body">
+                When declining an application enter an appropriate reason.
+              </p>
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <p class="govuk-body">
+                      Common decline reasons:
+                    </p>
+                  </legend>
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                        Company not found on companies house
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                        Company Registration Number does not match the registration number on the companies house website
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                        Company switchboard has no knowledge of applicant
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                        Charity cannot be found on the CC website
+                      </label>
+                    </div>
+                    <div class="govuk-radios__divider">or</div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="where-do-you-live-6" name="where-do-you-live" type="radio" value="abroad">
+                      <label class="govuk-label govuk-radios__label" for="where-do-you-live-6">
+                        Charity Registration number does not match
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <hr class="govuk-section-break govuk-section-break--m">
+                <button class="govuk-button govuk-button--blue">
+                  Add reason
+                </button>
+
+                <p class="govuk-body">
+                  Decline reason text
+                </p>
+                <textarea class="govuk-textarea" rows="3"></textarea>
+                <p class="govuk-body">
+                  Decline next steps
+                </p>
+                <textarea class="govuk-textarea" rows="8"></textarea>
+
+                <button class="govuk-button govuk-button--warning">
+                  Decline
+                </button>
+              </div>
+            </div>
+          </div>
+      </fieldset>
+    </div>
   </div>
 </div>
 

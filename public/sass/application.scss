@@ -314,6 +314,18 @@ $govuk-assets-path: '/govuk/assets/';
   text-indent: -33px;
   padding-left: 33px;
 }
+.govuk-list--alpha-cap-double {
+  counter-reset: letter;
+
+  li:before {
+    content:"(" counter(letter, upper-alpha) ") ";
+    counter-increment: letter;
+    padding-right: 8px;
+  }
+
+  text-indent: -37px;
+  padding-left: 37px;
+}
 
 .govuk-list--roman {
   counter-reset: letter;
@@ -327,6 +339,19 @@ $govuk-assets-path: '/govuk/assets/';
   text-indent: -25px;
   padding-left: 25px;
 }
+.govuk-list--roman-dot {
+  counter-reset: letter;
+
+  li:before {
+    content: counter(letter, lower-roman) ". ";
+    counter-increment: letter;
+    padding-right: 5px;
+  }
+
+  text-indent: -30px;
+  padding-left: 30px;
+}
+
 
 .govuk-button--blue {
   background-color: #1d70b8;

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/version-13/inspire-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-13/restrict-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-13/restrict-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-13/restrict-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-13/restrict-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-13/inspire-download.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-13/inspire-download.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>
@@ -48,23 +48,23 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/version-13" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/version-13" />
+      <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/app/views/version-12" />
+      <recent name="$PROJECT_DIR$/app/views/version-11" />
+      <recent name="$PROJECT_DIR$/app/views/version-7-8-9" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/version-4-1" />
       <recent name="$PROJECT_DIR$/app/views/version-1-1" />
       <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/views/version-1-1/create-account" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/app/views/version-12" />
-      <recent name="$PROJECT_DIR$/app/views/version-11" />
-      <recent name="$PROJECT_DIR$/app/views/version-7-8-9" />
-      <recent name="$PROJECT_DIR$/app/views/version-6" />
     </key>
   </component>
   <component name="RunManager">

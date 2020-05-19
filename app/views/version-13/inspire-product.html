@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+  <!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">INSPIRE Index Polygons spatial data</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        INSPIRE Index Polygons spatial data
+      </h1>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="#datasets">The dataset</a></li>
+          <li><a href="#how">How you can use the data</a></li>
+          <li><a href="#access">How to get the data</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div> <!-- column-one-third -->
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 id="datasets" class="govuk-heading-l">
+        The dataset
+      </h2>
+      <p class="govuk-body">
+        INSPIRE Index Polygons is an open source dataset, developed to comply with the
+        <a href="http://eur-lex.europa.eu/JOHtml.do?uri=OJ:L:2007:108:SOM:EN:HTML">INSPIRE Directive</a>. It contains
+        the locations of freehold registered property in England and Wales, a sub-set of our Index Polygons for all
+        freehold land and property.
+      </p>
+      <p class="govuk-body">
+        Polygons are shapes that show the position and indicative extent of a registered property. Each INSPIRE
+        Index Polygon has a unique identification number called the Land Registry-INSPIRE ID that relates to a
+        registered title.
+      </p>
+      <p class="govuk-body">
+        The extent of the land contained in any registered title cannot be established from the INSPIRE Index Polygons.
+        This can only be identified from the individual title plan.
+      </p>
+      <p class="govuk-body">
+        Each registered title will have a single title number, which may contain several separate polygons. Each
+        individual polygon will have a separate Land Registry-INSPIRE ID. If a property or piece of land does not
+        have a Land Registry-INSPIRE ID, it is possible that it is not registered. Alternatively, it could be a
+        leasehold registration or one of the other tenures that are not present in our INSPIRE Index Polygons.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Technical specification
+      </h3>
+      <p class="govuk-body">
+        This dataset contains predefined sets of data corresponding to local authority areas in England and Wales.
+        If a set of Polygons straddle local authority boundaries, they are included in each local authority set
+        they fall within.
+      </p>
+   <!--   <p class="govuk-body">
+        <a href="inspire-tech-spec" class="govuk-link">Read the technical specification for INSPIRE Index Polygons
+          spatial data</a> for full details about the data and what the column headings mean.
+      </p> -->
+
+      <h2 id="how" class="govuk-heading-l">
+        How you can use the data
+      </h2>
+      <p class="govuk-body">
+        The data is available free of charge for use and re-use under the 
+        <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a> (OGL).
+      </p>
+      <p class="govuk-body">
+        Make sure that you understand the terms of the OGL before using the data. If you use or publish this data,
+        you must add the following attribution statement:
+      </p>
+      <blockquote class="noquotes">
+        <p class="govuk-body">
+          Contains HM Land Registry data © Crown copyright and database right 2020. This data is licensed under the
+          Open Government Licence v3.0.
+        </p>
+      </blockquote>
+      <p class="govuk-body">
+        If you are reusing the polygons (including the associated geometry, namely x, y co-ordinates), you must also
+        display the following Ordnance Survey copyright/database right notice:
+      </p>
+      <blockquote class="noquotes">
+        <p class="govuk-body">
+          © Crown copyright and database rights 2020 Ordnance Survey 100026316.
+        </p>
+      </blockquote>
+      <p class="govuk-body">
+        You must provide a link to these conditions, where possible.
+      </p>
+
+      <h2 id="access" class="govuk-heading-l">
+        How to get the data
+      </h2>
+      <p class="govuk-body">
+        This data is updated on the first Sunday each month.
+      </p>
+      <p class="govuk-body">
+        You will need a Geographical Information System (GIS) to view the downloaded INSPIRE Index Polygons.
+      </p>
+      <p class="govuk-body">
+        You can download or view the data online.
+      </p>
+      <a href="inspire-download" role="button" class="govuk-button">
+        Access the data
+      </a>
+
+      <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+      <p class="govuk-body">
+        If you have any questions about this data, email our customer service team.
+      </p>
+      <h3 class="govuk-heading-s">
+        Email
+      </h3>
+      <ul class="govuk-list">
+        <li><a class="govuk-link" href="mailto:customer.service@landregistry.gov.uk">customer.service@landregistry.gov.uk​</a></li>
+        <li>We aim to respond within 2 working days</li>
+      </ul>
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

@@ -42,7 +42,7 @@
         <li><a href="#capture">Data capture information</a></li>
         <li><a href="#maintenance">Data maintenance</a></li>
         <li><a href="#product">Data product delivery</a></li>
-        <li><a href="#contact">Contact us</a></li>
+        <li><a href="#contact">Contact information</a></li>
       </ul>
     </div>
   </div> <!-- column-one-third -->
@@ -50,8 +50,18 @@
   <div class="govuk-grid-column-two-thirds">
     <h2 id="overview" class="govuk-heading-l">Overview</h2>
     <p class="govuk-body">
-      Transaction Data includes 5 different datasets that show how many customer applications we completed during
-      the previous month. The applications are:
+      Transaction data is a dataset that shows how many customer applications HM Land Registry (HMLR) completed in
+      the preceding month. We publish 5 files each month based on customer and location.
+    </p>
+
+    <h2 class="govuk-heading-l" id="scope">
+      Specification scope
+    </h2>
+    <h3 class="govuk-heading-m">
+      Inclusions and exclusions
+    </h3>
+    <p class="govuk-body">
+      The data includes the following application services:
     </p>
     <ul class="govuk-list govuk-list--bullet">
       <li>first registrations</li>
@@ -61,29 +71,25 @@
       <li>official copies</li>
       <li>official searches</li>
     </ul>
+    <p class="govuk-body">
+      Pending applications, bankruptcy applications and bulk applications are excluded.
+    </p>
 
-    <h2 class="govuk-heading-l" id="scope">
-      Specification scope
-    </h2>
     <h3 class="govuk-heading-m">
-      Inclusions and exclusions
+      Relationship to other HM Land Registry data products
     </h3>
     <p class="govuk-body">
-      The data includes most applications but excludes:
+      The Account Customer field may allow relational links to be made with other HMLR datasets that also contain this field.
     </p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>bankruptcy applications</li>
-      <li>bulk applications</li>
-      <li>applications that we've received but not yet completed</li>
-    </ul>
 
     <h2 class="govuk-heading-l" id="content">
       Data content and structure
     </h2>
     <h3 class="govuk-heading-m">
-      Table 1 - class diagram
+      Diagram 1: Applications by authority - Class diagram
     </h3>
     <table class="govuk-table">
+      <caption hidden>Class diagram describing the content and structure of the applications by authority file</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th scope="col" class="govuk-table__header">
@@ -111,9 +117,141 @@
 
     <hr class="govuk-section-break govuk-section-break--l">
     <h3 class="govuk-heading-m">
-      Table 2 - class diagram
+      Table 1: Applications by local authority - Table structure
+    </h3>
+
+    <table class="govuk-table">
+      <caption hidden>Description of the data fields in the applications by authority file</caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Field name</th>
+        <th scope="col" class="govuk-table__header">Data type</th>
+        <th scope="col" class="govuk-table__header">Mandatory</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">Local Authority</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          The local authority under which the transaction took place
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">FR</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application for a first registration of land both freehold and leasehold. For leasehold this applies
+          when the landlord’s title is not registered
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DFL</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application for the registration of a new lease granted by the proprietor of registered land
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TP</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to register the transfer of part of a registered title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DLG</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application in respect of registered land. This includes transfers of title, charges and notices
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(W)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPW)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search the whole of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(P)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for part of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPP)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search a part of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SIMS</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Searches of the index map; completed against the current Ordnance Survey map
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OC1</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to obtain an official copy of a register or title plan represents a true record of
+          entries in the register and extent of the registered title at a specific date and time. The data
+          includes historical editions of the register and title plan where they are kept by the registrar
+          in electronic form
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OC2</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to obtain a copy of a document referred to in the register or relates to an
+          application. This includes correspondence, surveys, application forms and emails relating to
+          applications that are pending, cancelled or completed
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Total</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Total applications
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">
+      Diagram 2: Applications by region - Class diagram
     </h3>
     <table class="govuk-table">
+      <caption hidden>Class diagram describing the content and structure of the applications by region file</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th scope="col" class="govuk-table__header">
@@ -141,9 +279,140 @@
 
     <hr class="govuk-section-break govuk-section-break--l">
     <h3 class="govuk-heading-m">
-      Table 3 - class diagram
+      Table 2: Applications by region - Table structure
+    </h3>
+
+    <table class="govuk-table">
+      <caption hidden>Description of the data fields in the applications by region file</caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Field name</th>
+        <th scope="col" class="govuk-table__header">Data type</th>
+        <th scope="col" class="govuk-table__header">Mandatory</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">Region</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          The local authority under which the transaction took place
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">FR</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application for a first registration of land both freehold and leasehold. For leasehold this applies
+          when the landlord’s title is not registered
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DFL</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application for the registration of a new lease granted by the proprietor of registered land
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TP</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to register the transfer of part of a registered title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DLG</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application in respect of registered land. This includes transfers of title, charges and notices
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(W)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPW)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search the whole of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(P)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for part of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPP)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search a part of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SIMS</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Searches of the index map; completed against the current Ordnance Survey map
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OC1</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to obtain an official copy of a register or title plan represents a true record of
+          entries in the register and extent of the registered title at a specific date and time. The data
+          includes historical editions of the register and title plan where they are kept by the registrar
+          in electronic form
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OC2</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to obtain a copy of a document referred to in the register or relates to an
+          application. This includes correspondence, surveys, application forms and emails relating to
+          applications that are pending, cancelled or completed
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Total</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Total applications
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">
+      Diagram 3: Applications by account customer - Class diagram
     </h3>
     <table class="govuk-table">
+      <caption hidden>Class diagram describing the content and structure of the applications by account customer file</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th scope="col" class="govuk-table__header">
@@ -171,9 +440,139 @@
 
     <hr class="govuk-section-break govuk-section-break--l">
     <h3 class="govuk-heading-m">
-      Table 4 - class diagram
+      Table 3: Applications by account customers - Table structure
     </h3>
     <table class="govuk-table">
+      <caption hidden>Description of the data fields in the applications by account customer file</caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Field name</th>
+        <th scope="col" class="govuk-table__header">Data type</th>
+        <th scope="col" class="govuk-table__header">Mandatory</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">Account Customer</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          The account customer who made the application
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">FR</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application for a first registration of land both freehold and leasehold. For leasehold this applies
+          when the landlord’s title is not registered
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DFL</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application for the registration of a new lease granted by the proprietor of registered land
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TP</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to register the transfer of part of a registered title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DLG</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application in respect of registered land. This includes transfers of title, charges and notices
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(W)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPW)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search the whole of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(P)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for part of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPP)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search a part of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SIMS</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Searches of the index map; completed against the current Ordnance Survey map
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OC1</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to obtain an official copy of a register or title plan represents a true record of
+          entries in the register and extent of the registered title at a specific date and time. The data
+          includes historical editions of the register and title plan where they are kept by the registrar
+          in electronic form
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OC2</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to obtain a copy of a document referred to in the register or relates to an
+          application. This includes correspondence, surveys, application forms and emails relating to
+          applications that are pending, cancelled or completed
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Total</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Total applications
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">
+      Diagram 4: Searches by account customer - Class diagram
+    </h3>
+    <table class="govuk-table">
+      <caption hidden>Class diagram describing the content and structure of the searches by account customer file</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th scope="col" class="govuk-table__header">
@@ -194,9 +593,77 @@
 
     <hr class="govuk-section-break govuk-section-break--l">
     <h3 class="govuk-heading-m">
-      Table 5 - class diagram
+      Table 4: Searches by account customers - Table structure
     </h3>
     <table class="govuk-table">
+      <caption hidden>Description of the data fields in the searches by account customer file</caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Field name</th>
+        <th scope="col" class="govuk-table__header">Data type</th>
+        <th scope="col" class="govuk-table__header">Mandatory</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">Account Customer</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          The account customer who made the application
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(W)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPW)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search the whole of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(P)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to protect a transaction for value, such as purchase, lease or charge for part of a title
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">OS(NPP)</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          An application to search a part of the register without getting priority
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Total</td>
+        <td class="govuk-table__cell">CharacterString</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Total searches
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">
+      Diagram 5: Transactions for value by customer - Class diagram
+    </h3>
+    <table class="govuk-table">
+      <caption hidden>Class diagram describing the content and structure of the transactions for value by customer file</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th scope="col" class="govuk-table__header">
@@ -217,268 +684,10 @@
 
     <hr class="govuk-section-break govuk-section-break--l">
     <h3 class="govuk-heading-m">
-      Table 6 - Applications in England and Wales divided by local authority table structure
+      Table 5 - Transactions for value by customer - Table structure
     </h3>
-
     <table class="govuk-table">
-      <thead class="govuk-table__head">
-      <tr>
-        <th scope="col" class="govuk-table__header">Field name</th>
-        <th scope="col" class="govuk-table__header">Data type</th>
-        <th scope="col" class="govuk-table__header">Mandatory</th>
-        <th scope="col" class="govuk-table__header">Description</th>
-      </tr>
-      </thead>
-
-      <tbody class="govuk-table__body">
-      <tr>
-        <td class="govuk-table__cell">Local Authority</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          The local authority under which the transaction took place.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">FR</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application for a first registration of land both freehold and leasehold. For leasehold this applies
-          when the landlord’s title is not registered.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">DFL</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application for the registration of a new lease granted by the proprietor of registered land.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">TP</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to register the transfer of part of a registered title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">DLG</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application in respect of registered land. This includes transfers of title, charges and notices.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(W)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPW)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search the whole of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(P)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for part of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPP)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search a part of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">SIMS</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          Searches of the index map; completed against the current Ordnance Survey map.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OC1</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to obtain an official copy of a register or title plan represents a true record of
-          entries in the register and extent of the registered title at a specific date and time. The data
-          includes historical editions of the register and title plan where they are kept by the registrar
-          in electronic form.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OC2</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to obtain a copy of a document referred to in the register or relates to an
-          application. This includes correspondence, surveys, application forms and emails relating to
-          applications that are pending, cancelled or completed.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">Total</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          Total applications.
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <hr class="govuk-section-break govuk-section-break--l">
-    <h3 class="govuk-heading-m">
-      Table 7 - Applications in England and Wales divided by region table structure
-    </h3>
-
-    <table class="govuk-table">
-      <thead class="govuk-table__head">
-      <tr>
-        <th scope="col" class="govuk-table__header">Field name</th>
-        <th scope="col" class="govuk-table__header">Data type</th>
-        <th scope="col" class="govuk-table__header">Mandatory</th>
-        <th scope="col" class="govuk-table__header">Description</th>
-      </tr>
-      </thead>
-
-      <tbody class="govuk-table__body">
-      <tr>
-        <td class="govuk-table__cell">Region</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          The region under which the transaction took place.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">FR</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application for a first registration of land both freehold and leasehold. For leasehold this applies
-          when the landlord’s title is not registered.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">DFL</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application for the registration of a new lease granted by the proprietor of registered land.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">TP</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to register the transfer of part of a registered title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">DLG</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application in respect of registered land. This includes transfers of title, charges and notices.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(W)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPW)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search the whole of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(P)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for part of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPP)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search a part of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">SIMS</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          Searches of the index map; completed against the current Ordnance Survey map.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OC1</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to obtain an official copy of a register or title plan represents a true record of
-          entries in the register and extent of the registered title at a specific date and time. The data
-          includes historical editions of the register and title plan where they are kept by the registrar
-          in electronic form.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OC2</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to obtain a copy of a document referred to in the register or relates to an
-          application. This includes correspondence, surveys, application forms and emails relating to
-          applications that are pending, cancelled or completed.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">Total</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          Total applications.
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <hr class="govuk-section-break govuk-section-break--l">
-    <h3 class="govuk-heading-m">
-      Table 8 - Applications by all account customers table structure
-    </h3>
-
-    <table class="govuk-table">
+      <caption hidden>Description of the data fields in the transactions for value by customer file</caption>
       <thead class="govuk-table__head">
       <tr>
         <th scope="col" class="govuk-table__header">Field name</th>
@@ -494,7 +703,7 @@
         <td class="govuk-table__cell">CharacterString</td>
         <td class="govuk-table__cell">Yes</td>
         <td class="govuk-table__cell">
-          The account customer who submitted the transaction.
+          The account customer who made the application
         </td>
       </tr>
       <tr>
@@ -502,8 +711,8 @@
         <td class="govuk-table__cell">CharacterString</td>
         <td class="govuk-table__cell">No</td>
         <td class="govuk-table__cell">
-          An application for a first registration of land both freehold and leasehold. For leasehold this applies
-          when the landlord’s title is not registered.
+          An application for a first registration of land both freehold and leasehold for value. For leasehold, this
+          applies when the landlord’s title is not registered
         </td>
       </tr>
       <tr>
@@ -511,7 +720,7 @@
         <td class="govuk-table__cell">CharacterString</td>
         <td class="govuk-table__cell">No</td>
         <td class="govuk-table__cell">
-          An application for the registration of a new lease granted by the proprietor of registered land.
+          An application for the registration of a new lease granted by the proprietor of registered land for value
         </td>
       </tr>
       <tr>
@@ -519,7 +728,7 @@
         <td class="govuk-table__cell">CharacterString</td>
         <td class="govuk-table__cell">No</td>
         <td class="govuk-table__cell">
-          An application to register the transfer of part of a registered title.
+          An application to register the transfer of part of a registered title for value
         </td>
       </tr>
       <tr>
@@ -527,68 +736,7 @@
         <td class="govuk-table__cell">CharacterString</td>
         <td class="govuk-table__cell">No</td>
         <td class="govuk-table__cell">
-          An application in respect of registered land. This includes transfers of title, charges and notices.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(W)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPW)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search the whole of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(P)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for part of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPP)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search a part of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">SIMS</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          Searches of the index map; completed against the current Ordnance Survey map.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OC1</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to obtain an official copy of a register or title plan represents a true record of
-          entries in the register and extent of the registered title at a specific date and time. The data
-          includes historical editions of the register and title plan where they are kept by the registrar
-          in electronic form.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OC2</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to obtain a copy of a document referred to in the register or relates to an
-          application. This includes correspondence, surveys, application forms and emails relating to
-          applications that are pending, cancelled or completed.
+          An application in respect of registered land. This includes transfers of title ownership for value
         </td>
       </tr>
       <tr>
@@ -602,148 +750,14 @@
       </tbody>
     </table>
 
-    <hr class="govuk-section-break govuk-section-break--l">
-    <h3 class="govuk-heading-m">
-      Table 9 - Number and types of transaction for value by all account customers table structure
-    </h3>
-
-    <table class="govuk-table">
-      <thead class="govuk-table__head">
-      <tr>
-        <th scope="col" class="govuk-table__header">Field name</th>
-        <th scope="col" class="govuk-table__header">Data type</th>
-        <th scope="col" class="govuk-table__header">Mandatory</th>
-        <th scope="col" class="govuk-table__header">Description</th>
-      </tr>
-      </thead>
-
-      <tbody class="govuk-table__body">
-      <tr>
-        <td class="govuk-table__cell">Account Customer</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          The account customer who submitted the transaction.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">FR</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application for a first registration of land both freehold and leasehold. For leasehold this applies
-          when the landlord’s title is not registered.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">DFL</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application for the registration of a new lease granted by the proprietor of registered land.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">TP</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to register the transfer of part of a registered title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">DLG</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application in respect of registered land. This includes transfers of title, charges and notices.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">Total</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          Total applications.
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-    <hr class="govuk-section-break govuk-section-break--l">
-    <h3 class="govuk-heading-m">
-      Table 10 - Number of searches by all account customers table structure
-    </h3>
-
-    <table class="govuk-table">
-      <thead class="govuk-table__head">
-      <tr>
-        <th scope="col" class="govuk-table__header">Field name</th>
-        <th scope="col" class="govuk-table__header">Data type</th>
-        <th scope="col" class="govuk-table__header">Mandatory</th>
-        <th scope="col" class="govuk-table__header">Description</th>
-      </tr>
-      </thead>
-
-      <tbody class="govuk-table__body">
-      <tr>
-        <td class="govuk-table__cell">Account Customer</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          The account customer who submitted the transaction.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(W)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for the whole of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPW)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search the whole of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(P)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to protect a transaction for value, such as purchase, lease or charge for part of a title.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">OS(NPP)</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">No</td>
-        <td class="govuk-table__cell">
-          An application to search a part of the register without getting priority.
-        </td>
-      </tr>
-      <tr>
-        <td class="govuk-table__cell">Total</td>
-        <td class="govuk-table__cell">CharacterString</td>
-        <td class="govuk-table__cell">Yes</td>
-        <td class="govuk-table__cell">
-          Total applications.
-        </td>
-      </tr>
-      </tbody>
-    </table>
 
     <hr class="govuk-section-break govuk-section-break--l">
     <h2 id="quality" class="govuk-heading-l">
       Data quality
     </h2>
     <p class="govuk-body">
-      Transaction datasets are created automatically from HM Land Registry databases. We try to make sure that
-      the data is accurate. This cannot be guaranteed and the data may contain errors.
+      We try to make sure that our public data is accurate, but we cannot guarantee that it is free from errors or
+      fit for your purpose or use.
     </p>
 
     <h2 id="capture" class="govuk-heading-l">
@@ -751,15 +765,15 @@
     </h2>
     <p class="govuk-body">
       This dataset contains data we collect about customers and their applications. Most applications from
-      professional customers are made electronically. They send applications either via the Business Gateway
-      or directly from the lender’s computer system. The applications are entered automatically to the day list.
+      professional customers are made electronically. They send applications to HMLR either via the Business
+      Gateway or directly from the lender’s computer system.
     </p>
 
     <h2 id="maintenance" class="govuk-heading-l">
       Data maintenance
     </h2>
     <p class="govuk-body">
-      The datasets are updated on a monthly basis on the 15th working day of that month.
+      We update the dataset monthly. It’s available to access on the 15th working day of the following month.
     </p>
 
     <h2 id="product" class="govuk-heading-l">
@@ -769,22 +783,25 @@
       Access to the dataset
     </h3>
     <p class="govuk-body">
-      There are 5 datasets which show the data in different ways. You can choose which dataset best suits your needs.
+      The dataset is available as CSV. files and is released under the
+      <a href="mailto:http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government
+        Licence</a> (OGL). Transaction data is also available in a machine-readable format as
+      <a href="mailto:https://landregistry.data.gov.uk/#linked-data">linked data</a>.
     </p>
 
     <h3 class="govuk-heading-m">
       File structure
     </h3>
     <p class="govuk-body">
-      The data in each file will:
+      The data is provided as csv files. The data in each file will:
     </p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
+      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
       <li>enclose all fields within double-quotes: ”” (ASCII 34)</li>
       <li>send blank fields without a character between double quotes: ””</li>
       <li>format dates as DD-MM-YYYY HH:MM:SS</li>
-      <li>use UTF-8 and ASCII encoding (the way characters are coded for websites)</li>
-      <li>remove line separation the data</li>
+      <li>use UTF-8 encoding (the way characters are coded for websites)</li>
+      <li>have line separation removed</li>
       <li>have the column heading name as the first row</li>
     </ul>
 
@@ -792,22 +809,15 @@
       File name
     </h3>
     <p class="govuk-body">
-      The file will be structured as follows:
+      The file names will be structured as follows:
     </p>
     <p class="govuk-body">
-      Transaction-<1>-<2>.csv
-    </p>
-    <p class="govuk-body">
-      <1> Year
-    </p>
-    <p class="govuk-body">
-      <2> Month
-    </p>
-    <p class="govuk-body">
+      Transaction-<1>-<2>.csv<br>
+      <1> Year <2> Month<br>
       Example file name structure: Number-of-applications-by-region-2017-10.csv
     </p>
 
-    <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+    <h2 id="contact" class="govuk-heading-l">Contact information</h2>
     <p class="govuk-body">
       If you have any questions about this data, email our customer service team.
     </p>

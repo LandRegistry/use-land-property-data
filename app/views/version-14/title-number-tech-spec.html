@@ -1,0 +1,273 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- back link -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<!-- full width row for page title -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Technical specification</span>
+      Title Number and UPRN Look Up dataset
+    </h1>
+  </div>
+</div>
+
+
+<!-- row for contents and content -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    
+    <div class="toc" id="contents">
+      <p>Contents</p>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#scope">Specification scope</a></li>
+        <li><a href="#content">Data content and structure</a></li>
+        <li><a href="#quality">Data quality</a></li>
+        <li><a href="#capture">Data capture information</a></li>
+        <li><a href="#maintenance">Data maintenance</a></li>
+        <li><a href="#delivery">Data product delivery</a></li>
+        <li><a href="#contact">Contact information</a></li>
+      </ul>
+    </div>
+  </div> <!-- column-one-third -->
+
+
+  <!-- column two-thirds for content -->
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l" id="overview">Overview</h2>
+    <p class=govuk-body">
+      The Title Number/UPRN Look Up Dataset contains title numbers from HM Land Registry and Unique Property
+      Reference Numbers (UPRN) from Ordnance Survey’s AddressBase. It covers registered properties in England
+      and Wales that have an association to an address containing a UPRN reference.
+    </p>
+    
+    <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+    <h3 class="govuk-heading-m">Inclusions and exclusions</h3>
+    <p class=govuk-body">
+      HM Land Registry (HMLR) records addresses at registration. We link them with Ordnance Survey AddressBase data
+      if possible. If it is not possible we’ll create the new address.
+    </p>
+    <p class=govuk-body">
+      HMLR match their created addresses and title numbers to new AddressBase addresses when they become available.
+    </p>
+    <p class=govuk-body">
+      The title number and UPRNs can only be linked where we can make a relationship between Ordnance Survey's
+      AddressBase address and the title number.
+    </p>
+        
+    <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+    <p class=govuk-body">
+      The Title Number and UPRN look Up dataset is closely linked to <a href="nps-tech-spec">National Polygon</a> and
+      <a href="title-desc-tech-spec">Title Descriptor</a> datasets.
+      They have been separated so that the datasets are smaller and easier to manage and maintain.
+    </p>
+    <p class=govuk-body">
+      The title number is a unique identifier that can be linked to other HM Land Registry data.
+    </p>
+    
+    <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+    <h3 class="govuk-heading-m">Table 1 - Title number and UPRN look up datatset: Class diagram</h3>
+    <table class="govuk-table table-hack">
+      <caption hidden>Class diagram of the dataset which describes the content and structure</caption>
+      <thead class="govuk-table__header">
+      <tr>
+        <th scope="col" class="govuk-table__header">Title Number/UPRN Look Up dataset </th>
+      </tr>
+      </thead>
+      
+      <tbody>
+      <tr><td class="govuk-table__cell">Title Number</td></tr>
+      <tr><td class="govuk-table__cell">UPRN</td></tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">Table 2 - Title Number and UPRN look up dataset: Table structure</h3>
+    <table class="govuk-table table-hack">
+      <caption hidden>Description of the data fields in the dataset</caption>
+      <thead class="govuk-table__header">
+      <tr>
+        <th scope="col" class="govuk-table__header" width="18%">Field name</th>
+        <th scope="col" class="govuk-table__header" width="18%">Data type</th>
+        <th scope="col" class="govuk-table__header" width="18%">Mandatory</th>
+        <th scope="col" class="govuk-table__header" width="46%">Description</th>
+      </tr>
+      </thead>
+      
+      <tbody>
+      <tr>
+        <td class="govuk-table__cell">Title_No</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Identifier of the title registration, required to enable associations to be made with the text register
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">UPRN</td>
+        <td class="govuk-table__cell">Integer</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Identifier of a spatial address</td>
+      </tr>
+      </tbody>
+    </table>
+    
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+    <p class=govuk-body">
+      As part of the address searching, ingest and matching process it is possible that:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        duplicate addresses may exist because the information supplied does not match the address in the Land
+        Registry Property Gazetteer (LRPG). This could result in two addresses in LRPG, one with a title number
+        and no UPRN, the other with a UPRN but no title number.
+      </li>
+      <li>
+        an address exists with a UPRN but is not in LRPG and therefore has no title number associated with it
+      </li>
+    </ul>
+        
+    <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+    <p class=govuk-body">
+      In the 1990s, HM Land Registry (HMLR) created its first national address database, populated with
+      residential Postcode Address File (PAF) addresses from Royal Mail.  Before this we used addressing
+      data sourced from street card indexes and local gazetteers.
+    </p>
+    <p class=govuk-body">
+      In 2002 we moved to our current addressing database - Land Registry Property Gazetteer (LRPG). LRPG used
+      AddressPoint data from the Ordnance Survey to provide a base of national addresses and where appropriate
+      linked our customer address and title numbers to the AddressPoint address.
+    </p>
+    <p class=govuk-body">
+      In 2011 HMLR adopted Ordnance Survey MasterMap and moved from Address-Point to AddressLayer2.
+    </p>
+    <p class=govuk-body">
+      In 2014 HMLR moved from AddressLayer 2 to AddressBase as our source of national addresses. LRPG ingests the
+      post office PAF data from AddressBase to maintain consistency with the addressing that we used to take from
+      AddressPoint and AddressLayer 2.  We created the Title Number and UPRN look up dataset by linking AddressBase
+      data to our title numbers.
+    </p>
+    <p class=govuk-body">
+      Some post office addresses that do not match Local Authority addresses have been excluded from AddressBase.
+      They do not have a UPRN and will not be available in this dataset.
+    </p>
+    <p class=govuk-body">
+      We created LRPG to enable us to make relationships between title numbers and addresses. We make the
+      association when a property is registered.
+    </p>
+    <p class=govuk-body">
+      Where there is no address found in LRPG, HM Land Registry creates its own.
+    </p>
+    <p class=govuk-body">
+      Where a title number affects many properties, all affecting UPRNs may be associated.
+    </p>
+    <p class=govuk-body">
+      If an AddressBase address has not been transferred to LRPG, there will be no UPRN for that title even if one exists.
+    </p>
+        
+    <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+    <p class=govuk-body">
+      Every 6 weeks HM Land Registry takes a change only update file of AddressBase.  The data is imported and
+      matched so that the LRPG is updated and title associations are made.
+    </p>
+    <p class=govuk-body">
+      The data can change several times during the six weeks. The published data will only show the last change made.
+    </p>
+
+    <h2 class="govuk-heading-l" id="delivery">
+      Data product delivery
+    </h2>
+    <h3 class="govuk-heading-m">Access to the dataset</h3>
+    <p class=govuk-body">
+      There is a charge for the dataset and you’ll have to sign a licence.
+    </p>
+    <p class=govuk-body">
+      You'll be able to access the data after you've:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>created an account on the <a href="listings">Use land and property data service</a></li>
+      <li>agreed to licences from Ordnance Survey and HM Land Registry</li>
+      <li>paid for the dataset</li>
+    </ul>
+    
+    <h3 class="govuk-heading-m">Granting access</h3>
+    <p class=govuk-body">
+      The files are updated and available from the 2nd working day of each month.
+    </p>
+    <p class=govuk-body">
+      You’ll have access to the full dataset and the validation files.
+    </p>
+    
+    <h3 class="govuk-heading-m">File structure</h3>
+    <p class=govuk-body">
+      The dataset is provided as a CSV file. The data in each file will:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
+      <li>enclose all fields within double quotes ““ (ASCII 34)</li>
+      <li>send blank fields without a character between double quotes: ”“</li>
+      <li>have a date format of DD-MM-YYYY. For example, 14 December 2013 will be shown as 14-12-2013</li>
+      <li>use UTF-8 encoding (the way characters are coded for websites)</li>
+      <li>have line separation removed</li>
+      <li>have the column heading name as the first row</li>
+    </ul>
+    
+    <h3 class="govuk-heading-m">File name</h3>
+    <p class=govuk-body">
+      The file names will be structured as follows:
+    </p>
+    <p class="govuk-body">
+      Full file: LR_UPRN_FULL_<3 character Month>.csv<br>
+      Example file name structure for April 2020: LR_UPRN_FULL_APR.csv
+    </p>
+    <p class=govuk-body">
+      Validation file: LR_UPRN_VALI_<3 character Month>.csv<br>
+      Example file name structure for April 2020: LR_UPRN_VALI_APR.csv
+    </p>
+    
+    <h2 class="govuk-heading-l" id="contact">
+      Contact information
+    </h2>
+    <p class=govuk-body">
+      If you have any feedback or questions about this data, contact us via:
+    </p>
+    <h3 class="govuk-heading-s">
+      Telephone
+    </h3>
+    <ul class="govuk-list">
+      <li>Telephone: 0300 006 0478</li>
+      <li>Monday to Friday, 9am to 5pm</li>
+    </ul>
+    <p class="govuk-body">
+      <a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
+    </p>
+
+    <h3 class="govuk-heading-s">
+      Email
+    </h3>
+    <ul class="govuk-list">
+      <li><a class="govuk-link" href="mailto:data.services@landregistry.gov.uk">data.services@landregistry.gov.uk​</a></li>
+      <li>We aim to respond within 2 working days</li>
+    </ul>
+  </div>
+</div>
+
+
+{% endblock %}

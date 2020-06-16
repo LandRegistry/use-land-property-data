@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl">
+                Confirm your card details
+            </h1>
+
+            <table class="govuk-table">
+                <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header govuk-!-font-weight-regular" scope="row">
+                        Card number:
+                    </th>
+                    <td class="govuk-table__cell govuk-!-font-weight-bold" id="card-number">
+                        ************1111
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header govuk-!-font-weight-regular" scope="row">
+                        Expiry date:
+                    </th>
+                    <td class="govuk-table__cell govuk-!-font-weight-bold" id="expiry-date">
+                        12/21
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header govuk-!-font-weight-regular" scope="row">
+                        Name on card:
+                    </th>
+                    <td class="govuk-table__cell govuk-!-font-weight-bold" id="cardholder-name">
+                        Rhys Barrett
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header govuk-!-font-weight-regular" scope="row">
+                        Billing address:
+                    </th>
+                    <td class="govuk-table__cell govuk-!-font-weight-bold" id="address">
+                        1 High St, Birmingham, B15 2EE, United Kingdom
+                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header govuk-!-font-weight-regular" scope="row">
+                        Confirmation email:
+                    </th>
+                    <td class="govuk-table__cell govuk-!-font-weight-bold" id="email">
+                        rtbarrett27@gmail.com
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <a href="../confirmation" id="confirm" class="govuk-button" data-module="stop-double-submit">
+                    Confirm
+                </a>
+            </div>
+
+            <a href="../../listings" class="govuk-link">Cancel</a>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <aside class="payment-summary">
+                <p id="payment-description" class="govuk-body govuk-!-font-weight-bold">
+                    Use land and property data identity check
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                    Total amount:
+                </p>
+                <span id="amount" class="amount govuk-!-font-size-36 govuk-!-font-weight-bold">£0.00</span>
+            </aside>
+        </div>
+    </div>
+
+
+{% endblock %}

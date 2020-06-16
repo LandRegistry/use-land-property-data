@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- back to previous page -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Check your answers
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      Your details
+    </h2>
+    <table class="govuk-table">
+      <thead>
+        <th width="40%"></th>
+        <th width="50%"></th>
+        <th width="10%"></th>
+      </thead>
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Name</th>
+        <td class="govuk-table__cell">Miss Amy Jones</td>
+        <td class="govuk-table__cell"><a href="your-details" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Email</th>
+        <td class="govuk-table__cell">Amy@123.com</td>
+        <td class="govuk-table__cell"><a href="your-details" class="govuk-link">Change</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--m">
+
+    <h2 class="govuk-heading-l">
+      Organisation details
+    </h2>
+    <table class="govuk-table">
+      <thead>
+        <th width="40%"></th>
+        <th width="50%"></th>
+        <th width="10%"></th>
+      </thead>
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Name</th>
+        <td class="govuk-table__cell">The Company LTD</td>
+        <td class="govuk-table__cell"><a href="org-details" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Registered in</th>
+        <td class="govuk-table__cell">France</td>
+        <td class="govuk-table__cell"><a href="org-details" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Address</th>
+        <td class="govuk-table__cell">1 High Street<br>Paris<br>95000<br>France</td>
+        <td class="govuk-table__cell"><a href="org-address" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Phone</th>
+        <td class="govuk-table__cell">0033 456789</td>
+        <td class="govuk-table__cell"><a href="org-address" class="govuk-link">Change</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--m">
+
+    <h2 class="govuk-heading-l">
+      Research
+    </h2>
+    <table class="govuk-table">
+      <thead>
+        <th width="40%"></th>
+        <th width="50%"></th>
+        <th width="10%"></th>
+      </thead>
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Take part in research</th>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell"><a href="research" class="govuk-link">Change</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Contact by</th>
+        <td class="govuk-table__cell">Email<br>Telephone</td>
+        <td class="govuk-table__cell"><a href="yes-research" class="govuk-link">Change</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--m">
+
+    <h2 class="govuk-heading-m">
+      Terms of use
+    </h2>
+    <div class="govuk-checkboxes govuk-!-padding-bottom-9">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="terms-of-use" name="terms-of-use" type="checkbox" value="yes">
+        <label class="govuk-label govuk-checkboxes__label" for="terms-of-use">
+          I have read and agreed to the <a href="../../terms-of-use" class="govuk-link">terms of use</a>.
+        </label>
+      </div>
+    </div>
+
+    <div>
+      <a href="../confirmation" role="button" class="govuk-button">
+        Send application
+      </a>
+    </div>
+
+    <p class="govuk-body"><a href="../../listings" class="govuk-link">Cancel</a></p>
+  </div>
+</div>
+
+
+
+{% endblock %}

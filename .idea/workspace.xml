@@ -2,93 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/accessibility.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/agree-lease-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/agree-overseas-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/agree-restrict-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/agree-uk-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/api-access.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/api-tech.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/confirm-reset-password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/cookies.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/confirmation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/create-account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/overseas-org-account/check-answers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/overseas-org-account/org-address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/overseas-org-account/org-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/overseas-org-account/research.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/overseas-org-account/yes-research.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/overseas-org-account/your-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/card-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/check-answers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/confirm-card-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/live-in-uk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/overseas-address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/research.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/uk-address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/yes-research.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/personal-account/your-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/charity-address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/charity-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/check-answers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/company-address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/company-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/gov-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/la-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/org-type.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/research.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/yes-research.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/create-account/uk-org-account/your-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/full-nps-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/gml-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/inspire-download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/inspire-product-metadata.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/inspire-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/lease-comm-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/lease-exp-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/lease-priv-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/lease-product-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/lease-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/lease-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/listings-cookie-banner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/listings-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/listings-with-maintenance.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/listings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/new-link-sent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/nps-product-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/nps-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/nps-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/overseas-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/overseas-product-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/overseas-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/overseas-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/request-download-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/request-download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/request-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/request-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/request-view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/reset-password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/restrict-comm-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/restrict-exp-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/restrict-priv-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/restrict-product-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/restrict-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/restrict-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/sample-nps-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/sign-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/terms-of-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/title-desc-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/title-number-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/transaction-download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/transaction-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/transaction-tech-spec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/uk-licence.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/uk-product-signed-in.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/uk-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/version-16/uk-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-16/api-access-extra.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-16/inspire-download.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/inspire-download.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-16/inspire-product-metadata.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/inspire-product-metadata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-16/inspire-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/inspire-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>
@@ -402,14 +321,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581683129152">
+    <state x="298" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592323568867">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1581683129152" />
-    <state x="298" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588694386743">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="298" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800@0.0.1280.800" timestamp="1588694386743" />
+    <state x="298" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.800@0.0.1280.800" timestamp="1592323568867" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1585643638357">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

@@ -3,30 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-15/agree-overseas-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/agree-overseas-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-15/agree-uk-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/agree-uk-licence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-15/lease-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/lease-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-15/lease-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/lease-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-15/overseas-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/overseas-licence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-15/restrict-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/restrict-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-15/restrict-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/restrict-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-15/uk-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-15/uk-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-16/agree-overseas-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/agree-overseas-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-16/agree-uk-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/agree-uk-licence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/lease-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/lease-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/lease-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/lease-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/listings-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/listings-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/overseas-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/overseas-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-16/full-nps-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/full-nps-licence.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-16/overseas-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/overseas-licence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/overseas-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/overseas-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/overseas-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/overseas-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/restrict-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/restrict-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/restrict-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/restrict-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/uk-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/uk-history.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/version-16/uk-licence.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/uk-licence.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/uk-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/uk-product-signed-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-16/uk-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-16/uk-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>

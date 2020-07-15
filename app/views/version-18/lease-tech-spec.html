@@ -53,13 +53,17 @@ Use land and property data
   <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-l" id="overview">Overview</h2>
     <p class="govuk-body">
-      A lease is a contract which gives the right to exclusive possession of land to a tenant for a specific amount
-      of time. Leasehold is one of two ways of owning land (the other is freehold). The landlord of a freehold or
-      leasehold may grant a lease to a tenant. If the lease is granted for more than 7 years, it must be registered
-      with HM Land Registry.
+      A lease is a contract which gives the right to exclusive possession of land to a tenant for a specific amount of
+      time. Leasehold is one of two ways of owning land (the other is freehold). The owner of a freehold or leasehold
+      interest may grant a lease. The landlord’s title is known as the “superior” title. The lease is granted from
+      the superior title by the landlord and the “tenant” or “lessee” is the person who takes the lease. The tenant’s
+      title is known as the “inferior title”.
+
     </p>
     <p class="govuk-body">
-      The registered leases dataset is made up of data elements relating to leasehold entries in HM Land Registry’s register.
+      If the lease is granted for more than 7 years, it must be registered with HM Land Registry. The registered
+      leases dataset is made up of data elements relating to leasehold entries in HM Land Registry’s register.
+
     </p>
 
 
@@ -83,6 +87,11 @@ Use land and property data
     <p class="govuk-body">
       The UID represents an individual registered title. Where there is more than one address associated with a
       registered title these are listed as multiple rows for the ID.
+    </p>
+    <p class="govuk-body">
+      There may be one or more addresses associated with a property where there is a superior lease. Not all leases
+      included in a superior lease are registered in their own right. Associated property addresses may not be
+      included in the register of the superior leasehold.
     </p>
 
     <h2 class="govuk-heading-l" id="content">Data content and structure</h2>

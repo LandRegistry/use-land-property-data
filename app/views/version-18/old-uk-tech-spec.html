@@ -1,0 +1,611 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="listings">Sign out</a>
+</div>
+
+<!-- back link -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<!-- full width row for page title -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Technical specification</span>
+      UK companies that own property in England and Wales
+    </h1>
+  </div>
+</div>
+
+<!-- row for contents and content -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <div class="toc" id="contents">
+      <p>Contents</p>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#scope">Specification scope</a></li>
+        <li><a href="#content">Data content and structure</a></li>
+        <li><a href="#quality">Data quality</a></li>
+        <li><a href="#capture">Data capture information</a></li>
+        <li><a href="#maintenance">Data maintenance</a></li>
+        <li><a href="#product">Data product delivery</a></li>
+        <li><a href="#contact">Contact information</a></li>
+      </ul>
+    </div>
+  </div><!-- column-one-third -->
+
+
+  <!-- column two-thirds for content -->
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- OVERVIEW -->
+    <h2 class="govuk-heading-l" id="overview">Overview</h2>
+    <p class="govuk-body">
+      HM Land Registry published this version of the dataset from November 2015 to October 2017. It was published
+      quarterly and shows freehold or leasehold registered titles that were legally owned by a company.
+    </p>
+
+    <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+    <h3 class="govuk-heading-m">Inclusions and exclusions</h3>
+    <p class="govuk-body">
+      The data may contain registrations by the following owner types:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        corporations aggregate (a separate legal entity formed by more than one individual person. The corporate
+        aggregate has an existence which is separate from the persons comprising it. The term is used to distinguish
+        them from corporations sole which are legal entities consisting of a single person at any one time)
+      </li>
+      <li>county councils</li>
+      <li>other local authorities</li>
+      <li>housing associations</li>
+      <li>industrial and provident societies</li>
+      <li>registered societies</li>
+      <li>limited companies</li>
+      <li>public limited companies</li>
+      <li>unlimited companies</li>
+      <li>limited liability partnerships</li>
+      <li>community interest companies</li>
+      <li>Societas Europaea (where registered at Companies House)</li>
+      <li>UK Companies with an overseas correspondence address</li>
+    </ul>
+    <p class="govuk-body">
+      The data excludes titles where the registered owners are:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>private individuals</li>
+      <li>overseas companies</li>
+      <li>charities including Charitable Incorporated Organisations (CIO)</li>
+    </ul>
+    <p class="govuk-body">
+      If an excluded owner type is the sole owner, all details will be removed from the dataset.
+    </p>
+    <p class="govuk-body">
+      If a registered title is owned by both included and excluded owner types, the excluded owner details will be
+      removed from the name, proprietorship and correspondence address columns. An indicator will be displayed to
+      highlight there are other proprietors.
+    </p>
+    <p class="govuk-body">
+      Email addresses and British Forces Post Office addresses have been removed from the correspondence address records.
+      These are considered private and personal.
+    </p>
+
+    <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+    <p class="govuk-body">
+      The dataset is aligned with the <a href="overseas-product">Overseas companies that own property in England and Wales</a>.
+      It contains approximately 100,000 records, which describes titles registered to an overseas company or
+      corporate body.
+    </p>
+    <p class="govuk-body">
+      The title number allows relational links to be made with other HM Land Registry datasets that also
+      contain the title number.
+    </p>
+
+    <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+    <h3 class="govuk-heading-m">
+      Table 1 – UK companies that own property in England and Wales (November 2015 – October 2017): class diagram
+    </h3>
+
+    <table class="govuk-table">
+      <caption hidden>Class diagram of the dataset which describes the content and structure</caption>
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header">UK companies that own property in England and Wales</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr><td class="govuk-table__cell">PAON</td></tr>
+      <tr><td class="govuk-table__cell">SAON</td></tr>
+      <tr><td class="govuk-table__cell">Leading info</td></tr>
+      <tr><td class="govuk-table__cell">Sub building description</td></tr>
+      <tr><td class="govuk-table__cell">Sub building number</td></tr>
+      <tr><td class="govuk-table__cell">House description</td></tr>
+      <tr><td class="govuk-table__cell">House number</td></tr>
+      <tr><td class="govuk-table__cell">House alpha</td></tr>
+      <tr><td class="govuk-table__cell">Second house number</td></tr>
+      <tr><td class="govuk-table__cell">Second house alpha</td></tr>
+      <tr><td class="govuk-table__cell">Trail info</td></tr>
+      <tr><td class="govuk-table__cell">Street name</td></tr>
+      <tr><td class="govuk-table__cell">Street name 2</td></tr>
+      <tr><td class="govuk-table__cell">Local name</td></tr>
+      <tr><td class="govuk-table__cell">Local name 2</td></tr>
+      <tr><td class="govuk-table__cell">Town name</td></tr>
+      <tr><td class="govuk-table__cell">District name</td></tr>
+      <tr><td class="govuk-table__cell">County name</td></tr>
+      <tr><td class="govuk-table__cell">Region</td></tr>
+      <tr><td class="govuk-table__cell">Postcode</td></tr>
+      <tr><td class="govuk-table__cell">Postcode area</td></tr>
+      <tr><td class="govuk-table__cell">Postcode district</td></tr>
+      <tr><td class="govuk-table__cell">Postcode sector</td></tr>
+      <tr><td class="govuk-table__cell">Property address</td></tr>
+      <tr><td class="govuk-table__cell">Non private individual name</td></tr>
+      <tr><td class="govuk-table__cell">Company Registration number</td></tr>
+      <tr><td class="govuk-table__cell">Proprietorship</td></tr>
+      <tr><td class="govuk-table__cell">Correspondence address</td></tr>
+      <tr><td class="govuk-table__cell">Tenure</td></tr>
+      <tr><td class="govuk-table__cell">Title number</td></tr>
+      <tr><td class="govuk-table__cell">Date proprietor added</td></tr>
+      <tr><td class="govuk-table__cell">Change indicator</td></tr>
+      <tr><td class="govuk-table__cell">Change date</td></tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">Table 2 - UK companies that own property in England and Wales: table structure</h3>
+    <table class="govuk-table">
+      <caption hidden>Description of the data fields in the dataset</caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Field name</th>
+        <th scope="col" class="govuk-table__header">Data type</th>
+        <th scope="col" class="govuk-table__header">Mandatory</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">PAON</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Primary Addressable Object Name. Number or description used to identify the property.
+          This will often be a house number or name.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SAON</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Secondary Addressable Object Name. Number or description used to identify property.
+          This will often be a floor or flat within a building.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">LEAD_INFO</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Leading information. Text which is undefinable information which commences a property description.
+          For example, ‘land on the south side of’.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SUB_</br>BUILDING_DESC</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Sub building description. Name of a subdivision for example, the ground floor flat of a house or a
+          purpose-built block of flats.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SUB_</br>BUILDING_NO</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Sub building number. Number which uniquely identifies a subdivision of a house or a purpose-built block of flats.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">HOUSE_DESC</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          House description. Name of a property that is unique within a street or locality.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">HOUSE_NO</td>
+        <td class="govuk-table__cell">Numeric</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          House number. Number which uniquely identifies a property within a street.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">HOUSE_ALPHA</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name which, when used with house number, uniquely identifies a property within a street.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SECOND_</br>HOUSE_NO</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Second house number. Number associated with a particular property to show the upper limit of a
+          house number range. For example, 16 – 18.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">SECOND_</br>HOUSE_ALPHA</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Letter that follows the second number in an address. For example, 16 - 18B.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TRAIL_INFO</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Trailing information text Undefinable information which ends a property description, e.g. ‘and parking spaces’
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">STREET_NAME</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name of any thoroughfare in England and Wales which is the first or only street name in an address.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">STREET_NAME_2</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name of any thoroughfare in England and Wales which is either the second street name in an address or
+          an alternative street name to that held in the street_name column.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">LOCAL_NAME</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          First or only name of a place which is either a hamlet or village in a rural area or a subdivision of a
+          town or city in an urban area.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">LOCAL_NAME_2</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name which is either the second local place name in an address or an alternative local name.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TOWN_NAME</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name of an urban area within England and Wales.  town_name will be restricted to the post office’s
+          concept of post town.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DISTRICT_NAME</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name of a district created since local reorganisation in 1974. Administrative district also covers the
+          London boroughs, unitary authorities and Isles of Scilly Parishes.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">COUNTY_NAME</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">Name of current county in England and Wales.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">REGION</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Name of a geographic region which comprises one or more current counties, former counties or unitary
+          authorities or any combination of these. The names and extents of the regions are the economic planning
+          regions used by various bodies. Region names allocated by the Office for National Statistics differ in
+          some instances from names in this field.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">POSTCODE</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          A combination of up to 7 letters and numbers (plus one embedded blank), which defines geographic units.
+          It is part of a coding system created and used by the post office across the UK. For example, SW1A 2AA.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">POSTCODE_</br>AREA</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Part of the postcode that identifies the area. It consists of the first letters and one number for example,
+          <strong>SW1</strong>A 2AA.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">POSTCODE_</br>DISTRICT</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Part of the postcode that identifies the district. It consists of one or two letters followed by one or
+          two numbers or one number and one letter. For example, <strong>SW1A</strong> 2AA.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">POSTCODE_</br>SECTOR</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Part of the postcode that identifies the sector. It consists of the first part of the postcode before the
+          blank space and the first number of the second part of the postcode. For example, <strong>SW1A 2</strong>AA.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">PTY_ADDR</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Property address. Text which is the property description as it appears on the register.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">NON_PI_NAME</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Non - Private Individual Name. Name of a company, corporate body, local authority or other
+          organisation or establishment.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">CO_REG_NO</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Company Registration Number. A unique identifier assigned to a company when it is registered at
+          Companies' House. Although the name of the company may change, the Company Registration Number
+          will stay the same.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">PROPRIETORSHIP</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Text which describes the category in which a name falls.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">CORRESPONDENCE_</br>ADDRESS</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address and postcode of either the property or the registered proprietor.
+          It is in the same format as it appears in the register. The text will include any commas but exclude
+          any final punctuation marks and any internal delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TENURE</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Freehold or leasehold.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">TITLE_NO</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Unique number which identifies a registered title to land or a caution against first registration.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">DATE_PROPRIETOR_</br>ADDED</td>
+        <td class="govuk-table__cell">Date</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          The date that the proprietor was added to the register.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">CHANGE_IND</td>
+        <td class="govuk-table__cell">String</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Change indicator. On a full data file ‘A’ means ‘Added’. In a COU file where data has been updated
+          there will be 2 rows shown, a row with a ‘D’ to delete the old row and a row with ‘A’ for the added
+          or changed data.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">CHANGE_DATE</td>
+        <td class="govuk-table__cell">Date</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          The date of the extract.
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+    <p class="govuk-body">
+      During more than 150 years of land registration, improvements to working practice may have caused some
+      inconsistencies in the data.
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Only completed register entries are included. No pending applications or historic owners are included.
+      </li>
+      <li>
+        The information about owners may not always reflect the position on the Register, as we do not include
+        information about private individuals, overseas companies and charities.
+      </li>
+      <li>
+        The source data is from information supplied by citizens, corporate bodies and conveyancers on registration
+        deeds and documents. There is often inconsistency in the way in which addresses and names are supplied to
+        Land Registry.
+      </li>
+      <li>
+        There may be spelling errors in the ownership names. This could be due to input error or the way in which
+        they were presented.
+      </li>
+      <li>
+        Detailed address information is provided wherever possible.
+      </li>
+      <li>
+        The postcode is taken from the registered property description. If one hasn’t been registered then the
+        postcode will be blank.
+      </li>
+      <li>
+        The Date Proprietor Added is the date the proprietor was registered. When HM Land Registry registers a
+        proprietor, the date of registration is usually entered in the register. This date is automatically
+        entered but may be overwritten and left blank, for example, where two individual titles are amalgamated.
+        Approx. 2% of titles in this dataset have a blank field. Where a date is shown this might not be the
+        date that the proprietor was first registered. For example, it might be the date of the last registered
+        property transfer where one owner remains the same.
+      </li>
+      <li>
+        There are typographic errors in Company Registration Numbers.
+      </li>
+      <li>
+        It is possible for a Company Registration Number to legitimately be associated with more than one company.
+        For example, if a company changed its name and did not update the property record. Clerical or format
+        errors may show a mismatch between company name and registration number. There was no obligation to
+        record a Company Registration Number before 1 January 1997. However, approx. 2% of LTD or PLC titles
+        registered after this date have no Company Registration Number due to errors made.
+      </li>
+      <li>
+        There are some errors where an incorrect proprietorship has been selected during registration.
+      </li>
+      <li>
+        If we find any overseas Companies, charities or private individuals have been included in this
+        dataset, we’ll remove them.
+      </li>
+    </ul>
+
+    <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+    <p class="govuk-body">
+      The data is collected when property is transferred or leased to a non-private individual. During the
+      application process the Company Registration Number is recorded. This has been the case since 1997.
+    </p>
+    <p class="govuk-body">
+      HM Land Registry does not validate Company Registration Numbers. Other types of corporations may be
+      allocated a number by their registration authority.
+    </p>
+    <p class="govuk-body">
+      We take customer addresses at registration and check them against Ordnance Survey AddressBase data if
+      possible. We’ll create a new address in our register if there’s no match.
+    </p>
+
+    <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+    <p class="govuk-body">
+      This is historical data and no changes will be made to the files.
+    </p>
+
+    <h2 class="govuk-heading-l" id="product">Data product delivery</h2>
+    <h3 class="govuk-heading-m">Access to the dataset</h3>
+    <p class="govuk-body">
+      There is one file for each quarter from November 2015 to October 2017. There will be no updates to these files.
+    </p>
+
+    <h3 class="govuk-heading-m">Granting access</h3>
+    <p class="govuk-body">
+      You will need to create an account on the <a href="listings">Use land and property data service</a> and
+      sign in to access the data.
+    </p>
+
+    <h3 class="govuk-heading-m">File structure</h3>
+    <p class="govuk-body">
+      The dataset is provided as a CSV file. The data in each file will:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
+      <li>enclose all fields within double quotes “ “ (ASCII 34)</li>
+      <li>send blank fields without a character between double quotes: ”“</li>
+      <li>have a date format of DD-MM-YYYY. For example, 14 December 2013 will be shown as 14-12-2013</li>
+      <li>will use UTF-8 encoding (the way characters are coded for websites)</li>
+      <li>have line separation removed</li>
+      <li>have the column heading as the first row</li>
+    </ul>
+
+    <h3 class="govuk-heading-m">File name</h3>
+    <p class="govuk-body">
+      The file names will be structured as follows:
+    </p>
+    <p class="govuk-body">
+
+    </p>
+    <p class="govuk-body">
+      Example file name structure:<br>
+
+    </p>
+
+    <h2 id="contact" class="govuk-heading-l">Contact information</h2>
+    <p>
+      If you have any feedback or questions about this data, contact us:
+    </p>
+    <h3 class="govuk-heading-s">
+      Telephone
+    </h3>
+    <ul class="govuk-list">
+      <li>Telephone: 0300 006 0478</li>
+      <li>Monday to Friday, 9am to 5pm</li>
+    </ul>
+    <p class="govuk-body">
+      <a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
+    </p>
+
+    <h3 class="govuk-heading-s">
+      Email
+    </h3>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="mailto:data.services@mail.landregistry.gov.uk">
+          data.services@mail.landregistry.gov.uk​
+        </a>
+      </li>
+      <li>We aim to respond within 2 working days</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+{% endblock %}

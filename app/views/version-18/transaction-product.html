@@ -1,0 +1,254 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+  <!-- breadcrumbs -->
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="listings">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Transaction Data</li>
+    </ol>
+  </div>
+
+  <!-- full width row for title -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Dataset</span>
+        Transaction Data
+      </h1>
+      <p class="govuk-body-l">
+        Information about the number and types of applications we complete.
+      </p>
+    </div>
+  </div>
+
+  <!-- row for contents and content -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <!-- contents -->
+      <div class="toc" id="contents">
+        <p class="govuk-body">Contents</p>
+        <ul>
+          <li><a href="#datasets">The dataset</a></li>
+          <li><a href="#how">How you can use the data</a></li>
+          <li><a href="#access">How to get the data</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </div> <!-- column-one-third -->
+
+    <div class="govuk-grid-column-two-thirds">
+      <h2 id="datasets" class="govuk-heading-l">
+        The dataset
+      </h2>
+      <p class="govuk-body">
+        Transaction Data shows how many customer applications we completed in the previous month.
+      </p>
+      <p class="govuk-body">
+        The dataset is available to access on the 15th working day of the month and contains information from the
+        previous month. For example, files published in April show the transactions we completed in March.
+      </p>
+      <p class="govuk-body">
+        We publish 5 different versions of this dataset.
+      </p>
+      <p class="govuk-body">
+        There are 2 datasets listed by location:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>number of applications in England and Wales divided by location</li>
+        <li>number of applications in England and Wales divided by local authority</li>
+      </ul>
+      <p class="govuk-body">
+        There are 3 datasets listed by customer name. They show the applications we get from solicitors, conveyancers
+        and lenders that use an HM Land Registry account number:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>number and types of applications by all account customers</li>
+        <li>number and types of transactions for value by all account customers</li>
+        <li>number of searches by all account customers</li>
+      </ul>
+      <p class="govuk-body">
+        The data excludes:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>bankruptcy applications</li>
+        <li>bulk applications</li>
+        <li>applications that we've received but not yet completed</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        Abbreviations used in Transaction Data
+      </h3>
+      <table class="govuk-table">
+        <thead class="govuk-table__header">
+        <tr>
+          <th scope="col" class="govuk-table__header">Abbreviation</th>
+          <th scope="col" class="govuk-table__header">Title</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+        </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+        <tr>
+          <td class="govuk-table__cell">DFL</td>
+          <td class="govuk-table__cell">Dispositionary First Lease</td>
+          <td class="govuk-table__cell">
+            An application to register a new lease of registered land that has been granted by the proprietor
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">DLG</td>
+          <td class="govuk-table__cell">Dealing</td>
+          <td class="govuk-table__cell">
+            An application in respect of registered land. This includes transfers of title, charges and notices.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">FR</td>
+          <td class="govuk-table__cell">First Registration</td>
+          <td class="govuk-table__cell">
+            An application for a first registration of freehold or leasehold land. For leasehold, this applies when
+            the landlord’s title is not registered.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">TP</td>
+          <td class="govuk-table__cell">Transfer of Part</td>
+          <td class="govuk-table__cell">
+            An application to register the transfer of part of a registered title. For example, selling part
+            of a garden to a neighbour.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">OS(W)</td>
+          <td class="govuk-table__cell">Search of whole</td>
+          <td class="govuk-table__cell">
+            An application to protect a transaction that has a monetary value, such as purchase, lease or
+            charge for the whole of a title.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">OS(P)</td>
+          <td class="govuk-table__cell">Search of part</td>
+          <td class="govuk-table__cell">
+            An application to protect a transaction that has a monetary value, such as purchase, lease or
+            charge for part of a title.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">OS(NPW)</td>
+          <td class="govuk-table__cell">Non-priority search of whole</td>
+          <td class="govuk-table__cell">
+            An application to search the whole of the register without getting priority over other searches
+            or transactions.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">OS(NPP)</td>
+          <td class="govuk-table__cell">Non-priority search of whole</td>
+          <td class="govuk-table__cell">
+            An application to search a part of the register without getting priority over other searches
+            or transactions.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">OC1</td>
+          <td class="govuk-table__cell">Official copy</td>
+          <td class="govuk-table__cell">
+            An application to get an official copy of a register or title plan. It represents a true record
+            of entries in the register and extent of the registered title at a specific date and time. The
+            data includes historical editions of the register and title plan where they are kept by the
+            registrar in electronic form.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">OC2</td>
+          <td class="govuk-table__cell">Official copy of a deed or document</td>
+          <td class="govuk-table__cell">
+            An application to get a copy of a document referred to in the register or that relates to an
+            application. This includes correspondence, surveys, application forms and emails relating to
+            applications that are pending, cancelled or completed.
+          </td>
+        </tr>
+        <tr>
+          <td class="govuk-table__cell">SIM</td>
+          <td class="govuk-table__cell">Search of the index map</td>
+          <td class="govuk-table__cell">
+            An application to find out if land is registered and, if it is, to get the title number.
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <h3 class="govuk-heading-m">
+        Technical specification
+      </h3>
+      <p class="govuk-body">
+        <a href="transaction-tech-spec" class="govuk-link">Read the technical specification for Transaction Data</a>
+        for full details about the dataset.
+      </p>
+
+      <h2 id="how" class="govuk-heading-l">
+        How you can use the data
+      </h2>
+      <p class="govuk-body">
+        The data is available free of charge for use and re-use under the
+        <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a>
+        (OGL).
+      </p>
+      <p class="govuk-body">
+        Make sure you understand the terms of the OGL before using the data.
+        If you use or publish this data, you must add the following attribution statement:
+      </p>
+      <blockquote class="noquotes">
+        <p class="govuk-body">
+          Contains HM Land Registry data © Crown copyright and database right 2019. This data is licensed under
+          the Open Government Licence v3.0.
+        </p>
+      </blockquote>
+      <hr class="govuk-section-break govuk-section-break--m">
+
+
+      <h2 id="access" class="govuk-heading-l">How to get the data</h2>
+      <p class="govuk-body">
+        You can download  the data as CSV files. If you have knowledge of software engineering, you can access the
+        data in machine-readable format at <a href="http://landregistry.data.gov.uk/#linked-data">linked data</a>.
+      </p>
+      <p class="govuk-body">
+        You can also get older versions of the files. They go back to December 2011.
+      </p>
+      <a href="transaction-download" role="button" class="govuk-button">
+        Access the data
+      </a>
+      <hr class="govuk-section-break govuk-section-break--m">
+
+      <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+      <p class="govuk-body">
+        If you have any questions about this data, email our customer service team.
+      </p>
+      <h3 class="govuk-heading-s">
+        Email
+      </h3>
+      <ul class="govuk-list">
+        <li><a class="govuk-link" href="mailto:customer.service@mail.landregistry.gov.uk">customer.service@mail.landregistry.gov.uk​</a></li>
+        <li>We aim to respond within 2 working days</li>
+      </ul>
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}

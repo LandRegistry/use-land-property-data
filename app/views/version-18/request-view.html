@@ -1,0 +1,769 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+  <!-- back to previous page -->
+  <a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+  <!-- full width row for heading -->
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">View</span>
+        Request for information (requisition) data
+      </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">
+        Information about:​
+      </p>
+      <ul class="govuk-body-l govuk-list govuk-list--bullet">
+        <li>the 500 customers that sent the most applications to us</li>
+        <li>how many requests for information we sent</li>
+        <li>the number and type of applications we received and completed</li>
+      </ul>
+
+      <p class="govuk-body">
+        By downloading this dataset, you are agreeing to the
+        <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">
+          OGL conditionsof use</a>.
+      </p>
+
+      <p class="govuk-body">
+        <a href="/public/files/RFI.csv" download>Download .csv file</a>
+      </p>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">What the column headers mean</span>
+        </summary>
+
+        <div class="govuk-details__text">
+          <p class="govuk-body">
+            <strong>FR – First registration</strong><br>
+            An application for a first registration of land both freehold and leasehold. For leasehold, this applies when
+            the landlord’s title is not registered.
+          </p>
+          <p class="govuk-body">
+            <strong>TP – Transfer of part</strong><br>
+            An application to register the transfer of part of a registered title.
+          </p>
+          <p class="govuk-body">
+            <strong>DFL – Dispositionary first lease</strong><br>
+            An application for the registration of a new lease granted by the proprietor of registered land.
+          </p>
+          <p class="govuk-body">
+            <strong>Register update</strong><br>
+            An application to update details of an existing title on the register.
+          </p>
+          <p class="govuk-body">
+            <strong>Requests for information</strong><br>
+            This is the number of requests for information we sent to the customer. 
+          </p>
+          <p class="govuk-body">
+            <strong>Applications received</strong><br>
+            This is the number of applications made by the customer. 
+          </p>
+          <p class="govuk-body">
+            <strong>Applications completed</strong><br>
+            This is the number of applications completed by HM Land Registry. 
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption">
+            Data from April to June 2019. Published 19 July 2019
+        </caption>
+        <thead class="govuk-table__head">
+          <tr style="position: sticky;">
+            <th></th>
+            <th></th>
+            <th colspan="3" style="text-align: center;">Register creation</th>
+            <th class="govuk-table__header--numeric">Register updates</th>
+            <th class="govuk-table__header--numeric">Total</th>
+          </tr>
+          <tr class="govuk-table__row wide-bottom-border" style="position: sticky;">
+            <th class="govuk-table__header"></th>
+            <th class="govuk-table__header"></th>
+            <th class="govuk-table__header govuk-table__header--numeric">FR</th>
+            <th class="govuk-table__header govuk-table__header--numeric">TP</th>
+            <th class="govuk-table__header govuk-table__header--numeric">DFL</th>
+            <th class="govuk-table__header"></th>
+            <th class="govuk-table__header"></th>
+          </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th rowspan="3" class="govuk-table__header wide-bottom-border">1st Stop Financial</th>
+            <th class="govuk-table__header cell-shade">Request for information</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">69</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">69</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header cell-shade">Applications received</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">903</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">903</td>
+          </tr>
+          <tr class="govuk-table__row wide-bottom-border">
+            <th class="govuk-table__header cell-shade">Applications completed</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">864</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">864</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th rowspan="3" class="govuk-table__header wide-bottom-border">A Shade Greener</th>
+            <th class="govuk-table__header cell-shade">Request for information</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">6</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">22</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">28</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header cell-shade">Applications received</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">31</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">520</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">551</td>
+          </tr>
+          <tr class="govuk-table__row wide-bottom-border">
+            <th class="govuk-table__header cell-shade">Applications completed</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">23</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">521</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">544</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th rowspan="3" class="govuk-table__header wide-bottom-border">Abby National PLC</th>
+            <th class="govuk-table__header cell-shade">Request for information</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header cell-shade">Applications received</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">21151</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">21151</td>
+          </tr>
+          <tr class="govuk-table__row wide-bottom-border">
+            <th class="govuk-table__header cell-shade">Applications completed</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">21120</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">21120</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th rowspan="3" class="govuk-table__header wide-bottom-border">Abensons & Co</th>
+            <th class="govuk-table__header cell-shade">Request for information</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">6</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">9</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">7</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">112</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">134</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header cell-shade">Applications received</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">19</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">306</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">341</td>
+          </tr>
+          <tr class="govuk-table__row wide-bottom-border">
+            <th class="govuk-table__header cell-shade">Applications completed</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">7</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">16</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">17</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">303</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">343</td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <th rowspan="3" class="govuk-table__header wide-bottom-border">Addleshaw Goddard</th>
+            <th class="govuk-table__header cell-shade">Request for information</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">3</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">35</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">3</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">108</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">149</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header cell-shade">Applications received</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">15</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">85</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">862</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">983</td>
+          </tr>
+          <tr class="govuk-table__row wide-bottom-border">
+            <th class="govuk-table__header cell-shade">Applications completed</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">10</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">66</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">666</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">750</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="govuk-section-break govuk-section-break--m">
+      <h2 id="contact" class="govuk-heading-l">Contact us</h2>
+      <p class="govuk-body">
+        If you have any questions about this data, email:
+        <a href="mailto:customer.service@mail.landregistry.gov.uk">customer.service@mail.landregistry.gov.uk​</a>.
+      </p>
+
+    </div> <!-- column-two-thirds -->
+  </div> <!-- grid-row -->
+
+{% endblock %}
+
+<!--
+      <table>
+        <tr><td>Customer</td><td>FR intake</td><td>TP intake</td><td>DFL intake</td><td>Register update intake</td><td>Total intake</td><td>FR output</td><td>TP output</td><td>DFL output</td><td>Register update output</td><td>Total output</td><td>FR requests for information</td><td>TP requests for information</td><td>DFL requests for information</td><td>Register update requests for information</td><td>Total requests for information</td></tr>
+        <tr><td>1st Stop Financial</td><td>0</td><td>0</td><td>0</td><td>903</td><td>903</td><td>0</td><td>0</td><td>0</td><td>864</td><td>864</td><td>0</td><td>0</td><td>0</td><td>69</td><td>69</td></tr>
+        <tr><td>A Shade Greener</td><td>0</td><td>31</td><td>0</td><td>520</td><td>551</td><td>0</td><td>23</td><td>0</td><td>521</td><td>544</td><td>0</td><td>6</td><td>0</td><td>22</td><td>28</td></tr>
+        <tr><td>Abbey National PLC</td><td>0</td><td>0</td><td>0</td><td>21151</td><td>21151</td><td>0</td><td>0</td><td>0</td><td>21120</td><td>21120</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Abensons & Co</td><td>8</td><td>8</td><td>19</td><td>306</td><td>341</td><td>7</td><td>16</td><td>17</td><td>303</td><td>343</td><td>6</td><td>9</td><td>7</td><td>112</td><td>134</td></tr>
+        <tr><td>Aberdein Considine & Company</td><td>0</td><td>3</td><td>0</td><td>689</td><td>692</td><td>0</td><td>3</td><td>0</td><td>667</td><td>670</td><td>0</td><td>2</td><td>0</td><td>92</td><td>94</td></tr>
+        <tr><td>Accord Mortgages Limited</td><td>0</td><td>0</td><td>0</td><td>2670</td><td>2670</td><td>0</td><td>0</td><td>0</td><td>2681</td><td>2681</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Acenden Limited</td><td>0</td><td>0</td><td>0</td><td>3160</td><td>3160</td><td>0</td><td>0</td><td>0</td><td>3155</td><td>3155</td><td>0</td><td>0</td><td>0</td><td>26</td><td>26</td></tr>
+        <tr><td>Addleshaw Goddard</td><td>15</td><td>85</td><td>21</td><td>862</td><td>983</td><td>10</td><td>66</td><td>8</td><td>666</td><td>750</td><td>3</td><td>35</td><td>3</td><td>108</td><td>149</td></tr>
+        <tr><td>Advantage Property Lawyers</td><td>45</td><td>29</td><td>81</td><td>1438</td><td>1593</td><td>45</td><td>25</td><td>71</td><td>1387</td><td>1528</td><td>10</td><td>14</td><td>29</td><td>274</td><td>327</td></tr>
+        <tr><td>Aldermore Bank PLC</td><td>0</td><td>0</td><td>0</td><td>1226</td><td>1226</td><td>0</td><td>0</td><td>0</td><td>1219</td><td>1219</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Alexander Grace Law Limited</td><td>11</td><td>6</td><td>10</td><td>443</td><td>470</td><td>10</td><td>2</td><td>9</td><td>414</td><td>435</td><td>7</td><td>1</td><td>8</td><td>115</td><td>131</td></tr>
+        <tr><td>Alexander JLO</td><td>0</td><td>228</td><td>11</td><td>150</td><td>389</td><td>0</td><td>180</td><td>13</td><td>138</td><td>331</td><td>0</td><td>96</td><td>10</td><td>51</td><td>157</td></tr>
+        <tr><td>Allchurch Property Lawyers Limited</td><td>0</td><td>237</td><td>3</td><td>615</td><td>855</td><td>0</td><td>266</td><td>3</td><td>284</td><td>553</td><td>0</td><td>59</td><td>2</td><td>20</td><td>81</td></tr>
+        <tr><td>Amicus Solicitors</td><td>20</td><td>116</td><td>36</td><td>249</td><td>421</td><td>21</td><td>82</td><td>19</td><td>226</td><td>348</td><td>4</td><td>58</td><td>9</td><td>75</td><td>146</td></tr>
+        <tr><td>Amphlett Lissimore</td><td>2</td><td>82</td><td>15</td><td>486</td><td>585</td><td>2</td><td>62</td><td>16</td><td>471</td><td>551</td><td>0</td><td>29</td><td>13</td><td>172</td><td>214</td></tr>
+        <tr><td>Angel Wilkins LLP</td><td>6</td><td>22</td><td>48</td><td>361</td><td>437</td><td>5</td><td>37</td><td>34</td><td>384</td><td>460</td><td>1</td><td>19</td><td>13</td><td>101</td><td>134</td></tr>
+        <tr><td>Angela Viney Conveyancing Services</td><td>16</td><td>11</td><td>25</td><td>293</td><td>345</td><td>20</td><td>9</td><td>21</td><td>277</td><td>327</td><td>9</td><td>8</td><td>11</td><td>72</td><td>100</td></tr>
+        <tr><td>Anglian Water Services Ltd</td><td>1</td><td>0</td><td>14</td><td>370</td><td>385</td><td>5</td><td>1</td><td>12</td><td>353</td><td>371</td><td>3</td><td>1</td><td>4</td><td>6</td><td>14</td></tr>
+        <tr><td>Ansons</td><td>15</td><td>15</td><td>39</td><td>321</td><td>390</td><td>21</td><td>14</td><td>21</td><td>313</td><td>369</td><td>11</td><td>7</td><td>9</td><td>92</td><td>119</td></tr>
+        <tr><td>Anthony Collins</td><td>4</td><td>87</td><td>219</td><td>2718</td><td>3028</td><td>10</td><td>53</td><td>150</td><td>2619</td><td>2832</td><td>7</td><td>16</td><td>91</td><td>47</td><td>161</td></tr>
+        <tr><td>Anthony Gold</td><td>4</td><td>84</td><td>6</td><td>266</td><td>360</td><td>3</td><td>58</td><td>7</td><td>221</td><td>289</td><td>3</td><td>33</td><td>2</td><td>44</td><td>82</td></tr>
+        <tr><td>Aperture Debt Solutions LLP</td><td>0</td><td>0</td><td>0</td><td>640</td><td>640</td><td>0</td><td>0</td><td>0</td><td>743</td><td>743</td><td>0</td><td>0</td><td>0</td><td>87</td><td>87</td></tr>
+        <tr><td>Apex ABS Limited</td><td>3</td><td>25</td><td>15</td><td>320</td><td>363</td><td>2</td><td>19</td><td>12</td><td>294</td><td>327</td><td>1</td><td>15</td><td>8</td><td>105</td><td>129</td></tr>
+        <tr><td>Arnold Davies Vincent Evans</td><td>15</td><td>0</td><td>9</td><td>820</td><td>844</td><td>12</td><td>2</td><td>7</td><td>821</td><td>842</td><td>4</td><td>0</td><td>3</td><td>14</td><td>21</td></tr>
+        <tr><td>Ashfords</td><td>58</td><td>89</td><td>94</td><td>1068</td><td>1309</td><td>54</td><td>59</td><td>67</td><td>948</td><td>1128</td><td>17</td><td>39</td><td>40</td><td>198</td><td>294</td></tr>
+        <tr><td>Ashtons Legal</td><td>32</td><td>18</td><td>103</td><td>358</td><td>511</td><td>34</td><td>33</td><td>92</td><td>353</td><td>512</td><td>15</td><td>20</td><td>22</td><td>86</td><td>143</td></tr>
+        <tr><td>AST Hampsons</td><td>12</td><td>17</td><td>105</td><td>275</td><td>409</td><td>9</td><td>25</td><td>101</td><td>276</td><td>411</td><td>5</td><td>11</td><td>39</td><td>84</td><td>139</td></tr>
+        <tr><td>Attwells</td><td>15</td><td>51</td><td>39</td><td>448</td><td>553</td><td>17</td><td>43</td><td>27</td><td>454</td><td>541</td><td>6</td><td>32</td><td>18</td><td>123</td><td>179</td></tr>
+        <tr><td>Aviva Equity Release (UK) Limited</td><td>0</td><td>0</td><td>0</td><td>1334</td><td>1334</td><td>0</td><td>0</td><td>0</td><td>1334</td><td>1334</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Awdry Bailey & Douglas</td><td>27</td><td>28</td><td>40</td><td>422</td><td>517</td><td>22</td><td>19</td><td>42</td><td>392</td><td>475</td><td>6</td><td>6</td><td>13</td><td>82</td><td>107</td></tr>
+        <tr><td>Axiom Stone London Ltd</td><td>1</td><td>40</td><td>8</td><td>374</td><td>423</td><td>1</td><td>34</td><td>5</td><td>329</td><td>369</td><td>1</td><td>19</td><td>3</td><td>88</td><td>111</td></tr>
+        <tr><td>Band Hatton Button LLP</td><td>12</td><td>33</td><td>39</td><td>464</td><td>548</td><td>12</td><td>16</td><td>36</td><td>446</td><td>510</td><td>4</td><td>13</td><td>19</td><td>85</td><td>121</td></tr>
+        <tr><td>Bank of Ireland</td><td>0</td><td>0</td><td>0</td><td>4916</td><td>4916</td><td>0</td><td>0</td><td>0</td><td>4858</td><td>4858</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+        <tr><td>Bank of Scotland</td><td>0</td><td>0</td><td>0</td><td>441</td><td>441</td><td>0</td><td>0</td><td>0</td><td>443</td><td>443</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Banner Jones Limited</td><td>40</td><td>21</td><td>99</td><td>658</td><td>818</td><td>45</td><td>23</td><td>79</td><td>639</td><td>786</td><td>14</td><td>15</td><td>59</td><td>213</td><td>301</td></tr>
+        <tr><td>Bannister Preston</td><td>18</td><td>111</td><td>294</td><td>602</td><td>1025</td><td>12</td><td>92</td><td>280</td><td>568</td><td>952</td><td>4</td><td>55</td><td>146</td><td>125</td><td>330</td></tr>
+        <tr><td>Barcan & Kirby LLP</td><td>17</td><td>44</td><td>34</td><td>398</td><td>493</td><td>12</td><td>40</td><td>31</td><td>372</td><td>455</td><td>6</td><td>29</td><td>19</td><td>126</td><td>180</td></tr>
+        <tr><td>Barclays Bank PLC</td><td>0</td><td>0</td><td>0</td><td>802</td><td>802</td><td>0</td><td>0</td><td>0</td><td>796</td><td>796</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+        <tr><td>Barclays Bank UK PLC</td><td>0</td><td>0</td><td>0</td><td>25529</td><td>25529</td><td>0</td><td>0</td><td>0</td><td>25423</td><td>25423</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Barclays Security Trustee Ltd</td><td>0</td><td>0</td><td>0</td><td>1230</td><td>1230</td><td>0</td><td>0</td><td>0</td><td>1176</td><td>1176</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+        <tr><td>Barnes & Partners</td><td>7</td><td>108</td><td>44</td><td>460</td><td>619</td><td>7</td><td>79</td><td>38</td><td>419</td><td>543</td><td>3</td><td>52</td><td>20</td><td>160</td><td>235</td></tr>
+        <tr><td>Battens Solicitors Limited</td><td>26</td><td>27</td><td>36</td><td>331</td><td>420</td><td>31</td><td>21</td><td>37</td><td>335</td><td>424</td><td>6</td><td>12</td><td>17</td><td>73</td><td>108</td></tr>
+        <tr><td>BBH Legal Services Limited</td><td>2</td><td>11</td><td>21</td><td>759</td><td>793</td><td>1</td><td>10</td><td>19</td><td>753</td><td>783</td><td>0</td><td>9</td><td>12</td><td>127</td><td>148</td></tr>
+        <tr><td>BDB Pitmans</td><td>19</td><td>116</td><td>51</td><td>510</td><td>696</td><td>9</td><td>56</td><td>31</td><td>441</td><td>537</td><td>3</td><td>18</td><td>9</td><td>109</td><td>139</td></tr>
+        <tr><td>Beaumont Legal</td><td>34</td><td>21</td><td>189</td><td>2841</td><td>3085</td><td>30</td><td>36</td><td>176</td><td>2797</td><td>3039</td><td>10</td><td>18</td><td>94</td><td>383</td><td>505</td></tr>
+        <tr><td>Bell Lamb & Joynson</td><td>5</td><td>11</td><td>26</td><td>308</td><td>350</td><td>3</td><td>10</td><td>14</td><td>292</td><td>319</td><td>2</td><td>4</td><td>7</td><td>93</td><td>106</td></tr>
+        <tr><td>Bermans LLP</td><td>3</td><td>13</td><td>5</td><td>868</td><td>889</td><td>3</td><td>7</td><td>1</td><td>812</td><td>823</td><td>1</td><td>6</td><td>1</td><td>87</td><td>95</td></tr>
+        <tr><td>Berry Smith LLP</td><td>9</td><td>10</td><td>19</td><td>316</td><td>354</td><td>7</td><td>10</td><td>8</td><td>306</td><td>331</td><td>3</td><td>6</td><td>4</td><td>69</td><td>82</td></tr>
+        <tr><td>Bevan Brittan</td><td>16</td><td>34</td><td>217</td><td>356</td><td>623</td><td>9</td><td>33</td><td>168</td><td>317</td><td>527</td><td>5</td><td>27</td><td>91</td><td>71</td><td>194</td></tr>
+        <tr><td>BG Solicitors LLP</td><td>30</td><td>12</td><td>36</td><td>373</td><td>451</td><td>21</td><td>3</td><td>41</td><td>355</td><td>420</td><td>6</td><td>3</td><td>19</td><td>85</td><td>113</td></tr>
+        <tr><td>BHW Solicitors</td><td>12</td><td>33</td><td>205</td><td>289</td><td>539</td><td>6</td><td>29</td><td>188</td><td>275</td><td>498</td><td>3</td><td>18</td><td>116</td><td>78</td><td>215</td></tr>
+        <tr><td>Birchall Blackburn</td><td>53</td><td>66</td><td>145</td><td>2222</td><td>2486</td><td>64</td><td>53</td><td>113</td><td>2151</td><td>2381</td><td>26</td><td>29</td><td>62</td><td>437</td><td>554</td></tr>
+        <tr><td>Birkett Long LLP</td><td>26</td><td>23</td><td>25</td><td>285</td><td>359</td><td>22</td><td>28</td><td>20</td><td>269</td><td>339</td><td>11</td><td>14</td><td>11</td><td>78</td><td>114</td></tr>
+        <tr><td>Birketts LLP</td><td>75</td><td>149</td><td>276</td><td>1877</td><td>2377</td><td>73</td><td>140</td><td>261</td><td>1753</td><td>2227</td><td>25</td><td>65</td><td>143</td><td>300</td><td>533</td></tr>
+        <tr><td>Biscoes</td><td>18</td><td>41</td><td>20</td><td>288</td><td>367</td><td>19</td><td>31</td><td>23</td><td>272</td><td>345</td><td>5</td><td>16</td><td>11</td><td>57</td><td>89</td></tr>
+        <tr><td>Bishop & Sewell</td><td>1</td><td>150</td><td>9</td><td>475</td><td>635</td><td>0</td><td>120</td><td>9</td><td>414</td><td>543</td><td>0</td><td>68</td><td>5</td><td>82</td><td>155</td></tr>
+        <tr><td>Blackhurst Budd Limited</td><td>45</td><td>25</td><td>29</td><td>401</td><td>500</td><td>41</td><td>24</td><td>26</td><td>382</td><td>473</td><td>8</td><td>11</td><td>21</td><td>148</td><td>188</td></tr>
+        <tr><td>Blacks Solicitors</td><td>24</td><td>52</td><td>43</td><td>1419</td><td>1538</td><td>26</td><td>45</td><td>53</td><td>1443</td><td>1567</td><td>11</td><td>20</td><td>30</td><td>400</td><td>461</td></tr>
+        <tr><td>Blake Morgan</td><td>26</td><td>115</td><td>74</td><td>1133</td><td>1348</td><td>26</td><td>115</td><td>74</td><td>1167</td><td>1382</td><td>10</td><td>42</td><td>38</td><td>211</td><td>301</td></tr>
+        <tr><td>BLB</td><td>19</td><td>26</td><td>103</td><td>355</td><td>503</td><td>19</td><td>29</td><td>88</td><td>382</td><td>518</td><td>8</td><td>15</td><td>35</td><td>104</td><td>162</td></tr>
+        <tr><td>Blemain Finance</td><td>0</td><td>0</td><td>0</td><td>801</td><td>801</td><td>0</td><td>0</td><td>0</td><td>790</td><td>790</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Bower & Bailey</td><td>72</td><td>80</td><td>382</td><td>1228</td><td>1762</td><td>80</td><td>75</td><td>353</td><td>1212</td><td>1720</td><td>10</td><td>37</td><td>164</td><td>283</td><td>494</td></tr>
+        <tr><td>Boys & Maughan</td><td>6</td><td>90</td><td>43</td><td>664</td><td>803</td><td>5</td><td>66</td><td>41</td><td>631</td><td>743</td><td>4</td><td>31</td><td>24</td><td>198</td><td>257</td></tr>
+        <tr><td>BPE Solicitors LLP</td><td>10</td><td>219</td><td>27</td><td>300</td><td>556</td><td>6</td><td>80</td><td>30</td><td>270</td><td>386</td><td>3</td><td>46</td><td>19</td><td>87</td><td>155</td></tr>
+        <tr><td>Bpl Solicitors</td><td>17</td><td>45</td><td>57</td><td>899</td><td>1018</td><td>21</td><td>44</td><td>55</td><td>842</td><td>962</td><td>8</td><td>28</td><td>29</td><td>216</td><td>281</td></tr>
+        <tr><td>Brabners LLP</td><td>21</td><td>98</td><td>40</td><td>1241</td><td>1400</td><td>16</td><td>93</td><td>18</td><td>1353</td><td>1480</td><td>7</td><td>36</td><td>14</td><td>97</td><td>154</td></tr>
+        <tr><td>Brearleys</td><td>25</td><td>41</td><td>39</td><td>465</td><td>570</td><td>23</td><td>72</td><td>49</td><td>456</td><td>600</td><td>13</td><td>59</td><td>21</td><td>131</td><td>224</td></tr>
+        <tr><td>Brethertons LLP</td><td>17</td><td>50</td><td>41</td><td>332</td><td>440</td><td>14</td><td>61</td><td>35</td><td>347</td><td>457</td><td>8</td><td>40</td><td>25</td><td>87</td><td>160</td></tr>
+        <tr><td>Brewer Wallace Ltd</td><td>11</td><td>21</td><td>30</td><td>321</td><td>383</td><td>11</td><td>8</td><td>27</td><td>287</td><td>333</td><td>6</td><td>5</td><td>9</td><td>73</td><td>93</td></tr>
+        <tr><td>Bridge McFarland Solicitors</td><td>44</td><td>16</td><td>97</td><td>545</td><td>702</td><td>32</td><td>15</td><td>89</td><td>520</td><td>656</td><td>18</td><td>9</td><td>37</td><td>150</td><td>214</td></tr>
+        <tr><td>Bright (South West) LLP</td><td>5</td><td>27</td><td>97</td><td>297</td><td>426</td><td>2</td><td>30</td><td>109</td><td>272</td><td>413</td><td>0</td><td>23</td><td>79</td><td>84</td><td>186</td></tr>
+        <tr><td>Brightstone Law LLP</td><td>3</td><td>18</td><td>11</td><td>462</td><td>494</td><td>2</td><td>8</td><td>8</td><td>437</td><td>455</td><td>1</td><td>5</td><td>6</td><td>90</td><td>102</td></tr>
+        <tr><td>Browne Jacobson LLP</td><td>11</td><td>98</td><td>68</td><td>442</td><td>619</td><td>16</td><td>67</td><td>63</td><td>426</td><td>572</td><td>9</td><td>23</td><td>33</td><td>75</td><td>140</td></tr>
+        <tr><td>Browns Solicitors</td><td>11</td><td>35</td><td>34</td><td>338</td><td>418</td><td>16</td><td>34</td><td>42</td><td>353</td><td>445</td><td>3</td><td>17</td><td>26</td><td>71</td><td>117</td></tr>
+        <tr><td>Bryan Cave Leighton Paisner LLP</td><td>2</td><td>399</td><td>5</td><td>1603</td><td>2009</td><td>3</td><td>39</td><td>8</td><td>1578</td><td>1628</td><td>0</td><td>17</td><td>3</td><td>81</td><td>101</td></tr>
+        <tr><td>BSG Solicitors</td><td>0</td><td>20</td><td>2</td><td>1073</td><td>1095</td><td>0</td><td>14</td><td>3</td><td>1022</td><td>1039</td><td>0</td><td>8</td><td>2</td><td>140</td><td>150</td></tr>
+        <tr><td>Burnetts</td><td>45</td><td>15</td><td>57</td><td>496</td><td>613</td><td>43</td><td>17</td><td>29</td><td>434</td><td>523</td><td>21</td><td>11</td><td>14</td><td>123</td><td>169</td></tr>
+        <tr><td>Butcher & Barlow</td><td>23</td><td>19</td><td>54</td><td>612</td><td>708</td><td>25</td><td>22</td><td>56</td><td>598</td><td>701</td><td>15</td><td>14</td><td>28</td><td>188</td><td>245</td></tr>
+        <tr><td>Butterworths</td><td>26</td><td>29</td><td>158</td><td>477</td><td>690</td><td>21</td><td>13</td><td>124</td><td>454</td><td>612</td><td>9</td><td>10</td><td>59</td><td>153</td><td>231</td></tr>
+        <tr><td>Campions Solicitors (Nottingham)</td><td>14</td><td>20</td><td>48</td><td>419</td><td>501</td><td>11</td><td>18</td><td>52</td><td>383</td><td>464</td><td>6</td><td>10</td><td>21</td><td>119</td><td>156</td></tr>
+        <tr><td>Capita Mortgage Administration Ltd</td><td>0</td><td>0</td><td>0</td><td>857</td><td>857</td><td>0</td><td>0</td><td>0</td><td>854</td><td>854</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Capsticks Solicitors LLP</td><td>3</td><td>124</td><td>32</td><td>184</td><td>343</td><td>2</td><td>78</td><td>33</td><td>628</td><td>741</td><td>2</td><td>62</td><td>19</td><td>35</td><td>118</td></tr>
+        <tr><td>Cavendish Legal Group</td><td>3</td><td>708</td><td>79</td><td>1178</td><td>1968</td><td>2</td><td>613</td><td>63</td><td>1004</td><td>1682</td><td>2</td><td>359</td><td>45</td><td>338</td><td>744</td></tr>
+        <tr><td>Central Trust Limited</td><td>0</td><td>0</td><td>0</td><td>383</td><td>383</td><td>0</td><td>0</td><td>0</td><td>380</td><td>380</td><td>0</td><td>0</td><td>0</td><td>17</td><td>17</td></tr>
+        <tr><td>Chadwick Lawrence LLP</td><td>34</td><td>82</td><td>64</td><td>1191</td><td>1371</td><td>34</td><td>98</td><td>94</td><td>1136</td><td>1362</td><td>19</td><td>71</td><td>41</td><td>351</td><td>482</td></tr>
+        <tr><td>Chafes Hague Lambert LLP</td><td>20</td><td>18</td><td>36</td><td>284</td><td>358</td><td>17</td><td>17</td><td>19</td><td>293</td><td>346</td><td>6</td><td>11</td><td>6</td><td>92</td><td>115</td></tr>
+        <tr><td>Charles Russell Speechlys LLP</td><td>26</td><td>330</td><td>41</td><td>733</td><td>1130</td><td>22</td><td>88</td><td>23</td><td>651</td><td>784</td><td>9</td><td>56</td><td>9</td><td>135</td><td>209</td></tr>
+        <tr><td>Charter Court Financial Services Limited</td><td>0</td><td>0</td><td>0</td><td>2696</td><td>2696</td><td>0</td><td>0</td><td>0</td><td>2654</td><td>2654</td><td>0</td><td>0</td><td>0</td><td>32</td><td>32</td></tr>
+        <tr><td>Chattertons (Inc Chattertons McKinnells)</td><td>66</td><td>25</td><td>89</td><td>599</td><td>779</td><td>63</td><td>15</td><td>71</td><td>575</td><td>724</td><td>35</td><td>10</td><td>42</td><td>177</td><td>264</td></tr>
+        <tr><td>Child and Child Limited</td><td>0</td><td>61</td><td>4</td><td>296</td><td>361</td><td>1</td><td>53</td><td>4</td><td>261</td><td>319</td><td>0</td><td>19</td><td>2</td><td>68</td><td>89</td></tr>
+        <tr><td>Child Support Agency</td><td>0</td><td>0</td><td>0</td><td>798</td><td>798</td><td>0</td><td>0</td><td>0</td><td>721</td><td>721</td><td>0</td><td>0</td><td>0</td><td>19</td><td>19</td></tr>
+        <tr><td>CHL Mortgages (Capital Home Loans)</td><td>0</td><td>0</td><td>0</td><td>565</td><td>565</td><td>0</td><td>0</td><td>0</td><td>560</td><td>560</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Chubb Bulleid</td><td>41</td><td>18</td><td>47</td><td>358</td><td>464</td><td>34</td><td>15</td><td>47</td><td>342</td><td>438</td><td>11</td><td>10</td><td>21</td><td>68</td><td>110</td></tr>
+        <tr><td>Clarion Solicitors Ltd</td><td>2</td><td>7</td><td>9</td><td>345</td><td>363</td><td>1</td><td>6</td><td>6</td><td>309</td><td>322</td><td>1</td><td>4</td><td>3</td><td>75</td><td>83</td></tr>
+        <tr><td>Clarke Willmott</td><td>43</td><td>99</td><td>141</td><td>1747</td><td>2030</td><td>38</td><td>82</td><td>93</td><td>2444</td><td>2657</td><td>15</td><td>25</td><td>49</td><td>207</td><td>296</td></tr>
+        <tr><td>Clyde & Co LLP</td><td>12</td><td>29</td><td>28</td><td>601</td><td>670</td><td>10</td><td>41</td><td>22</td><td>558</td><td>631</td><td>4</td><td>20</td><td>7</td><td>73</td><td>104</td></tr>
+        <tr><td>CMS Cameron Mckenna LLP</td><td>8</td><td>99</td><td>38</td><td>1799</td><td>1944</td><td>10</td><td>79</td><td>32</td><td>1396</td><td>1517</td><td>3</td><td>37</td><td>11</td><td>167</td><td>218</td></tr>
+        <tr><td>Co-operative Legal Sevices</td><td>64</td><td>0</td><td>0</td><td>840</td><td>904</td><td>63</td><td>0</td><td>1</td><td>834</td><td>898</td><td>20</td><td>0</td><td>1</td><td>100</td><td>121</td></tr>
+        <tr><td>Coffin Mew LLP</td><td>47</td><td>179</td><td>408</td><td>662</td><td>1296</td><td>39</td><td>131</td><td>472</td><td>572</td><td>1214</td><td>4</td><td>53</td><td>155</td><td>126</td><td>338</td></tr>
+        <tr><td>Coles Miller Solicitors LLP</td><td>15</td><td>61</td><td>17</td><td>390</td><td>483</td><td>14</td><td>39</td><td>17</td><td>372</td><td>442</td><td>4</td><td>9</td><td>5</td><td>75</td><td>93</td></tr>
+        <tr><td>Collings Solicitors</td><td>2</td><td>25</td><td>4</td><td>334</td><td>365</td><td>5</td><td>11</td><td>4</td><td>328</td><td>348</td><td>1</td><td>8</td><td>1</td><td>82</td><td>92</td></tr>
+        <tr><td>Comptons</td><td>1</td><td>166</td><td>4</td><td>394</td><td>565</td><td>1</td><td>91</td><td>2</td><td>271</td><td>365</td><td>1</td><td>40</td><td>1</td><td>44</td><td>86</td></tr>
+        <tr><td>Computershare Mortgage SVS Ltd</td><td>0</td><td>0</td><td>0</td><td>5231</td><td>5231</td><td>0</td><td>0</td><td>0</td><td>5179</td><td>5179</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Convey Law Limited</td><td>25</td><td>40</td><td>48</td><td>875</td><td>988</td><td>20</td><td>36</td><td>52</td><td>830</td><td>938</td><td>8</td><td>21</td><td>24</td><td>239</td><td>292</td></tr>
+        <tr><td>Conveyancing Direct Ltd</td><td>14</td><td>58</td><td>30</td><td>2908</td><td>3010</td><td>15</td><td>40</td><td>25</td><td>2852</td><td>2932</td><td>4</td><td>23</td><td>14</td><td>436</td><td>477</td></tr>
+        <tr><td>Coodes</td><td>44</td><td>34</td><td>77</td><td>530</td><td>685</td><td>45</td><td>35</td><td>65</td><td>514</td><td>659</td><td>19</td><td>22</td><td>39</td><td>146</td><td>226</td></tr>
+        <tr><td>Cook Taylor Woodhouse</td><td>6</td><td>125</td><td>199</td><td>1030</td><td>1360</td><td>6</td><td>120</td><td>204</td><td>995</td><td>1325</td><td>4</td><td>65</td><td>121</td><td>238</td><td>428</td></tr>
+        <tr><td>Core Legal Limited</td><td>5</td><td>15</td><td>110</td><td>361</td><td>491</td><td>6</td><td>17</td><td>102</td><td>370</td><td>495</td><td>2</td><td>8</td><td>57</td><td>138</td><td>205</td></tr>
+        <tr><td>Countrywide Property Lawyers</td><td>73</td><td>17</td><td>87</td><td>2363</td><td>2540</td><td>71</td><td>14</td><td>61</td><td>2268</td><td>2414</td><td>22</td><td>10</td><td>32</td><td>420</td><td>484</td></tr>
+        <tr><td>Countrywide Tax & Trust Corporation</td><td>17</td><td>0</td><td>1</td><td>612</td><td>630</td><td>15</td><td>1</td><td>1</td><td>530</td><td>547</td><td>3</td><td>1</td><td>1</td><td>102</td><td>107</td></tr>
+        <tr><td>Coutts and Co</td><td>0</td><td>0</td><td>0</td><td>372</td><td>372</td><td>0</td><td>0</td><td>0</td><td>371</td><td>371</td><td>0</td><td>0</td><td>0</td><td>25</td><td>25</td></tr>
+        <tr><td>Coventry Building Society</td><td>0</td><td>1</td><td>0</td><td>9074</td><td>9075</td><td>0</td><td>1</td><td>0</td><td>9039</td><td>9040</td><td>0</td><td>1</td><td>0</td><td>2</td><td>3</td></tr>
+        <tr><td>Cozens-Hardy LLP</td><td>17</td><td>24</td><td>29</td><td>308</td><td>378</td><td>23</td><td>19</td><td>33</td><td>294</td><td>369</td><td>10</td><td>8</td><td>13</td><td>100</td><td>131</td></tr>
+        <tr><td>Crane & Walton Solicitors</td><td>22</td><td>8</td><td>38</td><td>292</td><td>360</td><td>16</td><td>6</td><td>27</td><td>290</td><td>339</td><td>8</td><td>2</td><td>14</td><td>92</td><td>116</td></tr>
+        <tr><td>Creditfix Limited</td><td>0</td><td>0</td><td>0</td><td>665</td><td>665</td><td>0</td><td>0</td><td>0</td><td>648</td><td>648</td><td>0</td><td>0</td><td>0</td><td>74</td><td>74</td></tr>
+        <tr><td>Cripps</td><td>13</td><td>117</td><td>61</td><td>659</td><td>850</td><td>7</td><td>91</td><td>55</td><td>611</td><td>764</td><td>5</td><td>47</td><td>32</td><td>109</td><td>193</td></tr>
+        <tr><td>Crombie Wilkinson Solicitors</td><td>55</td><td>12</td><td>48</td><td>343</td><td>458</td><td>46</td><td>9</td><td>27</td><td>330</td><td>412</td><td>24</td><td>6</td><td>10</td><td>98</td><td>138</td></tr>
+        <tr><td>Crown Prosecution Service (CPS)</td><td>0</td><td>0</td><td>0</td><td>507</td><td>507</td><td>0</td><td>0</td><td>0</td><td>496</td><td>496</td><td>0</td><td>0</td><td>0</td><td>12</td><td>12</td></tr>
+        <tr><td>Cubism Law</td><td>0</td><td>26</td><td>4</td><td>422</td><td>452</td><td>0</td><td>21</td><td>2</td><td>429</td><td>452</td><td>0</td><td>15</td><td>2</td><td>43</td><td>60</td></tr>
+        <tr><td>Cunningtons</td><td>14</td><td>22</td><td>55</td><td>545</td><td>636</td><td>12</td><td>41</td><td>41</td><td>563</td><td>657</td><td>7</td><td>12</td><td>28</td><td>151</td><td>198</td></tr>
+        <tr><td>Curtis Law LLP</td><td>11</td><td>14</td><td>73</td><td>314</td><td>412</td><td>12</td><td>8</td><td>26</td><td>262</td><td>308</td><td>7</td><td>4</td><td>17</td><td>48</td><td>76</td></tr>
+        <tr><td>DAC Beachcroft</td><td>11</td><td>107</td><td>23</td><td>583</td><td>724</td><td>12</td><td>68</td><td>24</td><td>647</td><td>751</td><td>4</td><td>33</td><td>14</td><td>95</td><td>146</td></tr>
+        <tr><td>Davies & Partners</td><td>10</td><td>45</td><td>166</td><td>499</td><td>720</td><td>8</td><td>40</td><td>113</td><td>608</td><td>769</td><td>1</td><td>27</td><td>58</td><td>120</td><td>206</td></tr>
+        <tr><td>Davisons Solicitors</td><td>36</td><td>168</td><td>334</td><td>1346</td><td>1884</td><td>34</td><td>218</td><td>342</td><td>1317</td><td>1911</td><td>16</td><td>149</td><td>205</td><td>427</td><td>797</td></tr>
+        <tr><td>DC Law</td><td>73</td><td>53</td><td>80</td><td>1885</td><td>2091</td><td>86</td><td>52</td><td>80</td><td>1943</td><td>2161</td><td>35</td><td>27</td><td>41</td><td>483</td><td>586</td></tr>
+        <tr><td>Dean Wilson Laing</td><td>8</td><td>77</td><td>7</td><td>439</td><td>531</td><td>0</td><td>61</td><td>21</td><td>342</td><td>424</td><td>0</td><td>32</td><td>13</td><td>73</td><td>118</td></tr>
+        <tr><td>Dee and Griffin</td><td>11</td><td>23</td><td>27</td><td>397</td><td>458</td><td>12</td><td>22</td><td>28</td><td>357</td><td>419</td><td>7</td><td>15</td><td>18</td><td>122</td><td>162</td></tr>
+        <tr><td>Dentons UKMEA LLP</td><td>7</td><td>128</td><td>18</td><td>569</td><td>722</td><td>4</td><td>102</td><td>19</td><td>541</td><td>666</td><td>0</td><td>59</td><td>11</td><td>115</td><td>185</td></tr>
+        <tr><td>Devonalds</td><td>15</td><td>6</td><td>40</td><td>418</td><td>479</td><td>23</td><td>5</td><td>23</td><td>398</td><td>449</td><td>12</td><td>4</td><td>13</td><td>152</td><td>181</td></tr>
+        <tr><td>Devonshires</td><td>87</td><td>210</td><td>99</td><td>3109</td><td>3505</td><td>81</td><td>266</td><td>108</td><td>2882</td><td>3337</td><td>34</td><td>132</td><td>66</td><td>116</td><td>348</td></tr>
+        <tr><td>Dezrezlegal Limited</td><td>8</td><td>12</td><td>21</td><td>294</td><td>335</td><td>5</td><td>9</td><td>15</td><td>287</td><td>316</td><td>2</td><td>5</td><td>9</td><td>69</td><td>85</td></tr>
+        <tr><td>Dickinson Wood</td><td>15</td><td>15</td><td>84</td><td>354</td><td>468</td><td>16</td><td>14</td><td>119</td><td>330</td><td>479</td><td>5</td><td>8</td><td>53</td><td>88</td><td>154</td></tr>
+        <tr><td>Direction Home (Law) LLP</td><td>21</td><td>790</td><td>159</td><td>822</td><td>1792</td><td>18</td><td>590</td><td>144</td><td>719</td><td>1471</td><td>1</td><td>308</td><td>66</td><td>230</td><td>605</td></tr>
+        <tr><td>DKLM</td><td>1</td><td>54</td><td>6</td><td>360</td><td>421</td><td>0</td><td>61</td><td>2</td><td>342</td><td>405</td><td>0</td><td>46</td><td>2</td><td>82</td><td>130</td></tr>
+        <tr><td>DLA Piper UK LLP</td><td>12</td><td>79</td><td>17</td><td>725</td><td>833</td><td>6</td><td>62</td><td>16</td><td>798</td><td>882</td><td>1</td><td>33</td><td>9</td><td>121</td><td>164</td></tr>
+        <tr><td>DMH Stallard</td><td>9</td><td>79</td><td>51</td><td>567</td><td>706</td><td>11</td><td>46</td><td>44</td><td>584</td><td>685</td><td>3</td><td>22</td><td>17</td><td>116</td><td>158</td></tr>
+        <tr><td>Douglas Wemyss LLP</td><td>9</td><td>17</td><td>17</td><td>308</td><td>351</td><td>11</td><td>13</td><td>16</td><td>314</td><td>354</td><td>5</td><td>8</td><td>11</td><td>114</td><td>138</td></tr>
+        <tr><td>Downs Solicitors LLP</td><td>5</td><td>29</td><td>20</td><td>328</td><td>382</td><td>2</td><td>20</td><td>22</td><td>327</td><td>371</td><td>0</td><td>13</td><td>13</td><td>69</td><td>95</td></tr>
+        <tr><td>Duffield Harrison LLP</td><td>4</td><td>60</td><td>58</td><td>231</td><td>353</td><td>4</td><td>74</td><td>40</td><td>212</td><td>330</td><td>3</td><td>42</td><td>22</td><td>61</td><td>128</td></tr>
+        <tr><td>Dutton Gregory</td><td>13</td><td>78</td><td>135</td><td>422</td><td>648</td><td>15</td><td>75</td><td>138</td><td>433</td><td>661</td><td>3</td><td>43</td><td>80</td><td>125</td><td>251</td></tr>
+        <tr><td>DWF LLP</td><td>8</td><td>215</td><td>42</td><td>984</td><td>1249</td><td>11</td><td>113</td><td>65</td><td>963</td><td>1152</td><td>5</td><td>66</td><td>40</td><td>162</td><td>273</td></tr>
+        <tr><td>DWP</td><td>0</td><td>0</td><td>0</td><td>605</td><td>605</td><td>0</td><td>0</td><td>0</td><td>603</td><td>603</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>D?r Cymru Welsh Water</td><td>0</td><td>0</td><td>0</td><td>561</td><td>561</td><td>0</td><td>0</td><td>0</td><td>704</td><td>704</td><td>0</td><td>0</td><td>0</td><td>9</td><td>9</td></tr>
+        <tr><td>EDC Lord & Co</td><td>3</td><td>66</td><td>12</td><td>259</td><td>340</td><td>3</td><td>58</td><td>8</td><td>240</td><td>309</td><td>3</td><td>32</td><td>3</td><td>63</td><td>101</td></tr>
+        <tr><td>E J Winter & Son</td><td>1</td><td>68</td><td>145</td><td>170</td><td>384</td><td>1</td><td>67</td><td>118</td><td>157</td><td>343</td><td>0</td><td>43</td><td>53</td><td>42</td><td>138</td></tr>
+        <tr><td>Edward Hands & Lewis</td><td>23</td><td>55</td><td>92</td><td>871</td><td>1041</td><td>37</td><td>66</td><td>116</td><td>891</td><td>1110</td><td>24</td><td>52</td><td>82</td><td>390</td><td>548</td></tr>
+        <tr><td>Elliot Mather LLP</td><td>22</td><td>32</td><td>155</td><td>699</td><td>908</td><td>32</td><td>24</td><td>154</td><td>656</td><td>866</td><td>18</td><td>7</td><td>89</td><td>231</td><td>345</td></tr>
+        <tr><td>Ellis Fermor & Negus</td><td>26</td><td>24</td><td>40</td><td>523</td><td>613</td><td>29</td><td>15</td><td>37</td><td>511</td><td>592</td><td>13</td><td>8</td><td>20</td><td>116</td><td>157</td></tr>
+        <tr><td>Ellis Jones</td><td>11</td><td>80</td><td>30</td><td>424</td><td>545</td><td>11</td><td>34</td><td>22</td><td>400</td><td>467</td><td>5</td><td>13</td><td>13</td><td>84</td><td>115</td></tr>
+        <tr><td>Ellisons</td><td>42</td><td>26</td><td>54</td><td>436</td><td>558</td><td>36</td><td>19</td><td>50</td><td>396</td><td>501</td><td>17</td><td>13</td><td>33</td><td>135</td><td>198</td></tr>
+        <tr><td>Elmhirst Parker LLP</td><td>36</td><td>3</td><td>36</td><td>262</td><td>337</td><td>30</td><td>4</td><td>18</td><td>268</td><td>320</td><td>8</td><td>2</td><td>13</td><td>71</td><td>94</td></tr>
+        <tr><td>Emin Read Solicitors</td><td>1</td><td>57</td><td>12</td><td>429</td><td>499</td><td>2</td><td>45</td><td>13</td><td>403</td><td>463</td><td>1</td><td>34</td><td>9</td><td>104</td><td>148</td></tr>
+        <tr><td>Emsleys</td><td>8</td><td>6</td><td>149</td><td>233</td><td>396</td><td>8</td><td>15</td><td>134</td><td>242</td><td>399</td><td>4</td><td>9</td><td>32</td><td>65</td><td>110</td></tr>
+        <tr><td>EMW Law LLP</td><td>11</td><td>54</td><td>29</td><td>324</td><td>418</td><td>11</td><td>44</td><td>27</td><td>324</td><td>406</td><td>5</td><td>19</td><td>21</td><td>96</td><td>141</td></tr>
+        <tr><td>Enact</td><td>132</td><td>57</td><td>57</td><td>33546</td><td>33792</td><td>142</td><td>26</td><td>58</td><td>33610</td><td>33836</td><td>48</td><td>14</td><td>31</td><td>4598</td><td>4691</td></tr>
+        <tr><td>Eric Robinson Solicitors</td><td>18</td><td>50</td><td>77</td><td>385</td><td>530</td><td>20</td><td>55</td><td>93</td><td>386</td><td>554</td><td>7</td><td>36</td><td>39</td><td>100</td><td>182</td></tr>
+        <tr><td>Estates & Management Ltd</td><td>0</td><td>0</td><td>414</td><td>373</td><td>787</td><td>2</td><td>0</td><td>63</td><td>337</td><td>402</td><td>2</td><td>0</td><td>13</td><td>42</td><td>57</td></tr>
+        <tr><td>Eversheds Sutherland</td><td>234</td><td>297</td><td>161</td><td>13001</td><td>13693</td><td>203</td><td>171</td><td>106</td><td>13027</td><td>13507</td><td>49</td><td>108</td><td>63</td><td>635</td><td>855</td></tr>
+        <tr><td>Evolution Lending Limited</td><td>0</td><td>0</td><td>0</td><td>1006</td><td>1006</td><td>0</td><td>0</td><td>0</td><td>991</td><td>991</td><td>0</td><td>0</td><td>0</td><td>54</td><td>54</td></tr>
+        <tr><td>Fairfax</td><td>0</td><td>0</td><td>0</td><td>803</td><td>803</td><td>0</td><td>0</td><td>0</td><td>819</td><td>819</td><td>0</td><td>0</td><td>0</td><td>31</td><td>31</td></tr>
+        <tr><td>Fairweather Law</td><td>5</td><td>48</td><td>179</td><td>145</td><td>377</td><td>3</td><td>45</td><td>190</td><td>115</td><td>353</td><td>1</td><td>25</td><td>85</td><td>25</td><td>136</td></tr>
+        <tr><td>Farnfields</td><td>18</td><td>17</td><td>20</td><td>337</td><td>392</td><td>18</td><td>13</td><td>26</td><td>323</td><td>380</td><td>10</td><td>6</td><td>8</td><td>71</td><td>95</td></tr>
+        <tr><td>Farrer & Co</td><td>29</td><td>16</td><td>26</td><td>345</td><td>416</td><td>7</td><td>12</td><td>13</td><td>278</td><td>310</td><td>4</td><td>7</td><td>5</td><td>57</td><td>73</td></tr>
+        <tr><td>FBC Manby Bowdler LLP</td><td>60</td><td>18</td><td>45</td><td>457</td><td>580</td><td>57</td><td>8</td><td>34</td><td>327</td><td>426</td><td>27</td><td>5</td><td>20</td><td>103</td><td>155</td></tr>
+        <tr><td>Fidler & Pepper</td><td>33</td><td>25</td><td>200</td><td>1736</td><td>1994</td><td>29</td><td>21</td><td>215</td><td>1739</td><td>2004</td><td>11</td><td>19</td><td>120</td><td>464</td><td>614</td></tr>
+        <tr><td>Fieldfisher LLP</td><td>5</td><td>49</td><td>14</td><td>1231</td><td>1299</td><td>6</td><td>47</td><td>21</td><td>1216</td><td>1290</td><td>4</td><td>33</td><td>13</td><td>261</td><td>311</td></tr>
+        <tr><td>Fisher Jones Greenwood (FJG)</td><td>27</td><td>25</td><td>74</td><td>526</td><td>652</td><td>29</td><td>30</td><td>66</td><td>484</td><td>609</td><td>9</td><td>19</td><td>23</td><td>141</td><td>192</td></tr>
+        <tr><td>Flint Bishop Solicitors</td><td>22</td><td>36</td><td>40</td><td>417</td><td>515</td><td>23</td><td>20</td><td>41</td><td>425</td><td>509</td><td>11</td><td>7</td><td>30</td><td>117</td><td>165</td></tr>
+        <tr><td>Foot Anstey Solicitors</td><td>24</td><td>420</td><td>351</td><td>735</td><td>1530</td><td>14</td><td>301</td><td>327</td><td>642</td><td>1284</td><td>5</td><td>150</td><td>157</td><td>154</td><td>466</td></tr>
+        <tr><td>Forbes Solicitors</td><td>19</td><td>8</td><td>53</td><td>358</td><td>438</td><td>22</td><td>14</td><td>49</td><td>318</td><td>403</td><td>11</td><td>8</td><td>29</td><td>71</td><td>119</td></tr>
+        <tr><td>Forster Dean Ltd</td><td>18</td><td>6</td><td>46</td><td>420</td><td>490</td><td>16</td><td>5</td><td>34</td><td>427</td><td>482</td><td>4</td><td>4</td><td>15</td><td>138</td><td>161</td></tr>
+        <tr><td>Forsters LLP</td><td>6</td><td>143</td><td>41</td><td>897</td><td>1087</td><td>7</td><td>116</td><td>23</td><td>824</td><td>970</td><td>6</td><td>59</td><td>15</td><td>90</td><td>170</td></tr>
+        <tr><td>Foskett Marr Gadsby & Head</td><td>10</td><td>60</td><td>49</td><td>282</td><td>401</td><td>10</td><td>48</td><td>40</td><td>311</td><td>409</td><td>7</td><td>25</td><td>25</td><td>76</td><td>133</td></tr>
+        <tr><td>Fosters</td><td>26</td><td>17</td><td>25</td><td>385</td><td>453</td><td>30</td><td>11</td><td>24</td><td>366</td><td>431</td><td>8</td><td>5</td><td>10</td><td>86</td><td>109</td></tr>
+        <tr><td>Foys Solicitors</td><td>34</td><td>17</td><td>84</td><td>574</td><td>709</td><td>28</td><td>11</td><td>59</td><td>531</td><td>629</td><td>15</td><td>8</td><td>27</td><td>152</td><td>202</td></tr>
+        <tr><td>Franklins Solicitors LLP</td><td>16</td><td>58</td><td>212</td><td>432</td><td>718</td><td>17</td><td>52</td><td>186</td><td>407</td><td>662</td><td>8</td><td>24</td><td>82</td><td>120</td><td>234</td></tr>
+        <tr><td>Fraser Brown</td><td>12</td><td>65</td><td>88</td><td>558</td><td>723</td><td>13</td><td>61</td><td>96</td><td>431</td><td>601</td><td>6</td><td>36</td><td>39</td><td>97</td><td>178</td></tr>
+        <tr><td>Fraser Dawbarns Solicitors</td><td>62</td><td>13</td><td>75</td><td>386</td><td>536</td><td>60</td><td>9</td><td>51</td><td>368</td><td>488</td><td>38</td><td>6</td><td>27</td><td>112</td><td>183</td></tr>
+        <tr><td>Freers Askew Bunting Sols Ltd</td><td>12</td><td>14</td><td>42</td><td>456</td><td>524</td><td>13</td><td>8</td><td>39</td><td>433</td><td>493</td><td>6</td><td>6</td><td>20</td><td>122</td><td>154</td></tr>
+        <tr><td>Freeths</td><td>23</td><td>143</td><td>96</td><td>2181</td><td>2443</td><td>25</td><td>123</td><td>89</td><td>1751</td><td>1988</td><td>10</td><td>74</td><td>52</td><td>292</td><td>428</td></tr>
+        <tr><td>GM Wilson</td><td>2</td><td>9</td><td>192</td><td>300</td><td>503</td><td>6</td><td>10</td><td>151</td><td>301</td><td>468</td><td>4</td><td>7</td><td>67</td><td>113</td><td>191</td></tr>
+        <tr><td>Gaby Hardwicke</td><td>3</td><td>49</td><td>20</td><td>447</td><td>519</td><td>6</td><td>47</td><td>21</td><td>440</td><td>514</td><td>3</td><td>34</td><td>10</td><td>93</td><td>140</td></tr>
+        <tr><td>Gardner Leader</td><td>6</td><td>57</td><td>16</td><td>338</td><td>417</td><td>6</td><td>61</td><td>18</td><td>338</td><td>423</td><td>4</td><td>31</td><td>7</td><td>103</td><td>145</td></tr>
+        <tr><td>Garner Canning & Co Solicitor</td><td>21</td><td>59</td><td>133</td><td>896</td><td>1109</td><td>20</td><td>44</td><td>140</td><td>882</td><td>1086</td><td>8</td><td>32</td><td>72</td><td>303</td><td>415</td></tr>
+        <tr><td>Gateley</td><td>12</td><td>166</td><td>107</td><td>1832</td><td>2117</td><td>7</td><td>118</td><td>77</td><td>1331</td><td>1533</td><td>3</td><td>85</td><td>40</td><td>259</td><td>387</td></tr>
+        <tr><td>Geldards LLP</td><td>66</td><td>169</td><td>117</td><td>1068</td><td>1420</td><td>59</td><td>103</td><td>86</td><td>860</td><td>1108</td><td>13</td><td>47</td><td>29</td><td>76</td><td>165</td></tr>
+        <tr><td>Gepp & Sons Solicitors LLP</td><td>15</td><td>10</td><td>18</td><td>292</td><td>335</td><td>13</td><td>9</td><td>20</td><td>274</td><td>316</td><td>7</td><td>5</td><td>15</td><td>96</td><td>123</td></tr>
+        <tr><td>Gilbert Stephens Solicitors</td><td>15</td><td>17</td><td>31</td><td>343</td><td>406</td><td>14</td><td>17</td><td>21</td><td>321</td><td>373</td><td>9</td><td>10</td><td>7</td><td>89</td><td>115</td></tr>
+        <tr><td>Girlings</td><td>5</td><td>20</td><td>20</td><td>316</td><td>361</td><td>6</td><td>24</td><td>22</td><td>287</td><td>339</td><td>3</td><td>21</td><td>14</td><td>82</td><td>120</td></tr>
+        <tr><td>Glanvilles LLP</td><td>10</td><td>43</td><td>34</td><td>394</td><td>481</td><td>13</td><td>31</td><td>23</td><td>368</td><td>435</td><td>5</td><td>18</td><td>14</td><td>74</td><td>111</td></tr>
+        <tr><td>Glover Priest Solicitors Limited</td><td>30</td><td>52</td><td>99</td><td>854</td><td>1035</td><td>41</td><td>49</td><td>113</td><td>815</td><td>1018</td><td>21</td><td>39</td><td>65</td><td>322</td><td>447</td></tr>
+        <tr><td>Gordon Brown Law Firm LLP</td><td>13</td><td>34</td><td>254</td><td>558</td><td>859</td><td>19</td><td>276</td><td>273</td><td>527</td><td>1095</td><td>9</td><td>157</td><td>143</td><td>120</td><td>429</td></tr>
+        <tr><td>Gordons LLP</td><td>16</td><td>87</td><td>147</td><td>486</td><td>736</td><td>19</td><td>37</td><td>131</td><td>444</td><td>631</td><td>4</td><td>27</td><td>78</td><td>122</td><td>231</td></tr>
+        <tr><td>Gordons Property Lawyers</td><td>12</td><td>17</td><td>22</td><td>6038</td><td>6089</td><td>10</td><td>22</td><td>31</td><td>6062</td><td>6125</td><td>2</td><td>12</td><td>15</td><td>677</td><td>706</td></tr>
+        <tr><td>Gorvins</td><td>28</td><td>95</td><td>66</td><td>1234</td><td>1423</td><td>27</td><td>71</td><td>74</td><td>1249</td><td>1421</td><td>15</td><td>56</td><td>38</td><td>431</td><td>540</td></tr>
+        <tr><td>Gosschalks</td><td>11</td><td>37</td><td>24</td><td>364</td><td>436</td><td>15</td><td>20</td><td>22</td><td>484</td><td>541</td><td>7</td><td>14</td><td>17</td><td>89</td><td>127</td></tr>
+        <tr><td>Gowling WLG (UK) LLP</td><td>44</td><td>128</td><td>111</td><td>1287</td><td>1570</td><td>63</td><td>108</td><td>93</td><td>1420</td><td>1684</td><td>8</td><td>48</td><td>50</td><td>223</td><td>329</td></tr>
+        <tr><td>Green Wright Chalton Annis</td><td>8</td><td>81</td><td>23</td><td>518</td><td>630</td><td>10</td><td>36</td><td>20</td><td>450</td><td>516</td><td>6</td><td>17</td><td>5</td><td>91</td><td>119</td></tr>
+        <tr><td>Grindeys LLP</td><td>24</td><td>28</td><td>207</td><td>8437</td><td>8696</td><td>24</td><td>32</td><td>201</td><td>8371</td><td>8628</td><td>5</td><td>15</td><td>96</td><td>1017</td><td>1133</td></tr>
+        <tr><td>Gunnercooke LLP</td><td>5</td><td>29</td><td>9</td><td>382</td><td>425</td><td>8</td><td>18</td><td>14</td><td>338</td><td>378</td><td>3</td><td>14</td><td>11</td><td>73</td><td>101</td></tr>
+        <tr><td>Hadgkiss Hughes & Beale</td><td>14</td><td>15</td><td>12</td><td>354</td><td>395</td><td>7</td><td>18</td><td>17</td><td>343</td><td>385</td><td>2</td><td>12</td><td>11</td><td>101</td><td>126</td></tr>
+        <tr><td>Hallett & Co</td><td>16</td><td>22</td><td>39</td><td>294</td><td>371</td><td>10</td><td>27</td><td>33</td><td>276</td><td>346</td><td>4</td><td>12</td><td>17</td><td>81</td><td>114</td></tr>
+        <tr><td>Hampton Mortgage Servicing Limited</td><td>0</td><td>0</td><td>0</td><td>460</td><td>460</td><td>0</td><td>0</td><td>0</td><td>458</td><td>458</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Harding Evans LLP</td><td>14</td><td>13</td><td>48</td><td>436</td><td>511</td><td>14</td><td>14</td><td>29</td><td>443</td><td>500</td><td>4</td><td>3</td><td>19</td><td>101</td><td>127</td></tr>
+        <tr><td>Harold Benjamin</td><td>10</td><td>37</td><td>6</td><td>636</td><td>689</td><td>14</td><td>29</td><td>7</td><td>592</td><td>642</td><td>1</td><td>15</td><td>7</td><td>149</td><td>172</td></tr>
+        <tr><td>Harrison Clark Rickerbys</td><td>48</td><td>91</td><td>85</td><td>753</td><td>977</td><td>51</td><td>64</td><td>87</td><td>606</td><td>808</td><td>30</td><td>43</td><td>59</td><td>157</td><td>289</td></tr>
+        <tr><td>Harrison Drury</td><td>13</td><td>8</td><td>31</td><td>341</td><td>393</td><td>13</td><td>15</td><td>23</td><td>327</td><td>378</td><td>7</td><td>15</td><td>14</td><td>89</td><td>125</td></tr>
+        <tr><td>Harrowells (inc Powell & Young)</td><td>33</td><td>33</td><td>101</td><td>332</td><td>499</td><td>27</td><td>14</td><td>104</td><td>301</td><td>446</td><td>9</td><td>8</td><td>39</td><td>64</td><td>120</td></tr>
+        <tr><td>Hartley & Worstenholme</td><td>20</td><td>29</td><td>41</td><td>344</td><td>434</td><td>16</td><td>50</td><td>31</td><td>314</td><td>411</td><td>7</td><td>21</td><td>21</td><td>116</td><td>165</td></tr>
+        <tr><td>Hayward Moon Property Lawyers</td><td>15</td><td>31</td><td>49</td><td>549</td><td>644</td><td>18</td><td>15</td><td>35</td><td>507</td><td>575</td><td>6</td><td>9</td><td>20</td><td>142</td><td>177</td></tr>
+        <tr><td>HBOS PLC</td><td>0</td><td>0</td><td>0</td><td>19946</td><td>19946</td><td>0</td><td>0</td><td>0</td><td>19818</td><td>19818</td><td>0</td><td>0</td><td>0</td><td>8</td><td>8</td></tr>
+        <tr><td>HBOS PLC Bank</td><td>0</td><td>0</td><td>0</td><td>51062</td><td>51062</td><td>0</td><td>0</td><td>0</td><td>51098</td><td>51098</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>HCB Solicitors</td><td>8</td><td>38</td><td>35</td><td>386</td><td>467</td><td>5</td><td>15</td><td>33</td><td>366</td><td>419</td><td>2</td><td>13</td><td>26</td><td>125</td><td>166</td></tr>
+        <tr><td>Healys LLP</td><td>5</td><td>103</td><td>13</td><td>420</td><td>541</td><td>5</td><td>63</td><td>14</td><td>377</td><td>459</td><td>2</td><td>45</td><td>12</td><td>128</td><td>187</td></tr>
+        <tr><td>Hedleys & Co (Sunderland)</td><td>5</td><td>5</td><td>105</td><td>267</td><td>382</td><td>7</td><td>5</td><td>101</td><td>258</td><td>371</td><td>5</td><td>5</td><td>34</td><td>86</td><td>130</td></tr>
+        <tr><td>Hegarty LLP</td><td>16</td><td>18</td><td>116</td><td>338</td><td>488</td><td>15</td><td>18</td><td>129</td><td>312</td><td>474</td><td>6</td><td>11</td><td>84</td><td>69</td><td>170</td></tr>
+        <tr><td>Herbert Smith Freehills LLP</td><td>0</td><td>11</td><td>5</td><td>441</td><td>457</td><td>1</td><td>1</td><td>0</td><td>365</td><td>367</td><td>1</td><td>0</td><td>0</td><td>24</td><td>25</td></tr>
+        <tr><td>Herrington & Carmichael LLP</td><td>5</td><td>99</td><td>253</td><td>324</td><td>681</td><td>4</td><td>68</td><td>219</td><td>291</td><td>582</td><td>2</td><td>20</td><td>86</td><td>61</td><td>169</td></tr>
+        <tr><td>Hewitsons</td><td>25</td><td>30</td><td>31</td><td>376</td><td>462</td><td>20</td><td>21</td><td>18</td><td>337</td><td>396</td><td>8</td><td>11</td><td>9</td><td>73</td><td>101</td></tr>
+        <tr><td>Hewitts</td><td>8</td><td>8</td><td>47</td><td>287</td><td>350</td><td>11</td><td>2</td><td>68</td><td>278</td><td>359</td><td>7</td><td>2</td><td>36</td><td>91</td><td>136</td></tr>
+        <tr><td>Hibberts LLP</td><td>45</td><td>13</td><td>31</td><td>295</td><td>384</td><td>30</td><td>10</td><td>37</td><td>285</td><td>362</td><td>10</td><td>4</td><td>19</td><td>97</td><td>130</td></tr>
+        <tr><td>Higgs & Sons</td><td>26</td><td>27</td><td>24</td><td>268</td><td>345</td><td>20</td><td>22</td><td>26</td><td>273</td><td>341</td><td>7</td><td>8</td><td>12</td><td>68</td><td>95</td></tr>
+        <tr><td>Hill Dickinson</td><td>9</td><td>80</td><td>19</td><td>453</td><td>561</td><td>9</td><td>48</td><td>14</td><td>485</td><td>556</td><td>3</td><td>25</td><td>6</td><td>98</td><td>132</td></tr>
+        <tr><td>Holmes & Hills</td><td>40</td><td>62</td><td>82</td><td>374</td><td>558</td><td>31</td><td>48</td><td>63</td><td>321</td><td>463</td><td>12</td><td>32</td><td>43</td><td>97</td><td>184</td></tr>
+        <tr><td>Home Property Lawyers Limited</td><td>26</td><td>15</td><td>44</td><td>661</td><td>746</td><td>24</td><td>19</td><td>38</td><td>641</td><td>722</td><td>9</td><td>12</td><td>22</td><td>170</td><td>213</td></tr>
+        <tr><td>Homeloan Management Limited</td><td>0</td><td>0</td><td>0</td><td>3778</td><td>3778</td><td>0</td><td>0</td><td>0</td><td>3710</td><td>3710</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Homes And Communities Agency</td><td>0</td><td>0</td><td>0</td><td>4446</td><td>4446</td><td>0</td><td>0</td><td>1</td><td>4444</td><td>4445</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Howard Kennedy FSI</td><td>4</td><td>118</td><td>22</td><td>668</td><td>812</td><td>4</td><td>75</td><td>11</td><td>694</td><td>784</td><td>1</td><td>37</td><td>9</td><td>136</td><td>183</td></tr>
+        <tr><td>Howells Solicitors</td><td>30</td><td>49</td><td>139</td><td>1008</td><td>1226</td><td>30</td><td>35</td><td>137</td><td>997</td><td>1199</td><td>8</td><td>15</td><td>60</td><td>241</td><td>324</td></tr>
+        <tr><td>Howes Percival</td><td>27</td><td>39</td><td>58</td><td>369</td><td>493</td><td>25</td><td>36</td><td>55</td><td>336</td><td>452</td><td>9</td><td>15</td><td>26</td><td>97</td><td>147</td></tr>
+        <tr><td>HSBC</td><td>0</td><td>0</td><td>0</td><td>17477</td><td>17477</td><td>0</td><td>0</td><td>0</td><td>17495</td><td>17495</td><td>0</td><td>0</td><td>0</td><td>75</td><td>75</td></tr>
+        <tr><td>HSBC Bank PLC</td><td>0</td><td>0</td><td>0</td><td>483</td><td>483</td><td>0</td><td>0</td><td>0</td><td>478</td><td>478</td><td>0</td><td>0</td><td>0</td><td>4</td><td>4</td></tr>
+        <tr><td>HSBC Invoice Finance (UK) Limited</td><td>0</td><td>0</td><td>0</td><td>385</td><td>385</td><td>0</td><td>0</td><td>0</td><td>388</td><td>388</td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+        <tr><td>HSR Law</td><td>23</td><td>6</td><td>44</td><td>365</td><td>438</td><td>20</td><td>4</td><td>34</td><td>374</td><td>432</td><td>7</td><td>4</td><td>20</td><td>127</td><td>158</td></tr>
+        <tr><td>Hugh James Solicitors</td><td>56</td><td>119</td><td>104</td><td>7970</td><td>8249</td><td>61</td><td>57</td><td>79</td><td>8062</td><td>8259</td><td>12</td><td>33</td><td>49</td><td>1048</td><td>1142</td></tr>
+        <tr><td>Humphries Kirk LLP</td><td>21</td><td>23</td><td>13</td><td>383</td><td>440</td><td>21</td><td>28</td><td>11</td><td>381</td><td>441</td><td>10</td><td>12</td><td>5</td><td>79</td><td>106</td></tr>
+        <tr><td>Hutchinson Thomas</td><td>15</td><td>12</td><td>33</td><td>363</td><td>423</td><td>10</td><td>6</td><td>23</td><td>357</td><td>396</td><td>6</td><td>3</td><td>13</td><td>119</td><td>141</td></tr>
+        <tr><td>Ingram Winter Green</td><td>0</td><td>90</td><td>4</td><td>326</td><td>420</td><td>0</td><td>79</td><td>7</td><td>323</td><td>409</td><td>0</td><td>12</td><td>5</td><td>29</td><td>46</td></tr>
+        <tr><td>Insight Law</td><td>6</td><td>9</td><td>17</td><td>355</td><td>387</td><td>13</td><td>10</td><td>22</td><td>361</td><td>406</td><td>8</td><td>6</td><td>17</td><td>120</td><td>151</td></tr>
+        <tr><td>Insolvency Service (The)</td><td>0</td><td>0</td><td>0</td><td>670</td><td>670</td><td>0</td><td>0</td><td>0</td><td>609</td><td>609</td><td>0</td><td>0</td><td>0</td><td>10</td><td>10</td></tr>
+        <tr><td>Irwin Mitchell</td><td>27</td><td>86</td><td>46</td><td>1011</td><td>1170</td><td>20</td><td>85</td><td>48</td><td>908</td><td>1061</td><td>7</td><td>44</td><td>29</td><td>260</td><td>340</td></tr>
+        <tr><td>Ison Harrison</td><td>53</td><td>92</td><td>380</td><td>1075</td><td>1600</td><td>54</td><td>105</td><td>362</td><td>992</td><td>1513</td><td>21</td><td>84</td><td>185</td><td>330</td><td>620</td></tr>
+        <tr><td>J S Law</td><td>16</td><td>32</td><td>65</td><td>986</td><td>1099</td><td>16</td><td>44</td><td>64</td><td>961</td><td>1085</td><td>3</td><td>36</td><td>39</td><td>201</td><td>279</td></tr>
+        <tr><td>Jackson Lees Group Ltd</td><td>13</td><td>9</td><td>21</td><td>433</td><td>476</td><td>14</td><td>9</td><td>19</td><td>437</td><td>479</td><td>4</td><td>7</td><td>11</td><td>142</td><td>164</td></tr>
+        <tr><td>Jacksons Law Firm</td><td>10</td><td>46</td><td>199</td><td>253</td><td>508</td><td>10</td><td>53</td><td>213</td><td>253</td><td>529</td><td>4</td><td>19</td><td>114</td><td>67</td><td>204</td></tr>
+        <tr><td>Jaffe Porter Crossick LLP</td><td>0</td><td>98</td><td>2</td><td>282</td><td>382</td><td>0</td><td>56</td><td>1</td><td>264</td><td>321</td><td>0</td><td>19</td><td>1</td><td>67</td><td>87</td></tr>
+        <tr><td>Jane Brooks Law</td><td>25</td><td>9</td><td>71</td><td>540</td><td>645</td><td>25</td><td>10</td><td>62</td><td>531</td><td>628</td><td>11</td><td>3</td><td>28</td><td>187</td><td>229</td></tr>
+        <tr><td>JCP Solicitors Limited (Inc VJG Johns & Son)</td><td>45</td><td>21</td><td>29</td><td>459</td><td>554</td><td>44</td><td>15</td><td>51</td><td>452</td><td>562</td><td>27</td><td>13</td><td>29</td><td>152</td><td>221</td></tr>
+        <tr><td>Jefferies Essex LLP</td><td>8</td><td>32</td><td>13</td><td>294</td><td>347</td><td>13</td><td>28</td><td>15</td><td>268</td><td>324</td><td>7</td><td>22</td><td>11</td><td>104</td><td>144</td></tr>
+        <tr><td>JMW Solicitors LLP</td><td>43</td><td>165</td><td>103</td><td>2203</td><td>2514</td><td>41</td><td>129</td><td>105</td><td>2134</td><td>2409</td><td>11</td><td>75</td><td>46</td><td>597</td><td>729</td></tr>
+        <tr><td>John W Davies & Co</td><td>9</td><td>12</td><td>20</td><td>519</td><td>560</td><td>7</td><td>17</td><td>24</td><td>507</td><td>555</td><td>2</td><td>13</td><td>18</td><td>156</td><td>189</td></tr>
+        <tr><td>Jones & Company</td><td>36</td><td>5</td><td>35</td><td>360</td><td>436</td><td>26</td><td>9</td><td>24</td><td>341</td><td>400</td><td>6</td><td>4</td><td>13</td><td>87</td><td>110</td></tr>
+        <tr><td>Jones Day</td><td>0</td><td>11</td><td>0</td><td>415</td><td>426</td><td>0</td><td>14</td><td>4</td><td>389</td><td>407</td><td>0</td><td>10</td><td>2</td><td>36</td><td>48</td></tr>
+        <tr><td>Judge & Priestley</td><td>2</td><td>60</td><td>6</td><td>427</td><td>495</td><td>2</td><td>36</td><td>2</td><td>373</td><td>413</td><td>2</td><td>20</td><td>1</td><td>99</td><td>122</td></tr>
+        <tr><td>Just Retirement Money Limited</td><td>0</td><td>0</td><td>0</td><td>512</td><td>512</td><td>0</td><td>0</td><td>0</td><td>500</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Keebles LLP</td><td>30</td><td>64</td><td>71</td><td>874</td><td>1039</td><td>20</td><td>54</td><td>64</td><td>792</td><td>930</td><td>4</td><td>34</td><td>39</td><td>266</td><td>343</td></tr>
+        <tr><td>Kew Law LLP</td><td>15</td><td>24</td><td>40</td><td>361</td><td>440</td><td>15</td><td>20</td><td>33</td><td>342</td><td>410</td><td>5</td><td>12</td><td>22</td><td>111</td><td>150</td></tr>
+        <tr><td>Key Conveyancing</td><td>8</td><td>77</td><td>198</td><td>317</td><td>600</td><td>9</td><td>75</td><td>191</td><td>293</td><td>568</td><td>5</td><td>46</td><td>106</td><td>97</td><td>254</td></tr>
+        <tr><td>Kidd Rapinet LLP</td><td>7</td><td>49</td><td>31</td><td>562</td><td>649</td><td>16</td><td>50</td><td>25</td><td>534</td><td>625</td><td>5</td><td>27</td><td>21</td><td>175</td><td>228</td></tr>
+        <tr><td>Kitson Hutchings</td><td>10</td><td>17</td><td>20</td><td>312</td><td>359</td><td>12</td><td>22</td><td>11</td><td>304</td><td>349</td><td>8</td><td>13</td><td>6</td><td>101</td><td>128</td></tr>
+        <tr><td>Knights Solicitors LLP (Newcastle Under Lyme)</td><td>22</td><td>128</td><td>69</td><td>2142</td><td>2361</td><td>22</td><td>65</td><td>82</td><td>1853</td><td>2022</td><td>13</td><td>33</td><td>37</td><td>240</td><td>323</td></tr>
+        <tr><td>Kuit Steinart Levy</td><td>4</td><td>19</td><td>11</td><td>355</td><td>389</td><td>4</td><td>24</td><td>5</td><td>395</td><td>428</td><td>3</td><td>14</td><td>2</td><td>99</td><td>118</td></tr>
+        <tr><td>Laceys</td><td>2</td><td>26</td><td>9</td><td>325</td><td>362</td><td>3</td><td>20</td><td>5</td><td>274</td><td>302</td><td>2</td><td>9</td><td>2</td><td>43</td><td>56</td></tr>
+        <tr><td>Lambert Pugh</td><td>14</td><td>4</td><td>32</td><td>342</td><td>392</td><td>12</td><td>4</td><td>31</td><td>346</td><td>393</td><td>5</td><td>3</td><td>10</td><td>78</td><td>96</td></tr>
+        <tr><td>Lambert Taylor & Gregory</td><td>17</td><td>2</td><td>8</td><td>404</td><td>431</td><td>18</td><td>7</td><td>8</td><td>466</td><td>499</td><td>5</td><td>5</td><td>4</td><td>75</td><td>89</td></tr>
+        <tr><td>Langley Wellington</td><td>11</td><td>39</td><td>114</td><td>352</td><td>516</td><td>12</td><td>43</td><td>117</td><td>305</td><td>477</td><td>5</td><td>31</td><td>70</td><td>102</td><td>208</td></tr>
+        <tr><td>Langleys</td><td>57</td><td>38</td><td>29</td><td>281</td><td>405</td><td>53</td><td>30</td><td>20</td><td>268</td><td>371</td><td>7</td><td>9</td><td>13</td><td>78</td><td>107</td></tr>
+        <tr><td>Lanyon Bowdler</td><td>40</td><td>21</td><td>44</td><td>339</td><td>444</td><td>36</td><td>26</td><td>40</td><td>321</td><td>423</td><td>21</td><td>10</td><td>20</td><td>60</td><td>111</td></tr>
+        <tr><td>Lawcomm Solicitors</td><td>1</td><td>229</td><td>12</td><td>193</td><td>435</td><td>2</td><td>189</td><td>16</td><td>172</td><td>379</td><td>0</td><td>107</td><td>11</td><td>57</td><td>175</td></tr>
+        <tr><td>Lawrence Stephens</td><td>2</td><td>51</td><td>3</td><td>403</td><td>459</td><td>1</td><td>65</td><td>4</td><td>437</td><td>507</td><td>0</td><td>34</td><td>2</td><td>111</td><td>147</td></tr>
+        <tr><td>Laytons Solicitors LLP</td><td>0</td><td>21</td><td>9</td><td>384</td><td>414</td><td>1</td><td>16</td><td>4</td><td>325</td><td>346</td><td>1</td><td>15</td><td>2</td><td>79</td><td>97</td></tr>
+        <tr><td>LB of Brent</td><td>0</td><td>4</td><td>0</td><td>533</td><td>537</td><td>1</td><td>0</td><td>0</td><td>477</td><td>478</td><td>0</td><td>0</td><td>0</td><td>6</td><td>6</td></tr>
+        <tr><td>LCF Residential Ltd</td><td>6</td><td>9</td><td>18</td><td>332</td><td>365</td><td>9</td><td>7</td><td>25</td><td>311</td><td>352</td><td>1</td><td>4</td><td>14</td><td>82</td><td>101</td></tr>
+        <tr><td>Leasehold Law LLP</td><td>0</td><td>80</td><td>4</td><td>361</td><td>445</td><td>0</td><td>66</td><td>9</td><td>321</td><td>396</td><td>0</td><td>34</td><td>8</td><td>10</td><td>52</td></tr>
+        <tr><td>Leathes Prior</td><td>16</td><td>28</td><td>29</td><td>281</td><td>354</td><td>13</td><td>24</td><td>25</td><td>285</td><td>347</td><td>2</td><td>11</td><td>10</td><td>77</td><td>100</td></tr>
+        <tr><td>Leeds & Holbeck Building Society</td><td>0</td><td>0</td><td>0</td><td>3933</td><td>3933</td><td>0</td><td>0</td><td>0</td><td>3923</td><td>3923</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Legal Aid Agency</td><td>0</td><td>0</td><td>0</td><td>2981</td><td>2981</td><td>0</td><td>0</td><td>0</td><td>2955</td><td>2955</td><td>0</td><td>0</td><td>0</td><td>17</td><td>17</td></tr>
+        <tr><td>Lester Aldridge LLP</td><td>5</td><td>80</td><td>22</td><td>724</td><td>831</td><td>7</td><td>124</td><td>22</td><td>737</td><td>890</td><td>7</td><td>61</td><td>11</td><td>97</td><td>176</td></tr>
+        <tr><td>Levi Solicitors LLP</td><td>23</td><td>21</td><td>81</td><td>434</td><td>559</td><td>17</td><td>18</td><td>70</td><td>447</td><td>552</td><td>8</td><td>14</td><td>29</td><td>134</td><td>185</td></tr>
+        <tr><td>Lightfoots</td><td>15</td><td>62</td><td>53</td><td>3174</td><td>3304</td><td>15</td><td>53</td><td>47</td><td>3083</td><td>3198</td><td>10</td><td>33</td><td>27</td><td>545</td><td>615</td></tr>
+        <tr><td>Lloyds Bank PLC</td><td>0</td><td>0</td><td>0</td><td>7835</td><td>7835</td><td>0</td><td>0</td><td>0</td><td>7700</td><td>7700</td><td>0</td><td>0</td><td>0</td><td>17</td><td>17</td></tr>
+        <tr><td>LMS (trading as Total Conveyancing Services)</td><td>4</td><td>1</td><td>5</td><td>3752</td><td>3762</td><td>6</td><td>0</td><td>5</td><td>3787</td><td>3798</td><td>3</td><td>0</td><td>5</td><td>1110</td><td>1118</td></tr>
+        <tr><td>Lockings</td><td>27</td><td>50</td><td>33</td><td>409</td><td>519</td><td>33</td><td>25</td><td>43</td><td>401</td><td>502</td><td>7</td><td>13</td><td>20</td><td>100</td><td>140</td></tr>
+        <tr><td>London & Quadrant Housing Trust</td><td>0</td><td>12</td><td>6</td><td>505</td><td>523</td><td>0</td><td>7</td><td>3</td><td>496</td><td>506</td><td>0</td><td>3</td><td>1</td><td>3</td><td>7</td></tr>
+        <tr><td>Lowell Solicitors Limited</td><td>0</td><td>0</td><td>0</td><td>497</td><td>497</td><td>0</td><td>0</td><td>0</td><td>445</td><td>445</td><td>0</td><td>0</td><td>0</td><td>22</td><td>22</td></tr>
+        <tr><td>Lupton Fawcett Denison Till</td><td>14</td><td>16</td><td>17</td><td>384</td><td>431</td><td>14</td><td>23</td><td>21</td><td>376</td><td>434</td><td>7</td><td>14</td><td>8</td><td>56</td><td>85</td></tr>
+        <tr><td>Macfarlanes LLP</td><td>1</td><td>14</td><td>9</td><td>465</td><td>489</td><td>1</td><td>11</td><td>8</td><td>421</td><td>441</td><td>1</td><td>5</td><td>5</td><td>29</td><td>40</td></tr>
+        <tr><td>Malcolm C Foy & Co Limited</td><td>6</td><td>21</td><td>206</td><td>304</td><td>537</td><td>7</td><td>17</td><td>233</td><td>305</td><td>562</td><td>2</td><td>8</td><td>144</td><td>83</td><td>237</td></tr>
+        <tr><td>Marcus Baum</td><td>12</td><td>29</td><td>17</td><td>499</td><td>557</td><td>13</td><td>25</td><td>19</td><td>462</td><td>519</td><td>3</td><td>16</td><td>10</td><td>132</td><td>161</td></tr>
+        <tr><td>Marsden Rawsthorn LLP</td><td>27</td><td>16</td><td>37</td><td>470</td><td>550</td><td>29</td><td>16</td><td>33</td><td>431</td><td>509</td><td>11</td><td>11</td><td>16</td><td>172</td><td>210</td></tr>
+        <tr><td>Martin Tolhurst Partnership LLP</td><td>4</td><td>50</td><td>59</td><td>1102</td><td>1215</td><td>8</td><td>32</td><td>40</td><td>1057</td><td>1137</td><td>3</td><td>22</td><td>19</td><td>258</td><td>302</td></tr>
+        <tr><td>Martin-Kaye</td><td>10</td><td>16</td><td>16</td><td>421</td><td>463</td><td>7</td><td>11</td><td>22</td><td>400</td><td>440</td><td>3</td><td>9</td><td>6</td><td>89</td><td>107</td></tr>
+        <tr><td>Mason Baggott & Garton</td><td>16</td><td>4</td><td>41</td><td>347</td><td>408</td><td>12</td><td>6</td><td>28</td><td>337</td><td>383</td><td>8</td><td>3</td><td>17</td><td>106</td><td>134</td></tr>
+        <tr><td>Matthew & Matthew</td><td>7</td><td>42</td><td>23</td><td>288</td><td>360</td><td>3</td><td>26</td><td>17</td><td>237</td><td>283</td><td>2</td><td>9</td><td>7</td><td>52</td><td>70</td></tr>
+        <tr><td>Matthew Montgomery & Co</td><td>2</td><td>31</td><td>102</td><td>250</td><td>385</td><td>1</td><td>30</td><td>99</td><td>245</td><td>375</td><td>0</td><td>14</td><td>52</td><td>77</td><td>143</td></tr>
+        <tr><td>Mayo Wynne Baxter</td><td>12</td><td>61</td><td>24</td><td>533</td><td>630</td><td>10</td><td>45</td><td>23</td><td>481</td><td>559</td><td>4</td><td>22</td><td>14</td><td>124</td><td>164</td></tr>
+        <tr><td>McMillan Williams</td><td>16</td><td>199</td><td>85</td><td>1642</td><td>1942</td><td>16</td><td>199</td><td>68</td><td>1612</td><td>1895</td><td>10</td><td>137</td><td>40</td><td>598</td><td>785</td></tr>
+        <tr><td>Mendip District Council</td><td>3</td><td>0</td><td>2</td><td>670</td><td>675</td><td>0</td><td>0</td><td>2</td><td>654</td><td>656</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Metcalfe Copeman & Pettefar</td><td>34</td><td>6</td><td>20</td><td>358</td><td>418</td><td>25</td><td>3</td><td>24</td><td>374</td><td>426</td><td>12</td><td>1</td><td>12</td><td>96</td><td>121</td></tr>
+        <tr><td>MFG Solicitors</td><td>65</td><td>53</td><td>70</td><td>493</td><td>681</td><td>52</td><td>41</td><td>53</td><td>481</td><td>627</td><td>18</td><td>32</td><td>32</td><td>124</td><td>206</td></tr>
+        <tr><td>Michelmores LLP</td><td>23</td><td>52</td><td>53</td><td>522</td><td>650</td><td>22</td><td>40</td><td>31</td><td>443</td><td>536</td><td>10</td><td>13</td><td>23</td><td>97</td><td>143</td></tr>
+        <tr><td>Mike Judge</td><td>0</td><td>0</td><td>0</td><td>343</td><td>343</td><td>0</td><td>0</td><td>0</td><td>345</td><td>345</td><td>0</td><td>0</td><td>0</td><td>28</td><td>28</td></tr>
+        <tr><td>Mills & Reeve LLP</td><td>15</td><td>122</td><td>26</td><td>699</td><td>862</td><td>21</td><td>108</td><td>26</td><td>565</td><td>720</td><td>13</td><td>35</td><td>17</td><td>112</td><td>177</td></tr>
+        <tr><td>Mincoffs Solicitors LLP</td><td>12</td><td>24</td><td>36</td><td>451</td><td>523</td><td>8</td><td>11</td><td>17</td><td>375</td><td>411</td><td>3</td><td>6</td><td>7</td><td>65</td><td>81</td></tr>
+        <tr><td>Mishcon De Reya</td><td>4</td><td>62</td><td>6</td><td>421</td><td>493</td><td>1</td><td>85</td><td>1</td><td>293</td><td>380</td><td>1</td><td>62</td><td>1</td><td>77</td><td>141</td></tr>
+        <tr><td>Moon Beever</td><td>0</td><td>17</td><td>0</td><td>322</td><td>339</td><td>0</td><td>30</td><td>0</td><td>366</td><td>396</td><td>0</td><td>8</td><td>0</td><td>30</td><td>38</td></tr>
+        <tr><td>Mooreblatch</td><td>17</td><td>60</td><td>49</td><td>531</td><td>657</td><td>14</td><td>51</td><td>50</td><td>503</td><td>618</td><td>4</td><td>19</td><td>26</td><td>111</td><td>160</td></tr>
+        <tr><td>Morgan Jones & Pett</td><td>11</td><td>40</td><td>40</td><td>433</td><td>524</td><td>10</td><td>26</td><td>38</td><td>410</td><td>484</td><td>3</td><td>16</td><td>27</td><td>141</td><td>187</td></tr>
+        <tr><td>Morgan Laroche</td><td>15</td><td>12</td><td>21</td><td>304</td><td>352</td><td>22</td><td>18</td><td>18</td><td>292</td><td>350</td><td>11</td><td>12</td><td>9</td><td>50</td><td>82</td></tr>
+        <tr><td>Morrisons</td><td>3</td><td>30</td><td>9</td><td>371</td><td>413</td><td>2</td><td>26</td><td>14</td><td>234</td><td>276</td><td>2</td><td>13</td><td>6</td><td>72</td><td>93</td></tr>
+        <tr><td>Mortimer Clarke Solicitors Limited</td><td>0</td><td>0</td><td>0</td><td>1567</td><td>1567</td><td>0</td><td>0</td><td>0</td><td>1620</td><td>1620</td><td>0</td><td>0</td><td>0</td><td>63</td><td>63</td></tr>
+        <tr><td>Mortons</td><td>7</td><td>36</td><td>37</td><td>366</td><td>446</td><td>8</td><td>27</td><td>33</td><td>307</td><td>375</td><td>3</td><td>11</td><td>23</td><td>104</td><td>141</td></tr>
+        <tr><td>MSB Law LLP</td><td>8</td><td>25</td><td>108</td><td>516</td><td>657</td><td>7</td><td>46</td><td>113</td><td>478</td><td>644</td><td>2</td><td>22</td><td>70</td><td>163</td><td>257</td></tr>
+        <tr><td>Muckle LLP</td><td>17</td><td>9</td><td>194</td><td>222</td><td>442</td><td>12</td><td>22</td><td>42</td><td>335</td><td>411</td><td>3</td><td>13</td><td>9</td><td>37</td><td>62</td></tr>
+        <tr><td>My Home Move Limited</td><td>114</td><td>283</td><td>434</td><td>9679</td><td>10510</td><td>144</td><td>245</td><td>405</td><td>9511</td><td>10305</td><td>49</td><td>151</td><td>208</td><td>1573</td><td>1981</td></tr>
+        <tr><td>Nalders Solicitors</td><td>44</td><td>39</td><td>60</td><td>544</td><td>687</td><td>47</td><td>25</td><td>60</td><td>473</td><td>605</td><td>16</td><td>17</td><td>29</td><td>161</td><td>223</td></tr>
+        <tr><td>Nantes</td><td>23</td><td>18</td><td>18</td><td>290</td><td>349</td><td>18</td><td>10</td><td>25</td><td>281</td><td>334</td><td>6</td><td>3</td><td>9</td><td>50</td><td>68</td></tr>
+        <tr><td>Napthens LLP</td><td>61</td><td>25</td><td>101</td><td>866</td><td>1053</td><td>54</td><td>29</td><td>82</td><td>908</td><td>1073</td><td>22</td><td>19</td><td>53</td><td>227</td><td>321</td></tr>
+        <tr><td>National Westminster Bank PLC</td><td>0</td><td>0</td><td>0</td><td>29686</td><td>29686</td><td>0</td><td>0</td><td>0</td><td>29523</td><td>29523</td><td>0</td><td>0</td><td>0</td><td>37</td><td>37</td></tr>
+        <tr><td>Nationwide Building Society</td><td>0</td><td>0</td><td>0</td><td>35425</td><td>35425</td><td>0</td><td>0</td><td>0</td><td>35424</td><td>35424</td><td>0</td><td>0</td><td>0</td><td>18</td><td>18</td></tr>
+        <tr><td>Neil Myerson LLP</td><td>4</td><td>13</td><td>9</td><td>396</td><td>422</td><td>1</td><td>14</td><td>1</td><td>854</td><td>870</td><td>0</td><td>11</td><td>1</td><td>35</td><td>47</td></tr>
+        <tr><td>Nelsons Solicitors LLP</td><td>13</td><td>12</td><td>15</td><td>431</td><td>471</td><td>13</td><td>5</td><td>17</td><td>388</td><td>423</td><td>10</td><td>5</td><td>7</td><td>119</td><td>141</td></tr>
+        <tr><td>Nemo Personal Finance Limited</td><td>0</td><td>0</td><td>0</td><td>502</td><td>502</td><td>0</td><td>0</td><td>0</td><td>502</td><td>502</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Neves Solicitors</td><td>14</td><td>46</td><td>53</td><td>334</td><td>447</td><td>13</td><td>53</td><td>40</td><td>297</td><td>403</td><td>6</td><td>27</td><td>26</td><td>75</td><td>134</td></tr>
+        <tr><td>New Homes Law</td><td>0</td><td>334</td><td>202</td><td>165</td><td>701</td><td>0</td><td>336</td><td>176</td><td>148</td><td>660</td><td>0</td><td>189</td><td>105</td><td>66</td><td>360</td></tr>
+        <tr><td>Newbold & Co</td><td>61</td><td>9</td><td>129</td><td>532</td><td>731</td><td>56</td><td>19</td><td>122</td><td>554</td><td>751</td><td>9</td><td>12</td><td>52</td><td>156</td><td>229</td></tr>
+        <tr><td>Newtons Solicitors Ltd</td><td>26</td><td>14</td><td>54</td><td>482</td><td>576</td><td>27</td><td>10</td><td>63</td><td>431</td><td>531</td><td>13</td><td>7</td><td>33</td><td>123</td><td>176</td></tr>
+        <tr><td>Nigel Broadhead Mynard</td><td>12</td><td>36</td><td>42</td><td>440</td><td>530</td><td>12</td><td>36</td><td>34</td><td>432</td><td>514</td><td>7</td><td>25</td><td>21</td><td>166</td><td>219</td></tr>
+        <tr><td>Northumbrian Water Limited</td><td>0</td><td>0</td><td>2</td><td>335</td><td>337</td><td>0</td><td>0</td><td>1</td><td>336</td><td>337</td><td>0</td><td>0</td><td>0</td><td>23</td><td>23</td></tr>
+        <tr><td>Norton Finance (UK) Limited</td><td>0</td><td>0</td><td>0</td><td>438</td><td>438</td><td>0</td><td>0</td><td>0</td><td>433</td><td>433</td><td>0</td><td>0</td><td>0</td><td>29</td><td>29</td></tr>
+        <tr><td>Norton Peskett (Quality Solicitors)</td><td>44</td><td>22</td><td>95</td><td>506</td><td>667</td><td>41</td><td>24</td><td>119</td><td>487</td><td>671</td><td>10</td><td>11</td><td>46</td><td>109</td><td>176</td></tr>
+        <tr><td>Nottingham Building Society</td><td>0</td><td>0</td><td>0</td><td>1038</td><td>1038</td><td>0</td><td>0</td><td>0</td><td>1032</td><td>1032</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>O'Neill Patient</td><td>72</td><td>210</td><td>179</td><td>20180</td><td>20641</td><td>59</td><td>153</td><td>197</td><td>20032</td><td>20441</td><td>21</td><td>90</td><td>116</td><td>3958</td><td>4185</td></tr>
+        <tr><td>Oliver & Co Solicitors Limited</td><td>13</td><td>34</td><td>17</td><td>329</td><td>393</td><td>13</td><td>36</td><td>16</td><td>321</td><td>386</td><td>5</td><td>25</td><td>8</td><td>100</td><td>138</td></tr>
+        <tr><td>Onesavings Bank PLC</td><td>0</td><td>0</td><td>0</td><td>1154</td><td>1154</td><td>0</td><td>0</td><td>0</td><td>1157</td><td>1157</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Optima Legal Services</td><td>42</td><td>37</td><td>24</td><td>18743</td><td>18846</td><td>47</td><td>16</td><td>18</td><td>18761</td><td>18842</td><td>12</td><td>10</td><td>11</td><td>2998</td><td>3031</td></tr>
+        <tr><td>Orbit Group Limited</td><td>0</td><td>0</td><td>0</td><td>333</td><td>333</td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Osborne Clarke</td><td>9</td><td>101</td><td>68</td><td>1192</td><td>1370</td><td>7</td><td>115</td><td>45</td><td>847</td><td>1014</td><td>4</td><td>36</td><td>31</td><td>145</td><td>216</td></tr>
+        <tr><td>Osler Donegan Taylor</td><td>2</td><td>70</td><td>16</td><td>360</td><td>448</td><td>2</td><td>52</td><td>27</td><td>341</td><td>422</td><td>0</td><td>30</td><td>9</td><td>72</td><td>111</td></tr>
+        <tr><td>PCS</td><td>19</td><td>103</td><td>78</td><td>562</td><td>762</td><td>21</td><td>132</td><td>94</td><td>617</td><td>864</td><td>7</td><td>74</td><td>54</td><td>212</td><td>347</td></tr>
+        <tr><td>Paragon Group</td><td>0</td><td>0</td><td>0</td><td>2568</td><td>2568</td><td>0</td><td>0</td><td>0</td><td>2523</td><td>2523</td><td>0</td><td>0</td><td>0</td><td>60</td><td>60</td></tr>
+        <tr><td>Paratus AMC Ltd</td><td>0</td><td>0</td><td>0</td><td>513</td><td>513</td><td>0</td><td>0</td><td>0</td><td>517</td><td>517</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Paris Smith LLP</td><td>17</td><td>118</td><td>38</td><td>786</td><td>959</td><td>19</td><td>66</td><td>34</td><td>802</td><td>921</td><td>8</td><td>26</td><td>11</td><td>147</td><td>192</td></tr>
+        <tr><td>Park Woodfine</td><td>11</td><td>38</td><td>85</td><td>255</td><td>389</td><td>13</td><td>47</td><td>119</td><td>260</td><td>439</td><td>2</td><td>23</td><td>40</td><td>74</td><td>139</td></tr>
+        <tr><td>Parkinson Wright LLP</td><td>17</td><td>34</td><td>35</td><td>446</td><td>532</td><td>20</td><td>24</td><td>36</td><td>432</td><td>512</td><td>8</td><td>13</td><td>15</td><td>95</td><td>131</td></tr>
+        <tr><td>Paul Robinson & Co</td><td>12</td><td>57</td><td>40</td><td>483</td><td>592</td><td>13</td><td>69</td><td>42</td><td>460</td><td>584</td><td>6</td><td>39</td><td>25</td><td>165</td><td>235</td></tr>
+        <tr><td>Payplan Partnership</td><td>0</td><td>0</td><td>0</td><td>345</td><td>345</td><td>0</td><td>0</td><td>0</td><td>330</td><td>330</td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+        <tr><td>Penningtons Manches LLP</td><td>10</td><td>54</td><td>43</td><td>610</td><td>717</td><td>10</td><td>77</td><td>43</td><td>566</td><td>696</td><td>5</td><td>35</td><td>29</td><td>111</td><td>180</td></tr>
+        <tr><td>Pepper (UK) Ltd</td><td>0</td><td>0</td><td>0</td><td>1323</td><td>1323</td><td>0</td><td>0</td><td>0</td><td>1315</td><td>1315</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Peter Lynn & Partners</td><td>18</td><td>8</td><td>56</td><td>254</td><td>336</td><td>15</td><td>15</td><td>35</td><td>219</td><td>284</td><td>7</td><td>9</td><td>28</td><td>77</td><td>121</td></tr>
+        <tr><td>Philip Ross & Co</td><td>2</td><td>71</td><td>5</td><td>397</td><td>475</td><td>3</td><td>37</td><td>7</td><td>383</td><td>430</td><td>1</td><td>24</td><td>6</td><td>105</td><td>136</td></tr>
+        <tr><td>Pinsent Masons LLP</td><td>8</td><td>493</td><td>582</td><td>1854</td><td>2937</td><td>4</td><td>555</td><td>634</td><td>1692</td><td>2885</td><td>2</td><td>401</td><td>332</td><td>145</td><td>880</td></tr>
+        <tr><td>Pirie Palmann Limited</td><td>14</td><td>19</td><td>43</td><td>753</td><td>829</td><td>15</td><td>13</td><td>30</td><td>749</td><td>807</td><td>2</td><td>11</td><td>11</td><td>149</td><td>173</td></tr>
+        <tr><td>Platform Funding Limited</td><td>0</td><td>0</td><td>0</td><td>2026</td><td>2026</td><td>0</td><td>0</td><td>0</td><td>2007</td><td>2007</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Platform Funding Limited (Leek 12)</td><td>0</td><td>0</td><td>0</td><td>498</td><td>498</td><td>0</td><td>0</td><td>0</td><td>503</td><td>503</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>PM Law Ltd</td><td>10</td><td>36</td><td>29</td><td>568</td><td>643</td><td>11</td><td>26</td><td>32</td><td>563</td><td>632</td><td>8</td><td>18</td><td>20</td><td>164</td><td>210</td></tr>
+        <tr><td>Poole Alcock LLP</td><td>22</td><td>32</td><td>64</td><td>477</td><td>595</td><td>23</td><td>19</td><td>56</td><td>458</td><td>556</td><td>14</td><td>9</td><td>31</td><td>173</td><td>227</td></tr>
+        <tr><td>Porter Dodson LLP</td><td>46</td><td>33</td><td>32</td><td>362</td><td>473</td><td>34</td><td>29</td><td>32</td><td>335</td><td>430</td><td>11</td><td>8</td><td>13</td><td>65</td><td>97</td></tr>
+        <tr><td>Premier Solicitors LLP</td><td>17</td><td>36</td><td>20</td><td>487</td><td>560</td><td>22</td><td>32</td><td>16</td><td>467</td><td>537</td><td>13</td><td>23</td><td>12</td><td>206</td><td>254</td></tr>
+        <tr><td>Principality Building Society</td><td>0</td><td>0</td><td>0</td><td>2185</td><td>2185</td><td>0</td><td>0</td><td>0</td><td>2139</td><td>2139</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>Property Legal Services (PLS)</td><td>27</td><td>379</td><td>579</td><td>1716</td><td>2701</td><td>28</td><td>296</td><td>554</td><td>1842</td><td>2720</td><td>16</td><td>168</td><td>315</td><td>524</td><td>1023</td></tr>
+        <tr><td>Pure Law LLP</td><td>6</td><td>38</td><td>14</td><td>1219</td><td>1277</td><td>7</td><td>21</td><td>7</td><td>1187</td><td>1222</td><td>2</td><td>5</td><td>6</td><td>92</td><td>105</td></tr>
+        <tr><td>Ramsdens Solicitors LLP</td><td>53</td><td>54</td><td>99</td><td>1367</td><td>1573</td><td>49</td><td>34</td><td>95</td><td>1343</td><td>1521</td><td>17</td><td>22</td><td>60</td><td>296</td><td>395</td></tr>
+        <tr><td>Rathbone Trust Company Limited</td><td>0</td><td>0</td><td>0</td><td>1071</td><td>1071</td><td>5</td><td>0</td><td>2</td><td>1067</td><td>1074</td><td>0</td><td>0</td><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>Read Roper and Read</td><td>13</td><td>25</td><td>23</td><td>690</td><td>751</td><td>14</td><td>19</td><td>16</td><td>643</td><td>692</td><td>6</td><td>17</td><td>7</td><td>199</td><td>229</td></tr>
+        <tr><td>Red Kite Law</td><td>69</td><td>23</td><td>55</td><td>430</td><td>577</td><td>68</td><td>15</td><td>45</td><td>418</td><td>546</td><td>39</td><td>12</td><td>25</td><td>123</td><td>199</td></tr>
+        <tr><td>Reed Smith  LLP</td><td>1</td><td>13</td><td>1</td><td>773</td><td>788</td><td>1</td><td>11</td><td>3</td><td>538</td><td>553</td><td>0</td><td>9</td><td>3</td><td>44</td><td>56</td></tr>
+        <tr><td>Renier Gillies (t/a RG Solicitors)</td><td>23</td><td>67</td><td>193</td><td>550</td><td>833</td><td>20</td><td>71</td><td>201</td><td>519</td><td>811</td><td>5</td><td>44</td><td>98</td><td>167</td><td>314</td></tr>
+        <tr><td>Restons</td><td>0</td><td>0</td><td>0</td><td>878</td><td>878</td><td>0</td><td>0</td><td>0</td><td>878</td><td>878</td><td>0</td><td>0</td><td>0</td><td>17</td><td>17</td></tr>
+        <tr><td>Rhodes & Walker</td><td>6</td><td>3</td><td>207</td><td>125</td><td>341</td><td>4</td><td>5</td><td>158</td><td>119</td><td>286</td><td>0</td><td>5</td><td>94</td><td>49</td><td>148</td></tr>
+        <tr><td>Right Choice Conveyancing Limited</td><td>7</td><td>18</td><td>117</td><td>196</td><td>338</td><td>6</td><td>11</td><td>90</td><td>193</td><td>300</td><td>1</td><td>6</td><td>41</td><td>60</td><td>108</td></tr>
+        <tr><td>Riseam Sharples</td><td>0</td><td>148</td><td>1</td><td>203</td><td>352</td><td>0</td><td>130</td><td>0</td><td>200</td><td>330</td><td>0</td><td>69</td><td>0</td><td>33</td><td>102</td></tr>
+        <tr><td>RMNJ Solicitors</td><td>13</td><td>31</td><td>34</td><td>575</td><td>653</td><td>15</td><td>26</td><td>31</td><td>550</td><td>622</td><td>4</td><td>15</td><td>21</td><td>159</td><td>199</td></tr>
+        <tr><td>Robertsons</td><td>10</td><td>31</td><td>47</td><td>2834</td><td>2922</td><td>12</td><td>28</td><td>48</td><td>2764</td><td>2852</td><td>3</td><td>24</td><td>31</td><td>261</td><td>319</td></tr>
+        <tr><td>Rogers & Norton Limited</td><td>13</td><td>15</td><td>58</td><td>289</td><td>375</td><td>16</td><td>35</td><td>56</td><td>275</td><td>382</td><td>4</td><td>24</td><td>27</td><td>73</td><td>128</td></tr>
+        <tr><td>Rollits LLP</td><td>5</td><td>89</td><td>30</td><td>238</td><td>362</td><td>8</td><td>110</td><td>22</td><td>233</td><td>373</td><td>6</td><td>37</td><td>6</td><td>35</td><td>84</td></tr>
+        <tr><td>Ronald Fletcher Baker LLP</td><td>6</td><td>107</td><td>33</td><td>623</td><td>769</td><td>2</td><td>81</td><td>24</td><td>604</td><td>711</td><td>0</td><td>37</td><td>13</td><td>186</td><td>236</td></tr>
+        <tr><td>Ross Coates (t/a Harmony Law and Unite Solicitors)</td><td>6</td><td>22</td><td>28</td><td>283</td><td>339</td><td>13</td><td>29</td><td>27</td><td>305</td><td>374</td><td>3</td><td>22</td><td>16</td><td>101</td><td>142</td></tr>
+        <tr><td>Rothera Sharp</td><td>16</td><td>10</td><td>16</td><td>367</td><td>409</td><td>19</td><td>6</td><td>20</td><td>383</td><td>428</td><td>9</td><td>5</td><td>8</td><td>110</td><td>132</td></tr>
+        <tr><td>Rowlinsons Solicitors</td><td>13</td><td>20</td><td>37</td><td>348</td><td>418</td><td>20</td><td>23</td><td>35</td><td>353</td><td>431</td><td>10</td><td>6</td><td>18</td><td>91</td><td>125</td></tr>
+        <tr><td>Roythornes Limited</td><td>46</td><td>19</td><td>114</td><td>537</td><td>716</td><td>35</td><td>16</td><td>106</td><td>538</td><td>695</td><td>11</td><td>7</td><td>74</td><td>126</td><td>218</td></tr>
+        <tr><td>Russell & Russell</td><td>30</td><td>133</td><td>90</td><td>2448</td><td>2701</td><td>36</td><td>80</td><td>70</td><td>2380</td><td>2566</td><td>19</td><td>50</td><td>48</td><td>587</td><td>704</td></tr>
+        <tr><td>Russell-Cooke LLP</td><td>2</td><td>94</td><td>6</td><td>517</td><td>619</td><td>2</td><td>62</td><td>10</td><td>441</td><td>515</td><td>2</td><td>42</td><td>8</td><td>125</td><td>177</td></tr>
+        <tr><td>Salehs LLP</td><td>2</td><td>23</td><td>10</td><td>368</td><td>403</td><td>3</td><td>13</td><td>14</td><td>311</td><td>341</td><td>2</td><td>7</td><td>6</td><td>89</td><td>104</td></tr>
+        <tr><td>Santander UK</td><td>0</td><td>0</td><td>0</td><td>4023</td><td>4023</td><td>0</td><td>0</td><td>0</td><td>3805</td><td>3805</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+        <tr><td>Santander UK PLC</td><td>0</td><td>0</td><td>0</td><td>10991</td><td>10991</td><td>0</td><td>0</td><td>0</td><td>11178</td><td>11178</td><td>0</td><td>0</td><td>0</td><td>4</td><td>4</td></tr>
+        <tr><td>Sas Daniels</td><td>80</td><td>68</td><td>53</td><td>583</td><td>784</td><td>75</td><td>40</td><td>39</td><td>589</td><td>743</td><td>18</td><td>24</td><td>26</td><td>216</td><td>284</td></tr>
+        <tr><td>Schofield Sweeney LLP</td><td>17</td><td>36</td><td>55</td><td>498</td><td>606</td><td>19</td><td>34</td><td>41</td><td>488</td><td>582</td><td>13</td><td>22</td><td>24</td><td>127</td><td>186</td></tr>
+        <tr><td>Seatons</td><td>9</td><td>20</td><td>35</td><td>332</td><td>396</td><td>9</td><td>8</td><td>42</td><td>327</td><td>386</td><td>1</td><td>5</td><td>25</td><td>108</td><td>139</td></tr>
+        <tr><td>Seddons</td><td>2</td><td>92</td><td>17</td><td>582</td><td>693</td><td>0</td><td>67</td><td>11</td><td>538</td><td>616</td><td>0</td><td>46</td><td>6</td><td>123</td><td>175</td></tr>
+        <tr><td>Setfords Law Ltd</td><td>21</td><td>196</td><td>100</td><td>1220</td><td>1537</td><td>22</td><td>142</td><td>75</td><td>1101</td><td>1340</td><td>7</td><td>80</td><td>41</td><td>332</td><td>460</td></tr>
+        <tr><td>Shakespeare Martineau LLP</td><td>26</td><td>906</td><td>358</td><td>1766</td><td>3056</td><td>39</td><td>902</td><td>344</td><td>1695</td><td>2980</td><td>21</td><td>228</td><td>148</td><td>389</td><td>786</td></tr>
+        <tr><td>Sherrards</td><td>5</td><td>65</td><td>13</td><td>265</td><td>348</td><td>4</td><td>40</td><td>2</td><td>237</td><td>283</td><td>3</td><td>25</td><td>1</td><td>45</td><td>74</td></tr>
+        <tr><td>Shoosmiths</td><td>62</td><td>384</td><td>235</td><td>3797</td><td>4478</td><td>54</td><td>382</td><td>249</td><td>3456</td><td>4141</td><td>15</td><td>203</td><td>138</td><td>671</td><td>1027</td></tr>
+        <tr><td>Shulmans</td><td>10</td><td>21</td><td>39</td><td>9739</td><td>9809</td><td>10</td><td>11</td><td>50</td><td>9794</td><td>9865</td><td>5</td><td>5</td><td>41</td><td>1834</td><td>1885</td></tr>
+        <tr><td>Sills & Betteridge incorporating MacLaren Britton</td><td>48</td><td>23</td><td>77</td><td>568</td><td>716</td><td>45</td><td>14</td><td>75</td><td>536</td><td>670</td><td>18</td><td>7</td><td>34</td><td>146</td><td>205</td></tr>
+        <tr><td>Simply Conveyancing Property Lawyers</td><td>19</td><td>21</td><td>34</td><td>854</td><td>928</td><td>20</td><td>18</td><td>26</td><td>862</td><td>926</td><td>8</td><td>5</td><td>20</td><td>208</td><td>241</td></tr>
+        <tr><td>Sintons LLP</td><td>12</td><td>40</td><td>30</td><td>293</td><td>375</td><td>11</td><td>24</td><td>28</td><td>277</td><td>340</td><td>5</td><td>9</td><td>15</td><td>75</td><td>104</td></tr>
+        <tr><td>Skipton Building Society</td><td>0</td><td>1</td><td>0</td><td>3779</td><td>3780</td><td>0</td><td>0</td><td>0</td><td>3729</td><td>3729</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+        <tr><td>Slater Heelis LLP</td><td>20</td><td>27</td><td>29</td><td>389</td><td>465</td><td>17</td><td>25</td><td>16</td><td>419</td><td>477</td><td>7</td><td>13</td><td>9</td><td>100</td><td>129</td></tr>
+        <tr><td>Slaughter & May</td><td>1</td><td>15</td><td>1</td><td>817</td><td>834</td><td>0</td><td>2</td><td>0</td><td>807</td><td>809</td><td>0</td><td>2</td><td>0</td><td>10</td><td>12</td></tr>
+        <tr><td>Slee Blackwell</td><td>40</td><td>28</td><td>71</td><td>499</td><td>638</td><td>44</td><td>19</td><td>55</td><td>462</td><td>580</td><td>18</td><td>9</td><td>29</td><td>100</td><td>156</td></tr>
+        <tr><td>Solex Legal Services Limited</td><td>0</td><td>8</td><td>7</td><td>5366</td><td>5381</td><td>0</td><td>5</td><td>7</td><td>5341</td><td>5353</td><td>0</td><td>1</td><td>7</td><td>632</td><td>640</td></tr>
+        <tr><td>Sort Legal Limited</td><td>4</td><td>0</td><td>8</td><td>1203</td><td>1215</td><td>4</td><td>0</td><td>3</td><td>1166</td><td>1173</td><td>1</td><td>0</td><td>2</td><td>113</td><td>116</td></tr>
+        <tr><td>Spire Solicitors LLP</td><td>60</td><td>21</td><td>92</td><td>522</td><td>695</td><td>72</td><td>19</td><td>81</td><td>514</td><td>686</td><td>31</td><td>9</td><td>37</td><td>133</td><td>210</td></tr>
+        <tr><td>Spratt Endicott</td><td>27</td><td>41</td><td>51</td><td>462</td><td>581</td><td>18</td><td>59</td><td>63</td><td>435</td><td>575</td><td>12</td><td>44</td><td>49</td><td>137</td><td>242</td></tr>
+        <tr><td>Squire Patton Boggs (UK) LLP</td><td>6</td><td>43</td><td>31</td><td>573</td><td>653</td><td>7</td><td>41</td><td>28</td><td>557</td><td>633</td><td>2</td><td>21</td><td>11</td><td>95</td><td>129</td></tr>
+        <tr><td>Star Legal LLP</td><td>57</td><td>37</td><td>66</td><td>789</td><td>949</td><td>53</td><td>44</td><td>70</td><td>762</td><td>929</td><td>23</td><td>26</td><td>37</td><td>198</td><td>284</td></tr>
+        <tr><td>Stephen Rimmer LLP</td><td>2</td><td>56</td><td>43</td><td>512</td><td>613</td><td>2</td><td>42</td><td>39</td><td>459</td><td>542</td><td>1</td><td>26</td><td>16</td><td>138</td><td>181</td></tr>
+        <tr><td>Stephens Scown</td><td>41</td><td>26</td><td>77</td><td>431</td><td>575</td><td>35</td><td>26</td><td>65</td><td>445</td><td>571</td><td>16</td><td>21</td><td>48</td><td>119</td><td>204</td></tr>
+        <tr><td>Stephenson Harwood</td><td>0</td><td>15</td><td>3</td><td>376</td><td>394</td><td>0</td><td>8</td><td>2</td><td>158</td><td>168</td><td>0</td><td>7</td><td>2</td><td>37</td><td>46</td></tr>
+        <tr><td>Stephensons LLP</td><td>17</td><td>42</td><td>47</td><td>377</td><td>483</td><td>16</td><td>67</td><td>33</td><td>336</td><td>452</td><td>6</td><td>43</td><td>19</td><td>98</td><td>166</td></tr>
+        <tr><td>Stirling Ackroyd Legal</td><td>2</td><td>46</td><td>15</td><td>455</td><td>518</td><td>3</td><td>55</td><td>23</td><td>441</td><td>522</td><td>1</td><td>37</td><td>16</td><td>210</td><td>264</td></tr>
+        <tr><td>Streeter Marshall</td><td>2</td><td>40</td><td>12</td><td>287</td><td>341</td><td>2</td><td>28</td><td>5</td><td>265</td><td>300</td><td>2</td><td>18</td><td>1</td><td>69</td><td>90</td></tr>
+        <tr><td>Sweeney Miller Solicitors</td><td>8</td><td>40</td><td>62</td><td>609</td><td>719</td><td>16</td><td>30</td><td>41</td><td>594</td><td>681</td><td>5</td><td>20</td><td>18</td><td>187</td><td>230</td></tr>
+        <tr><td>Switalskis Limited</td><td>26</td><td>36</td><td>132</td><td>347</td><td>541</td><td>23</td><td>26</td><td>119</td><td>354</td><td>522</td><td>12</td><td>15</td><td>68</td><td>140</td><td>235</td></tr>
+        <tr><td>Sydney Mitchell LLP</td><td>13</td><td>24</td><td>17</td><td>299</td><td>353</td><td>7</td><td>17</td><td>11</td><td>282</td><td>317</td><td>4</td><td>13</td><td>8</td><td>99</td><td>124</td></tr>
+        <tr><td>TJ Legal Services Limited</td><td>12</td><td>51</td><td>203</td><td>395</td><td>661</td><td>14</td><td>60</td><td>177</td><td>358</td><td>609</td><td>6</td><td>40</td><td>95</td><td>141</td><td>282</td></tr>
+        <tr><td>Talbots Law Limited</td><td>73</td><td>188</td><td>352</td><td>1377</td><td>1990</td><td>73</td><td>175</td><td>401</td><td>1331</td><td>1980</td><td>31</td><td>113</td><td>237</td><td>391</td><td>772</td></tr>
+        <tr><td>Tallents Solicitors</td><td>17</td><td>7</td><td>140</td><td>242</td><td>406</td><td>11</td><td>1</td><td>130</td><td>241</td><td>383</td><td>2</td><td>1</td><td>79</td><td>61</td><td>143</td></tr>
+        <tr><td>Target Group Limited</td><td>0</td><td>0</td><td>0</td><td>1080</td><td>1080</td><td>0</td><td>0</td><td>0</td><td>1073</td><td>1073</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Taylor & Emmet</td><td>61</td><td>34</td><td>144</td><td>983</td><td>1222</td><td>57</td><td>31</td><td>115</td><td>909</td><td>1112</td><td>27</td><td>14</td><td>49</td><td>240</td><td>330</td></tr>
+        <tr><td>Taylor Bracewell</td><td>17</td><td>7</td><td>43</td><td>465</td><td>532</td><td>19</td><td>14</td><td>40</td><td>447</td><td>520</td><td>9</td><td>10</td><td>19</td><td>102</td><td>140</td></tr>
+        <tr><td>Taylor Rose Law</td><td>42</td><td>175</td><td>371</td><td>6830</td><td>7418</td><td>41</td><td>189</td><td>454</td><td>6486</td><td>7170</td><td>18</td><td>128</td><td>283</td><td>1366</td><td>1795</td></tr>
+        <tr><td>Taylor Walton</td><td>17</td><td>77</td><td>96</td><td>657</td><td>847</td><td>18</td><td>91</td><td>79</td><td>674</td><td>862</td><td>8</td><td>37</td><td>45</td><td>174</td><td>264</td></tr>
+        <tr><td>Taylors Legal</td><td>1</td><td>239</td><td>86</td><td>311</td><td>637</td><td>1</td><td>224</td><td>92</td><td>262</td><td>579</td><td>0</td><td>113</td><td>59</td><td>82</td><td>254</td></tr>
+        <tr><td>Tayntons (LS) Limited</td><td>10</td><td>15</td><td>31</td><td>315</td><td>371</td><td>10</td><td>27</td><td>26</td><td>329</td><td>392</td><td>5</td><td>17</td><td>19</td><td>101</td><td>142</td></tr>
+        <tr><td>TBD Legal Limited</td><td>3</td><td>21</td><td>22</td><td>400</td><td>446</td><td>4</td><td>27</td><td>24</td><td>362</td><td>417</td><td>2</td><td>15</td><td>17</td><td>124</td><td>158</td></tr>
+        <tr><td>Tees</td><td>26</td><td>56</td><td>118</td><td>551</td><td>751</td><td>29</td><td>42</td><td>103</td><td>533</td><td>707</td><td>9</td><td>27</td><td>52</td><td>139</td><td>227</td></tr>
+        <tr><td>Thackray Williams</td><td>4</td><td>108</td><td>141</td><td>458</td><td>711</td><td>4</td><td>100</td><td>106</td><td>456</td><td>666</td><td>1</td><td>43</td><td>43</td><td>124</td><td>211</td></tr>
+        <tr><td>The Co-operative Bank</td><td>0</td><td>0</td><td>0</td><td>3163</td><td>3163</td><td>0</td><td>0</td><td>0</td><td>3137</td><td>3137</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>The Compton Group</td><td>6</td><td>0</td><td>275</td><td>299</td><td>580</td><td>6</td><td>0</td><td>91</td><td>280</td><td>377</td><td>2</td><td>0</td><td>27</td><td>12</td><td>41</td></tr>
+        <tr><td>The Foster Partnership Limited</td><td>4</td><td>34</td><td>42</td><td>331</td><td>411</td><td>3</td><td>18</td><td>37</td><td>293</td><td>351</td><td>1</td><td>13</td><td>20</td><td>88</td><td>122</td></tr>
+        <tr><td>The Mortgage Works (UK) PLC</td><td>0</td><td>0</td><td>0</td><td>5300</td><td>5300</td><td>0</td><td>0</td><td>0</td><td>5268</td><td>5268</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>The Partnership (2009) Limited</td><td>5</td><td>27</td><td>12</td><td>382</td><td>426</td><td>3</td><td>33</td><td>16</td><td>394</td><td>446</td><td>2</td><td>25</td><td>10</td><td>145</td><td>182</td></tr>
+        <tr><td>The Planning Crowd</td><td>14</td><td>0</td><td>0</td><td>422</td><td>436</td><td>15</td><td>0</td><td>0</td><td>428</td><td>443</td><td>3</td><td>0</td><td>0</td><td>56</td><td>59</td></tr>
+        <tr><td>The Ringrose Law Group</td><td>31</td><td>14</td><td>46</td><td>453</td><td>544</td><td>27</td><td>18</td><td>44</td><td>440</td><td>529</td><td>6</td><td>12</td><td>20</td><td>108</td><td>146</td></tr>
+        <tr><td>The Royal Bank of Scotland PLC</td><td>0</td><td>0</td><td>0</td><td>7776</td><td>7776</td><td>0</td><td>0</td><td>0</td><td>7759</td><td>7759</td><td>0</td><td>0</td><td>0</td><td>4</td><td>4</td></tr>
+        <tr><td>The Smith Partnership</td><td>29</td><td>21</td><td>91</td><td>575</td><td>716</td><td>35</td><td>16</td><td>104</td><td>551</td><td>706</td><td>9</td><td>9</td><td>54</td><td>174</td><td>246</td></tr>
+        <tr><td>The Spicketts Battrick Law Practice</td><td>33</td><td>50</td><td>72</td><td>922</td><td>1077</td><td>27</td><td>57</td><td>76</td><td>909</td><td>1069</td><td>11</td><td>41</td><td>47</td><td>318</td><td>417</td></tr>
+        <tr><td>The Wilkes Partnership</td><td>14</td><td>24</td><td>28</td><td>467</td><td>533</td><td>15</td><td>20</td><td>18</td><td>430</td><td>483</td><td>8</td><td>11</td><td>13</td><td>100</td><td>132</td></tr>
+        <tr><td>The Wrekin Housing Trust</td><td>0</td><td>0</td><td>26</td><td>13228</td><td>13254</td><td>0</td><td>0</td><td>37</td><td>8753</td><td>8790</td><td>0</td><td>0</td><td>26</td><td>5</td><td>31</td></tr>
+        <tr><td>Thomas & Thomas Solicitors Ltd</td><td>10</td><td>4</td><td>36</td><td>345</td><td>395</td><td>11</td><td>8</td><td>27</td><td>336</td><td>382</td><td>3</td><td>4</td><td>11</td><td>92</td><td>110</td></tr>
+        <tr><td>Thomas Flavell & Sons</td><td>19</td><td>31</td><td>82</td><td>454</td><td>586</td><td>15</td><td>40</td><td>74</td><td>434</td><td>563</td><td>6</td><td>27</td><td>52</td><td>154</td><td>239</td></tr>
+        <tr><td>Thomson Snell & Passmore</td><td>21</td><td>29</td><td>33</td><td>571</td><td>654</td><td>21</td><td>35</td><td>25</td><td>529</td><td>610</td><td>11</td><td>14</td><td>14</td><td>129</td><td>168</td></tr>
+        <tr><td>Thrings LLP</td><td>15</td><td>62</td><td>28</td><td>414</td><td>519</td><td>17</td><td>51</td><td>24</td><td>416</td><td>508</td><td>8</td><td>34</td><td>13</td><td>109</td><td>164</td></tr>
+        <tr><td>Thursfields Solicitors</td><td>26</td><td>31</td><td>46</td><td>377</td><td>480</td><td>34</td><td>29</td><td>59</td><td>366</td><td>488</td><td>15</td><td>17</td><td>37</td><td>95</td><td>164</td></tr>
+        <tr><td>Tickle Hall Cross</td><td>17</td><td>19</td><td>23</td><td>311</td><td>370</td><td>13</td><td>27</td><td>30</td><td>321</td><td>391</td><td>4</td><td>14</td><td>20</td><td>83</td><td>121</td></tr>
+        <tr><td>Tilly Bailey & Irvine</td><td>18</td><td>8</td><td>65</td><td>421</td><td>512</td><td>22</td><td>11</td><td>59</td><td>439</td><td>531</td><td>10</td><td>5</td><td>24</td><td>78</td><td>117</td></tr>
+        <tr><td>Tinsdills Solicitors</td><td>25</td><td>6</td><td>26</td><td>310</td><td>367</td><td>28</td><td>8</td><td>36</td><td>292</td><td>364</td><td>9</td><td>4</td><td>16</td><td>85</td><td>114</td></tr>
+        <tr><td>TLT LLP</td><td>26</td><td>125</td><td>57</td><td>1727</td><td>1935</td><td>24</td><td>138</td><td>55</td><td>1584</td><td>1801</td><td>7</td><td>93</td><td>36</td><td>289</td><td>425</td></tr>
+        <tr><td>Together Commercial Finance Ltd</td><td>0</td><td>0</td><td>0</td><td>1409</td><td>1409</td><td>0</td><td>0</td><td>0</td><td>1393</td><td>1393</td><td>0</td><td>0</td><td>0</td><td>124</td><td>124</td></tr>
+        <tr><td>Together Personal Finance Ltd</td><td>0</td><td>0</td><td>0</td><td>1381</td><td>1381</td><td>0</td><td>0</td><td>0</td><td>1353</td><td>1353</td><td>0</td><td>0</td><td>0</td><td>108</td><td>108</td></tr>
+        <tr><td>Tolhurst & Fisher</td><td>13</td><td>52</td><td>22</td><td>397</td><td>484</td><td>11</td><td>37</td><td>24</td><td>358</td><td>430</td><td>7</td><td>20</td><td>13</td><td>97</td><td>137</td></tr>
+        <tr><td>Tollers LLP</td><td>11</td><td>19</td><td>39</td><td>342</td><td>411</td><td>18</td><td>19</td><td>33</td><td>319</td><td>389</td><td>8</td><td>11</td><td>19</td><td>89</td><td>127</td></tr>
+        <tr><td>Tozers LLP</td><td>13</td><td>30</td><td>60</td><td>299</td><td>402</td><td>11</td><td>24</td><td>62</td><td>325</td><td>422</td><td>3</td><td>13</td><td>26</td><td>68</td><td>110</td></tr>
+        <tr><td>TQ Property Lawyers Ltd</td><td>13</td><td>98</td><td>20</td><td>599</td><td>730</td><td>13</td><td>138</td><td>14</td><td>603</td><td>768</td><td>8</td><td>93</td><td>7</td><td>181</td><td>289</td></tr>
+        <tr><td>Trethowans</td><td>26</td><td>65</td><td>50</td><td>643</td><td>784</td><td>20</td><td>71</td><td>47</td><td>659</td><td>797</td><td>8</td><td>39</td><td>15</td><td>162</td><td>224</td></tr>
+        <tr><td>Trowers & Hamlins</td><td>17</td><td>550</td><td>185</td><td>5650</td><td>6402</td><td>25</td><td>472</td><td>209</td><td>4515</td><td>5221</td><td>15</td><td>96</td><td>119</td><td>175</td><td>405</td></tr>
+        <tr><td>TSB Bank PLC Mortgage Servicing</td><td>0</td><td>0</td><td>0</td><td>5870</td><td>5870</td><td>0</td><td>0</td><td>0</td><td>5947</td><td>5947</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>TSB Bank PLC Sheldon Sec Centre</td><td>0</td><td>0</td><td>0</td><td>1489</td><td>1489</td><td>0</td><td>0</td><td>0</td><td>1378</td><td>1378</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>TWM Solicitors LLP</td><td>12</td><td>180</td><td>31</td><td>1127</td><td>1350</td><td>12</td><td>114</td><td>29</td><td>1048</td><td>1203</td><td>6</td><td>49</td><td>15</td><td>269</td><td>339</td></tr>
+        <tr><td>Veale Wasbrough Vizards</td><td>24</td><td>92</td><td>13</td><td>535</td><td>664</td><td>23</td><td>87</td><td>45</td><td>512</td><td>667</td><td>13</td><td>49</td><td>12</td><td>125</td><td>199</td></tr>
+        <tr><td>Vincents Solicitors</td><td>18</td><td>53</td><td>20</td><td>295</td><td>386</td><td>17</td><td>100</td><td>25</td><td>295</td><td>437</td><td>10</td><td>75</td><td>11</td><td>103</td><td>199</td></tr>
+        <tr><td>Virgin Money PLC</td><td>0</td><td>0</td><td>0</td><td>6803</td><td>6803</td><td>0</td><td>0</td><td>0</td><td>6717</td><td>6717</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+        <tr><td>Wake Smith Solicitors Limited</td><td>17</td><td>14</td><td>39</td><td>423</td><td>493</td><td>21</td><td>7</td><td>38</td><td>394</td><td>460</td><td>9</td><td>5</td><td>17</td><td>87</td><td>118</td></tr>
+        <tr><td>Waldrons</td><td>23</td><td>9</td><td>33</td><td>332</td><td>397</td><td>18</td><td>12</td><td>28</td><td>320</td><td>378</td><td>3</td><td>8</td><td>15</td><td>86</td><td>112</td></tr>
+        <tr><td>Walker Foster</td><td>31</td><td>16</td><td>73</td><td>317</td><td>437</td><td>31</td><td>11</td><td>77</td><td>300</td><td>419</td><td>8</td><td>9</td><td>48</td><td>69</td><td>134</td></tr>
+        <tr><td>Walker Morris LLP</td><td>4</td><td>38</td><td>21</td><td>633</td><td>696</td><td>5</td><td>30</td><td>10</td><td>675</td><td>720</td><td>4</td><td>26</td><td>8</td><td>126</td><td>164</td></tr>
+        <tr><td>Wansbroughs</td><td>12</td><td>16</td><td>24</td><td>311</td><td>363</td><td>13</td><td>14</td><td>15</td><td>268</td><td>310</td><td>7</td><td>2</td><td>4</td><td>33</td><td>46</td></tr>
+        <tr><td>Ward Gethin Archer</td><td>77</td><td>27</td><td>118</td><td>623</td><td>845</td><td>69</td><td>7</td><td>106</td><td>585</td><td>767</td><td>30</td><td>5</td><td>59</td><td>189</td><td>283</td></tr>
+        <tr><td>Ward Hadaway</td><td>12</td><td>46</td><td>86</td><td>586</td><td>730</td><td>42</td><td>40</td><td>49</td><td>583</td><td>714</td><td>8</td><td>21</td><td>26</td><td>131</td><td>186</td></tr>
+        <tr><td>Wards</td><td>48</td><td>57</td><td>214</td><td>789</td><td>1108</td><td>41</td><td>47</td><td>188</td><td>702</td><td>978</td><td>13</td><td>30</td><td>99</td><td>159</td><td>301</td></tr>
+        <tr><td>Warner Goodman LLP</td><td>23</td><td>24</td><td>19</td><td>531</td><td>597</td><td>26</td><td>18</td><td>33</td><td>506</td><td>583</td><td>5</td><td>10</td><td>15</td><td>87</td><td>117</td></tr>
+        <tr><td>Watson Ramsbottom</td><td>15</td><td>126</td><td>354</td><td>481</td><td>976</td><td>12</td><td>117</td><td>391</td><td>451</td><td>971</td><td>5</td><td>62</td><td>199</td><td>141</td><td>407</td></tr>
+        <tr><td>WBW LLP trading as WBW Solicitors</td><td>28</td><td>31</td><td>37</td><td>572</td><td>668</td><td>26</td><td>26</td><td>51</td><td>575</td><td>678</td><td>9</td><td>16</td><td>27</td><td>139</td><td>191</td></tr>
+        <tr><td>Weightmans LLP</td><td>13</td><td>75</td><td>14</td><td>577</td><td>679</td><td>14</td><td>90</td><td>15</td><td>570</td><td>689</td><td>5</td><td>64</td><td>11</td><td>130</td><td>210</td></tr>
+        <tr><td>West Bromwich Building Society</td><td>0</td><td>0</td><td>0</td><td>1282</td><td>1282</td><td>0</td><td>0</td><td>0</td><td>1278</td><td>1278</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>West Coast Conveyancing</td><td>4</td><td>44</td><td>23</td><td>286</td><td>357</td><td>1</td><td>14</td><td>11</td><td>214</td><td>240</td><td>0</td><td>10</td><td>7</td><td>62</td><td>79</td></tr>
+        <tr><td>Whitehead Monckton</td><td>7</td><td>28</td><td>34</td><td>306</td><td>375</td><td>8</td><td>14</td><td>25</td><td>261</td><td>308</td><td>4</td><td>8</td><td>12</td><td>97</td><td>121</td></tr>
+        <tr><td>WHN Solicitors Limited</td><td>0</td><td>17</td><td>31</td><td>343</td><td>391</td><td>0</td><td>76</td><td>26</td><td>392</td><td>494</td><td>0</td><td>31</td><td>11</td><td>75</td><td>117</td></tr>
+        <tr><td>Wigan MBC</td><td>432</td><td>1</td><td>1</td><td>35</td><td>469</td><td>414</td><td>0</td><td>1</td><td>42</td><td>457</td><td>1</td><td>0</td><td>1</td><td>9</td><td>11</td></tr>
+        <tr><td>Wilkin Chapman LLP</td><td>97</td><td>37</td><td>111</td><td>1390</td><td>1635</td><td>90</td><td>22</td><td>121</td><td>1413</td><td>1646</td><td>32</td><td>12</td><td>72</td><td>251</td><td>367</td></tr>
+        <tr><td>Wilkinson Woodward Norcliffe & Co</td><td>34</td><td>13</td><td>44</td><td>470</td><td>561</td><td>31</td><td>5</td><td>33</td><td>448</td><td>517</td><td>13</td><td>3</td><td>20</td><td>131</td><td>167</td></tr>
+        <tr><td>Willans LLP</td><td>24</td><td>36</td><td>27</td><td>275</td><td>362</td><td>17</td><td>21</td><td>21</td><td>263</td><td>322</td><td>5</td><td>9</td><td>10</td><td>75</td><td>99</td></tr>
+        <tr><td>Williamsons Solicitors Limited</td><td>11</td><td>8</td><td>21</td><td>299</td><td>339</td><td>17</td><td>3</td><td>27</td><td>301</td><td>348</td><td>9</td><td>0</td><td>12</td><td>61</td><td>82</td></tr>
+        <tr><td>Wilson Browne</td><td>24</td><td>23</td><td>86</td><td>368</td><td>501</td><td>24</td><td>31</td><td>36</td><td>365</td><td>456</td><td>11</td><td>21</td><td>13</td><td>100</td><td>145</td></tr>
+        <tr><td>Winckworth Sherwood</td><td>11</td><td>344</td><td>102</td><td>7279</td><td>7736</td><td>9</td><td>393</td><td>109</td><td>4738</td><td>5249</td><td>2</td><td>158</td><td>57</td><td>107</td><td>324</td></tr>
+        <tr><td>Withy King</td><td>34</td><td>70</td><td>109</td><td>758</td><td>971</td><td>33</td><td>80</td><td>115</td><td>712</td><td>940</td><td>14</td><td>44</td><td>56</td><td>221</td><td>335</td></tr>
+        <tr><td>Wolferstans</td><td>13</td><td>16</td><td>47</td><td>327</td><td>403</td><td>12</td><td>17</td><td>47</td><td>325</td><td>401</td><td>6</td><td>9</td><td>17</td><td>84</td><td>116</td></tr>
+        <tr><td>Wollen Michelmore</td><td>23</td><td>30</td><td>65</td><td>379</td><td>497</td><td>27</td><td>28</td><td>54</td><td>368</td><td>477</td><td>14</td><td>19</td><td>30</td><td>104</td><td>167</td></tr>
+        <tr><td>Womble Bond Dickinson</td><td>65</td><td>229</td><td>177</td><td>1194</td><td>1665</td><td>72</td><td>79</td><td>218</td><td>994</td><td>1363</td><td>22</td><td>49</td><td>49</td><td>151</td><td>271</td></tr>
+        <tr><td>Woodford Stauffer</td><td>10</td><td>40</td><td>35</td><td>362</td><td>447</td><td>8</td><td>26</td><td>27</td><td>317</td><td>378</td><td>3</td><td>8</td><td>9</td><td>93</td><td>113</td></tr>
+        <tr><td>Wosskow Brown</td><td>26</td><td>26</td><td>36</td><td>364</td><td>452</td><td>23</td><td>24</td><td>33</td><td>362</td><td>442</td><td>11</td><td>19</td><td>13</td><td>140</td><td>183</td></tr>
+        <tr><td>Wright Hassall LLP</td><td>13</td><td>39</td><td>127</td><td>876</td><td>1055</td><td>12</td><td>40</td><td>116</td><td>807</td><td>975</td><td>5</td><td>23</td><td>52</td><td>111</td><td>191</td></tr>
+        <tr><td>Wrigleys</td><td>15</td><td>14</td><td>9</td><td>464</td><td>502</td><td>21</td><td>4</td><td>9</td><td>444</td><td>478</td><td>12</td><td>0</td><td>4</td><td>40</td><td>56</td></tr>
+        <tr><td>Yorkshire Bank Home Loans</td><td>0</td><td>0</td><td>0</td><td>4104</td><td>4104</td><td>0</td><td>0</td><td>0</td><td>4094</td><td>4094</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td></tr>
+        <tr><td>Yorkshire Building Society</td><td>0</td><td>0</td><td>0</td><td>4615</td><td>4615</td><td>0</td><td>0</td><td>0</td><td>4626</td><td>4626</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Your Conveyancer Limited</td><td>0</td><td>0</td><td>0</td><td>1880</td><td>1880</td><td>0</td><td>0</td><td>1</td><td>1883</td><td>1884</td><td>0</td><td>0</td><td>1</td><td>246</td><td>247</td></tr>
+        <tr><td>YVA Solicitors LLP</td><td>0</td><td>95</td><td>9</td><td>446</td><td>550</td><td>0</td><td>43</td><td>3</td><td>401</td><td>447</td><td>0</td><td>28</td><td>2</td><td>129</td><td>159</td></tr>
+        <tr><td></td></tr>
+      </table>
+-->
+
+

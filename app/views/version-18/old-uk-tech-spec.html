@@ -52,7 +52,7 @@ Use land and property data
     <!-- OVERVIEW -->
     <h2 class="govuk-heading-l" id="overview">Overview</h2>
     <p class="govuk-body">
-      HM Land Registry published this version of the dataset from November 2015 to October 2017. It was published
+      HM Land Registry published this version of the dataset from March 2014 to September 2017. It was published
       quarterly and shows freehold or leasehold registered titles that were legally owned by a company.
     </p>
 
@@ -114,7 +114,7 @@ Use land and property data
 
     <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
     <h3 class="govuk-heading-m">
-      Table 1 – UK companies that own property in England and Wales (November 2015 – October 2017): class diagram
+      Table 1 – UK companies that own property in England and Wales (March 2014 – September 2017): class diagram
     </h3>
 
     <table class="govuk-table">
@@ -204,7 +204,7 @@ Use land and property data
         </td>
       </tr>
       <tr>
-        <td class="govuk-table__cell">SUB_</br>BUILDING_DESC</td>
+        <td class="govuk-table__cell" >SUB_</br>BUILDING_DESC</td>
         <td class="govuk-table__cell">String</td>
         <td class="govuk-table__cell">No</td>
         <td class="govuk-table__cell">
@@ -543,7 +543,8 @@ Use land and property data
     <h2 class="govuk-heading-l" id="product">Data product delivery</h2>
     <h3 class="govuk-heading-m">Access to the dataset</h3>
     <p class="govuk-body">
-      There is one file for each quarter from November 2015 to October 2017. There will be no updates to these files.
+      There is one file for each quarter from March 2014 to September 2017. There will be no updates to these files
+      There is no data available for the quarter ending March 2017.
     </p>
 
     <h3 class="govuk-heading-m">Granting access</h3>
@@ -561,7 +562,7 @@ Use land and property data
       <li>enclose all fields within double quotes “ “ (ASCII 34)</li>
       <li>send blank fields without a character between double quotes: ”“</li>
       <li>have a date format of DD-MM-YYYY. For example, 14 December 2013 will be shown as 14-12-2013</li>
-      <li>will use UTF-8 encoding (the way characters are coded for websites)</li>
+      <li>use UTF-8 encoding (the way characters are coded for websites)</li>
       <li>have line separation removed</li>
       <li>have the column heading as the first row</li>
     </ul>
@@ -571,11 +572,13 @@ Use land and property data
       The file names will be structured as follows:
     </p>
     <p class="govuk-body">
-
+      CCOD_FULL_&lt;1&gt;&lt;2&gt;.csv <br>
+      <1>Year of file creation (format YYYY)<br>
+      <2>Month of file creation (format MM)
     </p>
     <p class="govuk-body">
-      Example file name structure:<br>
-
+      Example file name structure for March 2016:<br>
+      CCOD_FULL_2016_03.csv
     </p>
 
     <h2 id="contact" class="govuk-heading-l">Contact information</h2>

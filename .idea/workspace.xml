@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-18/lease-tech-spec.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/lease-tech-spec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-17/lease-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-17/lease-product-signed-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-18/lease-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/lease-product-signed-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-18/old-uk-tech-spec.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/old-uk-tech-spec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-18/overseas-product-signed-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/overseas-product-signed-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-18/overseas-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/overseas-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-18/restrict-tech-spec.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/restrict-tech-spec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/version-18/uk-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/uk-product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>

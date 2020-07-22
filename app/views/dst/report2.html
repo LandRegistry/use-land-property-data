@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- signed in details -->
+<div class="govuk-body heading-nav">
+  <p class="govuk-body">Logged in as: BK123PQ</p>
+</div>
+
+<!-- back to previous page -->
+<a href="main-page#reports" class="govuk-back-link">Back to reports</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Report created 11 July 2020</span>
+      Applications from UK organisations between 01 January 2020 and 31 March 2020
+    </h1>
+    <p class="govuk-body-l">
+      Total number of users: <strong>294</strong>
+    </p>
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Open report in excel
+    </button>
+   <!-- <p class="govuk-body">
+      <a class="govuk-link" href="">View report in excel</a>
+    </p> -->
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col" width="17%">Name</th>
+        <th class="govuk-table__header" scope="col" width="18%">Organisation</th>
+        <th class="govuk-table__header" scope="col" width="18%">Email</th>
+        <th class="govuk-table__header" scope="col" width="11%">Application status</th>
+        <th class="govuk-table__header" scope="col" width="12%">Contact preferences</th>
+        <th class="govuk-table__header" scope="col" width="12%">Date application received</th>
+        <th class="govuk-table__header" scope="col" width="12%">Date approved/ declined</th>
+
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Miss Amy Jones</td>
+        <td class="govuk-table__cell">A. & T. Jones Property</td>
+        <td class="govuk-table__cell">ajones@outlook.com</td>
+        <td class="govuk-table__cell">Approved</td>
+        <td class="govuk-table__cell">Telephone<br>Email<br>Post</td>
+        <td class="govuk-table__cell">12 March 2020</td>
+        <td class="govuk-table__cell">12 March 2020</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Mr Tom Jones</td>
+        <td class="govuk-table__cell">A. & T. Jones Property</td>
+        <td class="govuk-table__cell">tom.jones@jonesproperty.co.uk</td>
+        <td class="govuk-table__cell">Pending</td>
+        <td class="govuk-table__cell">Not contactable</td>
+        <td class="govuk-table__cell">31 March 2020</td>
+        <td class="govuk-table__cell"></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

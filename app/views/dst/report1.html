@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+{% include "beta-banner.html" %}
+
+<!-- signed in details -->
+<div class="govuk-body heading-nav">
+  <p class="govuk-body">Logged in as: BK123PQ</p>
+</div>
+
+<!-- back to previous page -->
+<a href="main-page#reports" class="govuk-back-link">Back to reports</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Report created 11 July 2020</span>
+      Users that have access to NPS
+    </h1>
+    <p class="govuk-body-l" style="margin-bottom: 5px;">
+      Total number of users: <strong>54</strong>
+    </p>
+    <p class="govuk-body">
+      <a class="govuk-link" href="">View report in excel</a>
+    </p>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col" width="25%">Name</th>
+        <th class="govuk-table__header" scope="col" width="25%">Organisation</th>
+        <th class="govuk-table__header" scope="col" width="25%">Email</th>
+        <th class="govuk-table__header" scope="col" width="11%">Date access granted</th>
+        <th class="govuk-table__header" scope="col" width="14%">Contact preferences</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Miss Amy Jones</td>
+        <td class="govuk-table__cell">A. & T. Jones Property</td>
+        <td class="govuk-table__cell">ajones@outlook.com</td>
+        <td class="govuk-table__cell">15/03/2019</td>
+        <td class="govuk-table__cell">Telephone<br>Email<br>Post</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Mr Tom Jones</td>
+        <td class="govuk-table__cell">A. & T. Jones Property</td>
+        <td class="govuk-table__cell">tom.jones@jonesproperty.co.uk</td>
+        <td class="govuk-table__cell">15/03/2019</td>
+        <td class="govuk-table__cell">Not contactable</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

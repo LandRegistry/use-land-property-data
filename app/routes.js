@@ -18,7 +18,23 @@ router.post('/form-handler', function (req, res) {
 
 })
 
+// choosing the report type to create
+router.post('/report-choice', function (req, res) {
 
+    let choice = req.session.data['report-choice']
+
+    if (choice === 'report1') {
+        res.redirect('dst/report1')
+    } else if (choice == 'report2') {
+        res.redirect('dst/report2')
+    } else if (choice == 'report3') {
+        res.redirect('dst/report3')
+    } else if (choice == 'report4') {
+        res.redirect('dst/report4')
+    } else if (choice == 'report5') {
+        res.redirect('dst/report5')
+    }
+})
 
 // choosing the account type to create
 router.post('/account-choice', function (req, res) {

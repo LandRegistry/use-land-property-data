@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/dst/report1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/dst/report2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/dst/report3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/dst/report4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/dst/report5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dst/main-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dst/main-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/version-18/lease-tech-spec.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/version-18/lease-tech-spec.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>

@@ -1,0 +1,741 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Use land and property data
+{% endblock %}
+
+{% block content %}
+
+{% include "beta-banner.html" %}
+
+<!-- sign-in/create account links -->
+<div class="govuk-body heading-nav">
+  <a class="govuk-link" href="sign-in">Sign in</a>
+  <a class="govuk-link" href="create-account/create-account" >Create account</a>
+</div>
+
+<!-- back link -->
+<a href="#" onclick="location.href = document.referrer; return false;" class="govuk-back-link">Back</a>
+
+<!-- full width row for page title -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Technical specification</span>
+      Overseas companies that own property in England and Wales
+    </h1>
+  </div>
+</div>
+
+<!-- row for contents and content -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <!-- contents -->
+    <div class="toc" id="contents">
+      <p>Contents</p>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#scope">Specification scope</a></li>
+        <li><a href="#content">Data content and structure</a></li>
+        <li><a href="#quality">Data quality</a></li>
+        <li><a href="#capture">Data capture information</a></li>
+        <li><a href="#maintenance">Data maintenance</a></li>
+        <li><a href="#product">Data product delivery</a></li>
+        <li><a href="#contact">Contact information</a></li>
+      </ul>
+    </div>
+  </div> <!-- column-one-third -->
+
+
+  <!-- column two-thirds for content -->
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- OVERVIEW -->
+    <h2 id="overview" class="govuk-heading-l">Overview</h2>
+    <p class="govuk-body">
+      Overseas companies that own property in England and Wales is published monthly. It shows freehold or leasehold title
+      registrations held by HM Land Registry where the registered legal owner is an overseas company. This is a
+      company incorporated outside of the UK.
+    </p>
+    <p class="govuk-body">
+      Titles registered by private individuals, UK companies with an overseas address and charities are excluded for
+      data protection and fraud prevention purposes.
+    </p>
+
+    <!-- SPECIFICATION SCOPE -->
+    <h2 class="govuk-heading-l" id="scope">Specification scope</h2>
+    <h3 class="govuk-heading-m">Inclusions and exclusions</h3>
+    <p class="govuk-body">
+      This dataset shows registered legal estates relating to land or property where the registered legal owner
+      is an overseas company. That is a company incorporated outside of the UK.
+    </p>
+    <p class="govuk-body">
+      The data includes titles registered by the following owner types of:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Corporate bodies</li>
+      <li>Limited companies</li>
+      <li>Public limited companies</li>
+      <li>Unlimited companies</li>
+      <li>Limited liability partnerships</li>
+    </ul>
+    <p class="govuk-body">
+      The data excludes titles registered by the following owner types of:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>private individuals</li>
+      <li>UK companies with an overseas address</li>
+      <li>charities</li>
+    </ul>
+    <p class="govuk-body">
+      If an excluded owner type is the sole owner, all the details will be excluded from the dataset.
+    </p>
+    <p class="govuk-body">
+      If a registered title is owned by both included and excluded owner types, the excluded owner details will be
+      removed from the name, proprietorship and correspondence address columns.
+    </p>
+    <p class="govuk-body">
+      An indicator will be displayed to highlight there are other proprietors.
+    </p>
+    <p class="govuk-body">
+      Email addresses and British Forces Post Office addresses have been removed from the correspondence address records.
+      These are considered private and personal.
+    </p>
+
+    <h3 class="govuk-heading-m">Relationship to other HM Land Registry data products</h3>
+    <p class="govuk-body">
+      The dataset is aligned with <a href="uk-product">UK companies that own property in England and Wales</a> which
+      contains more than 3.2 million records of titles registered to a UK commercial organisation or corporate body.
+    </p>
+    <p class="govuk-body">
+      The title number allows relational links to be made with other HM Land Registry datasets that also contain the title number.
+    </p>
+
+    <!-- DATA CONTENT -->
+    <h2 class="govuk-heading-l" id="content">Data content and structure</h2>
+    <h3 class="govuk-heading-m">Table 1 – Overseas companies that own property in England and Wales: class diagram</h3>
+
+    <table class="govuk-table">
+      <caption hidden>Class diagram of the dataset which describes the content and structure </caption>
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Overseas companies that own property in England and Wales</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr><td class="govuk-table__cell">Title number</td></tr>
+      <tr><td class="govuk-table__cell">Tenure</td></tr>
+      <tr><td class="govuk-table__cell">Property Address</td></tr>
+      <tr><td class="govuk-table__cell">District</td></tr>
+      <tr><td class="govuk-table__cell">County</td></tr>
+      <tr><td class="govuk-table__cell">Region</td></tr>
+      <tr><td class="govuk-table__cell">Postcode</td></tr>
+      <tr><td class="govuk-table__cell">Multiple address Indicator</td></tr>
+      <tr><td class="govuk-table__cell">Price paid</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor name (1)</td></tr>
+      <tr><td class="govuk-table__cell">Company Registration No. (1)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietorship Category (1)</td></tr>
+      <tr><td class="govuk-table__cell">Country Incorporated (1)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (1) address (1)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (1) address (2)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (1) address (3)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor name (2)</td></tr>
+      <tr><td class="govuk-table__cell">Company registration No. (2)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietorship Category (2)</td></tr>
+      <tr><td class="govuk-table__cell">Country Incorporated (2)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (2) address (1)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (2) address (2)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (2) address (3)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor name (3)</td></tr>
+      <tr><td class="govuk-table__cell">Company Registration No. (3)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietorship Category (3)</td></tr>
+      <tr><td class="govuk-table__cell">Country Incorporated (3)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (3) address (1)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (3) address (2)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (3) address (3)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor name (4)</td></tr>
+      <tr><td class="govuk-table__cell">Company Registration No. (4)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietorship Category (4)</td></tr>
+      <tr><td class="govuk-table__cell">Country Incorporated (4)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (4) address (1)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (4) address (2)</td></tr>
+      <tr><td class="govuk-table__cell">Proprietor (4) address (3)</td></tr>
+      <tr><td class="govuk-table__cell">Date Proprietor added</td></tr>
+      <tr><td class="govuk-table__cell">Additional Proprietor Indicator</td></tr>
+      <tr><td class="govuk-table__cell">Change indicator (<abbr title="Change Only Update">COU</abbr> only)</td></tr>
+      <tr><td class="govuk-table__cell">Change Date (<abbr title="Change Only Update">COU</abbr> only)</td></tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">Table 2 – Overseas companies that own property in England and Wales: table structure</h3>
+
+    <table class="govuk-table">
+      <caption hidden>Description of the data fields in the dataset</caption>
+      <thead class="govuk-table__head">
+      <tr>
+        <th scope="col" class="govuk-table__header">Field name</th>
+        <th scope="col" class="govuk-table__header">Data type</th>
+        <th scope="col" class="govuk-table__header">Mandatory</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody class="govuk-table__body">
+      <tr>
+        <td class="govuk-table__cell">Title number</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Unique number which identifies a registered title to land or a caution against first registration.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Tenure</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Freehold or leasehold.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Property Address</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">The unformatted address in the register.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">District</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          District name. Name of an administrative district created since local government reorganisation in 1974.
+          Administrative district also covers the London boroughs, unitary authorities and (for HMLR’s
+          purposes) the Isles of Scilly parishes.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">County</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Name of current county in England and Wales.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Region</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Name of a geographic region which comprises one or more current counties, former counties or
+          unitary authorities or any combination of these. On HQ instructions, the names and extents of the
+          regions are the economic planning regions used by various bodies. N.B. region names allocated by
+          the Office for National Statistics differ in some instances from names in this field.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Postcode</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          A combination of up to 7 letters and numbers (plus one embedded blank), which defines geographic units.
+          It is part of a coding system created and used by the post office across the UK.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Multiple address Indicator</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Indicates that property addresses on the register are contained in a Property Schedule. The register
+          may contain additional property addresses.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Price Paid</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The sale price stated on the transfer deed.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor name (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Non-private Individual Name. Name of a company, corporate body, local authority or other organisation or
+          establishment.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Company Registration No. (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          A unique identifier assigned to a company when it is registered at Companies' House. Although the name
+          of the company may change, the Company Registration Number will stay the same.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietorship Category (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">Text which describes the category in which a name falls.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Country Incorporated (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">The country where the company is incorporated.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (1) address (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (1) address (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (1) address (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor name (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Non-private individual name. Name of a company, corporate body, local authority or other organisation
+          or establishment.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Company Registration No. (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Number which is a unique identifier assigned to a company when it is registered at Companies' House.
+          Although the name of the company may change, the Company Registration Number will stay the same.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietorship Category (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">Text which describes the category in which a name falls.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Country Incorporated (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The country where the company is incorporated.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (2) address (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (2) address (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (2) address (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor name (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Non-private individual name. Name of a company, corporate body, local authority or other organisation
+          or establishment.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Company Registration No. (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Number which is a unique identifier assigned to a company when it is registered at Companies' House.
+          Although the name of the company may change, the Company Registration Number will stay the same.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietorship Category (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">Text which describes the category in which a name falls.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Country Incorporated (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The country where the company is incorporated.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (3) address (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (3) address (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (3) address (3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor name (4)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Non-private individual name. Name of a company, corporate body, local authority or other organisation
+          or establishment.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Company Registration No. (4)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Number which is a unique identifier assigned to a company when it is registered at Companies' House.
+          Although the name of the company may change, the Company Registration Number will stay the same.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietorship Category (4)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">Text which describes the category in which a name falls.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Country Incorporated (4)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The country where the company is incorporated.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (4) address (1)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (4) address (2)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Proprietor (4) address 3)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Register address string. The address (including the postcode) either of a property or a registered
+          proprietor, in the form in which it appears as the property description on the register. The text
+          will include any commas but exclude any final punctuation marks (e.g. full stops) and any delimiters.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Date Proprietor added</td>
+        <td class="govuk-table__cell">Date</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The date a proprietor was added to the register.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Additional Proprietor Indicator</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">Yes</td>
+        <td class="govuk-table__cell">
+          Indicates if there are other proprietors on the register which are not overseas companies.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Change indicator (<abbr title="Change Only Update">COU</abbr> only)</td>
+        <td class="govuk-table__cell">Character</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">
+          Indicates the change to the row<br>
+          A – Added,<br>
+          D – Deleted.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">Change Date (<abbr title="Change Only Update">COU</abbr> only)</td>
+        <td class="govuk-table__cell">Date</td>
+        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell">The date of the extract.</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">Table 3 – Overseas companies that own property in England and Wales: Tenure code list</h3>
+    <table class="govuk-table">
+      <caption hidden>Codes and description of tenures listed in the dataset</caption>
+      <thead class="govuk-table__header">
+      <tr>
+        <th scope="col" class="govuk-table__header">Number</th>
+        <th scope="col" class="govuk-table__header">Tenure</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td class="govuk-table__cell">1</td>
+        <td class="govuk-table__cell">Freehold</td>
+        <td class="govuk-table__cell">Freehold estates are held for an infinite duration.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">2</td>
+        <td class="govuk-table__cell">Leasehold</td>
+        <td class="govuk-table__cell">
+          Leasehold estates have a fixed or maximum duration. Under the Land Registration Act 2002, only leases granted
+          for a term of more than seven years are compulsorily registrable and are included in this data.
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h3 class="govuk-heading-m">Table 4 – Overseas companies that own property in England and Wales: Proprietor code list</h3>
+    <table class="govuk-table">
+      <caption hidden>Names and descriptions of the proprietors included in the dataset</caption>
+      <thead class="govuk-table__header">
+      <tr>
+        <th scope="col" class="govuk-table__header">Number</th>
+        <th scope="col" class="govuk-table__header">Proprietorship</th>
+        <th scope="col" class="govuk-table__header">Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="govuk-table__cell">1</td>
+        <td class="govuk-table__cell">Limited Company or Public Limited Company</td>
+        <td class="govuk-table__cell">
+          A company where the liability for debts is limited either by guarantee or by reference to the number of shares
+          issued. The majority of companies are limited.
+        </td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">2</td>
+        <td class="govuk-table__cell">Corporate Body</td>
+        <td class="govuk-table__cell">An organisation that has its own legal rights and responsibilities.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">3</td>
+        <td class="govuk-table__cell">Unlimited Company</td>
+        <td class="govuk-table__cell">An unlimited company is a company with unlimited liability for its debts.</td>
+      </tr>
+      <tr>
+        <td class="govuk-table__cell">4</td>
+        <td class="govuk-table__cell">Limited Liability Partnership</td>
+        <td class="govuk-table__cell">
+          A Limited Liability Partnership (<abbr title="Limited Liability Partnership">LLP</abbr>) is a corporate
+          body and has legal identity separate from that of its members. It can hold property in its own right and
+          has unlimited powers to deal with estates.
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr class="govuk-section-break govuk-section-break--l">
+    <h2 class="govuk-heading-l" id="quality">Data quality</h2>
+    <p class="govuk-body">
+      During more than 150 years of land registration, improvements to working practice may have caused some
+      inconsistencies in the data.
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Only completed register entries are included. No pending applications or historic owners are included.
+      </li>
+      <li>
+        HM Land Registry did not routinely record the country of incorporation in the register before January 1999.
+      </li>
+      <li>
+        The information regarding owners may not always reflect the position on the Register, as we have removed
+        private individuals, overseas companies and charities.
+      </li>
+      <li>
+        The source data is from citizens and conveyancers supplied on registration deeds and documents. There
+        is often inconsistency in the way addresses and names are supplied to HM Land Registry.
+      </li>
+      <li>
+        There may be spelling errors in the names of the owners. This could be due to input error or the way
+        the names were presented.
+      </li>
+      <li>
+        Detailed address information is provided wherever possible.
+      </li>
+      <li>
+        The postcode will be derived from the registered property description. If one hasn’t been registered then
+        the postcode will be blank.
+      </li>
+      <li>
+        The ‘Registered on’ date is the date the proprietor was registered. If there is more than one proprietor
+        on the register it will be the date the latest proprietor was added. This could mean it is not when the
+        overseas company was registered, but another proprietor on the register whose details are excluded.
+      </li>
+      <li>
+        Y in the Multiple Address Indicator field indicates that property addresses on the register are contained
+        in a Property Schedule. The register may contain additional property addresses. You’ll need to buy an
+        official copy of the register to find out more about these addresses.
+      </li>
+      <li>
+        Not every title will have an amount in the Price Paid field. These figures are taken from the monthly
+        Price Paid information based on the latest application.
+      </li>
+    </ul>
+
+    <h2 class="govuk-heading-l" id="capture">Data capture information</h2>
+    <p class="govuk-body">
+      The data is collected when property is transferred or leased to an overseas corporation. During the application
+      process, the country of incorporation is recorded in the register. This has been the case since 1997.
+    </p>
+    <p class="govuk-body">
+      In some countries, a corporation is registered in a particular state or province. In this case, HM Land Registry
+      enters both the state or province and the country. For example: #MONTBLANC HOLDINGS LIMITED# (incorporated in
+      British Columbia, Canada).
+    </p>
+
+    <h2 class="govuk-heading-l" id="maintenance">Data maintenance</h2>
+    <p class="govuk-body">
+      The data can change several times during the month. The published data will only show the latest change made.
+    </p>
+
+    <h2 class="govuk-heading-l" id="product">Data product delivery</h2>
+    <h3 class="govuk-heading-m">Access to the dataset</h3>
+    <p class="govuk-body">
+      Two files will be published from the 2nd working day of the month. The data is published in both a monthly
+      complete file and a file that only shows changes to the dataset since the previous month. This is known as
+      the change only update file.
+    </p>
+    <p class="govuk-body">
+      Once the full dataset has been downloaded, the title number allows users to maintain the data by adding the
+      change only update to the full dataset each month. Alternatively, the user can download the full dataset again,
+      which also contains all changes made to date.
+    </p>
+
+    <h3 class="govuk-heading-m">Granting access</h3>
+    <p class="govuk-body">
+      You will need to create an account on the <a href="listings">Use land and property data service</a> and
+      sign in to access the data.
+    </p>
+
+    <h3 class="govuk-heading-m">File structure</h3>
+    <p class="govuk-body">
+      The dataset is provided as a CSV file. The data in each file will:
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>use a comma to separate each field: ‘,’ (ASCII 44)</li>
+      <li>enclose all fields within double quotes “ “ (ASCII 34)</li>
+      <li>send blank fields without a character between double quotes: ”“</li>
+      <li>have a date format of DD-MM-YYYY. For example, 14 December 2013 will be shown as 14-12-2013</li>
+      <li>use UTF-8 encoding (the way characters are coded for websites)</li>
+      <li>have line separation removed</li>
+      <li>have the column heading as the first row</li>
+    </ul>
+
+    <h3 class="govuk-heading-m">File name</h3>
+    <p class="govuk-body">
+      The file names will be structured as below.
+    </p>
+    <p class="govuk-body">
+      OCOD_&lt;1&gt;&lt;2&gt;&lt;3&gt;.csv<br>
+      &lt;1&gt;File Type. FULL denotes Full monthly extract, <abbr title="Change Only Update">COU</abbr> denotes
+      monthly change only update.<br>
+      &lt;2&gt;Year of file creation (format YYYY).<br>
+      &lt;3&gt;Month of file creation (format MM).
+    </p>
+    <p class="govuk-body">
+      The following are examples for the 2 types of file:<br>
+      OCOD_FULL_2015_08.csv<br>
+      OCOD_COU_2015_08.csv
+    </p>
+
+    <h2 class="govuk-heading-l" id="contact">Contact information</h2>
+    <p>
+      If you have any feedback or questions about this data, contact us:
+    </p>
+    <h3 class="govuk-heading-s">
+      Telephone
+    </h3>
+    <ul class="govuk-list">
+      <li>Telephone: 0300 006 0478</li>
+      <li>Monday to Friday, 9am to 5pm</li>
+    </ul>
+    <p class="govuk-body">
+      <a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
+    </p>
+
+    <h3 class="govuk-heading-s">
+      Email
+    </h3>
+    <ul class="govuk-list">
+      <li><a class="govuk-link" href="mailto:data.services@mail.landregistry.gov.uk">data.services@mail.landregistry.gov.uk​</a></li>
+      <li>We aim to respond within 2 working days</li>
+    </ul>
+  </div>
+</div>
+
+
+{% endblock %}

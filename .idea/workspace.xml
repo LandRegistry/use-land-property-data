@@ -2,7 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be074fdf-c74c-4377-a13c-af6143497b45" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/dst/main-page-report-created.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/dst/report-v1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/accessibility.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/agree-lease-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/agree-overseas-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/agree-restrict-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/agree-uk-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/api-access-extra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/api-access.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/api-tech.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/confirm-reset-password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/cookies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/create-account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/overseas-org-account/check-answers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/overseas-org-account/org-address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/overseas-org-account/org-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/overseas-org-account/research.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/overseas-org-account/yes-research.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/overseas-org-account/your-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/card-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/check-answers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/confirm-card-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/live-in-uk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/overseas-address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/research.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/uk-address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/yes-research.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/personal-account/your-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/charity-address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/charity-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/check-answers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/company-address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/company-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/gov-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/la-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/org-type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/research.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/yes-research.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/create-account/uk-org-account/your-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/full-nps-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/gml-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/inspire-download.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/inspire-product-metadata.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/inspire-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/lease-comm-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/lease-exp-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/lease-priv-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/lease-product-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/lease-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/lease-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/listings-cookie-banner.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/listings-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/listings-with-maintenance.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/listings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/new-link-sent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/nps-product-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/nps-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/nps-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/old-uk-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/overseas-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/overseas-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/overseas-product-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/overseas-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/overseas-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/request-download-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/request-download.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/request-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/request-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/request-view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/reset-password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/restrict-comm-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/restrict-exp-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/restrict-priv-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/restrict-product-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/restrict-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/restrict-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/sample-nps-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/sign-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/terms-of-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/title-desc-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/title-number-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/transaction-download.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/transaction-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/transaction-tech-spec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/uk-history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/uk-licence.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/uk-product-signed-in.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/uk-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/version-19/uk-tech-spec.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dst/main-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dst/main-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data" beforeDir="false" afterPath="$PROJECT_DIR$/use-land-property-data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/use-land-property-data/README.md" beforeDir="false" />
     </list>
@@ -46,23 +139,23 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/dst" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/dst" />
-      <recent name="$PROJECT_DIR$/app/views/version-18" />
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$USER_HOME$/Not c7oud/Data Publication/use-land-property-data/app/views" />
-      <recent name="$PROJECT_DIR$/app/views/version-16" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/views/version-4-1" />
       <recent name="$PROJECT_DIR$/app/views/version-1-1" />
       <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app/views/version-1-1/create-account" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/app/views/dst" />
+      <recent name="$PROJECT_DIR$/app/views/version-18" />
+      <recent name="$USER_HOME$/Not c7oud/Data Publication/use-land-property-data/app/views" />
+      <recent name="$PROJECT_DIR$/app/views/version-16" />
     </key>
   </component>
   <component name="RunManager">

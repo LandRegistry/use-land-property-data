@@ -39,11 +39,6 @@ Use land and property data
                         Reports
                     </a>
                 </li>
-                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-                    <a class="govuk-tabs__tab" href="#message">
-                        Manage service message
-                    </a>
-                </li>
             </ul> <!-- tabs list -->
 
             <!-- My datasets tab -->
@@ -169,7 +164,13 @@ Use land and property data
 
             <section class="govuk-tabs__panel" id="reports">
                 <form action="/report-choice" method="post">
+                    <div class="govuk-panel govuk-panel--confirmation">
+                        <div class="govuk-panel__body" style="font-size: 24px;">
+                            <strong>Your report has been created and saved</strong>
+                        </div>
+                    </div>
 
+                    <hr class="govuk-section-break govuk-section-break--m">
                     <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
                             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -398,58 +399,12 @@ Use land and property data
                         </fieldset>
                     </div>
 
-                    <a class="govuk-button" href="main-page-report-created#reports">
+                    <button class="govuk-button" data-module="govuk-button">
                         Create report
-                    </a>
+                    </button>
                 </form>
             </section> <!-- reports tab -->
 
-            <!-- manage messages tab -->
-            <section class="govuk-tabs__panel" id="message">
-                 <h2 class="govuk-heading-m">
-                     Manage service messages
-                 </h2>
-
-                <table class="govuk-table">
-                    <thead class="govuk-table__head">
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="col" width="50%">Active message</th>
-                        <th class="govuk-table__header" scope="col" width="35%%">Actions</th>
-                        <th class="govuk-table__header" scope="col" width="15%"></th>
-                    </tr>
-                    </thead>
-
-                    <tbody class="govuk-table__body">
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell">There are currently no active messages</td>
-                        <td class="govuk-table__cell"></td>
-                        <td class="govuk-table__cell"></td>
-                    </tr>
-                    </tbody>
-                </table>
-
-                <hr class="govuk-section-break govuk-section-break--l">
-                <div class="govuk-form-group">
-                    <label class="govuk-label" for="message-name">
-                        Message name
-                    </label>
-                    <div id="account-number-hint" class="govuk-hint">
-                        This will not be seen by the service user
-                    </div>
-                    <input class="govuk-input govuk-input--width-40" id="message-name" name="message-name" type="text" spellcheck="false" aria-describedby="account-number-hint">
-                </div>
-
-                <div class="govuk-form-group">
-                    <label class="govuk-label" for="more-detail">
-                        Enter the message to be shown
-                    </label>
-                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-                </div>
-
-                <a class="govuk-button" href="">
-                    Continue
-                </a>
-            </section> <!-- manage messages tab -->
         </div> <!-- tabs -->
     </div>
 </div>
